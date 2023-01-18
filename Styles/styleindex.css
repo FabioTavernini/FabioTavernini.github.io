@@ -12,9 +12,15 @@ body {
     width: 100%;
     height: 2.5rem;
     text-align: center;
+    text-decoration: none;
     font-family: monospace;
-  }
-  
+}
+
+#footerlink {
+    text-decoration: none;
+    color: inherit;
+}
+
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
@@ -61,28 +67,26 @@ body {
 }
 
 
-
-
 #redirect {
     margin-top: 50px;
     font-size: 25px;
     font-family: monospace;
     letter-spacing: .05em;
-
-    margin-left: -140px;
+    margin-left: -135px;
     text-align: center;
-    -webkit-animation: fadein 15s;
+    -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 3s ease 0s normal forwards 1 fadein;
 
 }
 
-@keyframes fadein {
-    from {
-        opacity: 0;
-    }
-
-    to {
-        opacity: 1;
-    }
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
 }
 
-
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
