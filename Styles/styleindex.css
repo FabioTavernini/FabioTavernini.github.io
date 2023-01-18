@@ -6,6 +6,16 @@ body {
     justify-content: center;
 }
 
+#footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 2.5rem;
+    text-align: center;
+    font-family: monospace;
+  }
+  
+
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
     color: black;
@@ -53,9 +63,12 @@ body {
 
 
 
-#redirect p {
+#redirect {
     margin-top: 50px;
     font-size: 25px;
+    font-family: monospace;
+    letter-spacing: .05em;
+
     margin-left: -140px;
     text-align: center;
     -webkit-animation: fadein 15s;
@@ -71,4 +84,5 @@ body {
         opacity: 1;
     }
 }
+
 
