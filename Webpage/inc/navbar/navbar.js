@@ -4,15 +4,18 @@ document.write('\
 \
 .navbar > a {\
     width: 100%;\
-    color: black;\
+    color: white;\
     text-decoration: none;\
     font-size: 30px;\
     font-family: monospace;\
 }\
+.navbar > a:hover{\
+    background-color: #333;\
+}\
 .navbar{\
     text-align:center;\
     display:flex;\
-    background-color:grey;\
+    background-color:#222;\
 }\
 \
 </style>\
@@ -23,4 +26,3 @@ document.write('\
     <a href="./About.html">ABOUT</a> \
 </nav>\
 ');
-

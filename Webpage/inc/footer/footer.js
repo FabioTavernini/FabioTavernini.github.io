@@ -11,8 +11,9 @@ document.write('\
     width: 100%;\
     position: absolute;\
     font-family: monospace;\
-    color: black;\
-    bottom: 5px;\
+    background-color:#222;\
+    color: white;\
+    bottom: 0px;\
     left: 0px;\
 }\
 </style>\
