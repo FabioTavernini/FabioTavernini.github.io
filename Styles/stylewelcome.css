@@ -7,21 +7,21 @@ body {
     height: 100%;
 }
 
-#footer {
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 2.5rem;
-    text-align: center;
-    text-decoration: none;
-    font-family: monospace;
-}
-
 #footerlink {
     text-decoration: none;
-    color: inherit;
+    color: black;
 }
 
+#footer {
+    clear: both;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    font-family: monospace;
+    color: black;
+    bottom: 5px;
+    left: 0px;
+}
 
 /* DEMO-SPECIFIC STYLES */
 .typewriter h1 {
