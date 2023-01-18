@@ -24,3 +24,14 @@ html, body {
 }
 
 
+.tiles-grid{
+  justify-content: center;
+  padding-top: 10px;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+#Leittext {
+  text-align: center;
+}
+
