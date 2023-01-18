@@ -10,3 +10,8 @@ document.addEventListener('keydown', (event) => {
     }
 
 });
+
+window.addEventListener("click", function(event) {
+    location.href = "./webpage/index.html";
+});
+
