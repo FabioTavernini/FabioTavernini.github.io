@@ -5,11 +5,15 @@ html, body {
   background-color: #333;
 }
 
-body {
-  -webkit-animation: fadein 5s;
-  /* Safari, Chrome and Opera > 12.1 */
-
+@media screen and (min-width: 1000px) {
+  body {
+    -webkit-animation: fadein 5s;
+    /* Safari, Chrome and Opera > 12.1 */
+  
+  }
 }
+
+
 
 /* Safari, Chrome and Opera > 12.1 */
 @-webkit-keyframes fadein {
