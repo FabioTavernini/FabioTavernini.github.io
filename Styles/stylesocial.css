@@ -24,6 +24,12 @@ html, body {
   }
 }
 
+#footer{
+  position: absolute;
+}
+
+
+
 .wrapper{
   margin-top: 20%;
 }
