@@ -43,15 +43,27 @@ body {
 }
 
 
+a{
+  text-decoration: none;
+}
 
+
+
+.projecttiles{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
 .column-4 {
   float: left;
   width: 21%;
   padding: 10px;
   margin: 20px;
-  height: 250px;
+  /* height: 250px; */
   font-family: monospace;
+  border-radius: 20px;
 }
 
 .project-text {
@@ -74,8 +86,12 @@ body {
 
 }
 
+
+
 .project-2 {
   background-color: white;
+  text-align: center;
+  color: #333;
 }
 
 .project-3 {
