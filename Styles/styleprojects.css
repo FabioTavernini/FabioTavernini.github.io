@@ -1,5 +1,6 @@
 /* GLOBAL STYLES */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   background-color: #333;
@@ -12,7 +13,7 @@ html, body {
 }
 
 
-.einleitung{
+.einleitung {
   text-align: center;
 }
 
@@ -26,7 +27,7 @@ html, body {
   body {
     -webkit-animation: fadein 5s;
     /* Safari, Chrome and Opera > 12.1 */
-  
+
   }
 }
 
@@ -35,10 +36,70 @@ html, body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
 }
 
 
+
+
+.column-4 {
+  float: left;
+  width: 21%;
+  padding: 10px;
+  margin: 20px;
+  height: 250px;
+  font-family: monospace;
+}
+
+.project-text {
+  text-align: center;
+  font-size: 50px;
+}
+
+
+.project-1 {
+  background: url('../Webpage/img/projects/e30/E30Tile.JPG');
+
+  color: #fff;
+
+  box-sizing: border-box;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+
+}
+
+.project-2 {
+  background-color: white;
+}
+
+.project-3 {
+  background-color: #209BFF;
+}
+
+.project-4 {
+  background-color: #112d4e;
+}
+
+.project-5 {
+  background-color: #F9F7F7;
+}
+
+.project-6 {
+  background-color: #209BFF;
+}
+
+.project-7 {
+  background-color: #ffffff00;
+}
+
+.project-8 {
+  background: url('../images/project-right.jpeg');
+  background-size: cover;
+}
 
