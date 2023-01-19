@@ -5,6 +5,23 @@ html, body {
   background-color: #333;
 }
 
+
+.footer {
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+
+
+.einleitung{
+  text-align: center;
+}
+
+#leittext {
+  text-decoration: none;
+  color: #fff;
+  font-family: monospace;
+}
+
 @media screen and (min-width: 1000px) {
   body {
     -webkit-animation: fadein 5s;
@@ -24,14 +41,4 @@ html, body {
 }
 
 
-.tiles-grid{
-  justify-content: center;
-  padding-top: 10px;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-
-#Leittext {
-  text-align: center;
-}
 

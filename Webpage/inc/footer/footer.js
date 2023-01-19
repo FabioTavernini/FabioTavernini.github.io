@@ -15,6 +15,9 @@ document.write('\
     color: white;\
     bottom: 0px;\
     left: 0px;\
+    position: fixed;\
+    left: 0;\
+    bottom: 0;\
 }\
 </style>\
 \
