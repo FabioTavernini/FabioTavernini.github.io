@@ -7,7 +7,7 @@ body {
 }
 
 #footer{
-  position: unset;
+  position: fixed;
 }
 
 .einleitung {
@@ -23,12 +23,28 @@ body {
 @media screen and (min-width: 1000px) {
   body {
     -webkit-animation: fadein 5s;
-    /* Safari, Chrome and Opera > 12.1 */
-
   }
 }
 
-/* Safari, Chrome and Opera > 12.1 */
+
+@media (max-width:1000px){
+  .project-text {
+    text-align: center;
+    font-size: 30px;
+  }
+}
+
+@media (min-width:1000px){
+  .project-text {
+    text-align: center;
+    font-size: 50px;
+  }
+}
+
+
+
+
+
 @-webkit-keyframes fadein {
   from {
     opacity: 0;
@@ -58,14 +74,12 @@ a{
   width: 21%;
   padding: 10px;
   margin: 20px;
-  /* height: 250px; */
   font-family: monospace;
   border-radius: 20px;
 }
 
 .project-text {
   text-align: center;
-  font-size: 50px;
 }
 
 
