@@ -24,6 +24,10 @@ html, body {
   }
 }
 
+#navsocial{
+  background-color: #333;
+}
+
 #footer{
   position: absolute;
 }

@@ -25,6 +25,10 @@ body {
   }
 }
 
+#navindex{
+  background-color: #333;
+}
+
 #footer {
   position: unset;
 }

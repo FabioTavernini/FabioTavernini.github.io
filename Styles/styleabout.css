@@ -24,6 +24,10 @@ html, body {
     }
   }
 
+  #navabout{
+    background-color: #333;
+  }
+
 
   #footer{
     position: absolute;
