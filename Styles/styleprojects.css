@@ -101,15 +101,11 @@ a{
 
 .project-1 {
   background: url('../Webpage/img/projects/e30/E30Tile.JPG');
-
   color: #fff;
-
   box-sizing: border-box;
-
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 
 }
 
@@ -123,6 +119,8 @@ a{
 
 .project-3 {
   background-color: #209BFF;
+  text-align: center;
+  color: #333;
 }
 
 .project-4 {
