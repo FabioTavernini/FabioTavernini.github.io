@@ -42,19 +42,19 @@ body {
 
 
 
-@media (max-width:625px){
+@media (max-width:760px){
   .project-text {
     font-size: 20px;
   }
 }
 
-@media (min-width:625px){
+@media (min-width:760px){
   .project-text {
     font-size: 30px;
   }
 }
 
-@media (min-width:1000px){
+@media (min-width:1300px){
   .project-text {
 
     font-size: 50px;
