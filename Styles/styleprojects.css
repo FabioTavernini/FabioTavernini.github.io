@@ -27,16 +27,22 @@ body {
 }
 
 
-@media (max-width:1000px){
+
+@media (max-width:625px){
   .project-text {
-    text-align: center;
+    font-size: 20px;
+  }
+}
+
+@media (min-width:625px){
+  .project-text {
     font-size: 30px;
   }
 }
 
 @media (min-width:1000px){
   .project-text {
-    text-align: center;
+
     font-size: 50px;
   }
 }
