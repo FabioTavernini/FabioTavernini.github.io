@@ -8,8 +8,7 @@ document.write('\
     text-decoration: none;\
     font-size: 15px;\
     font-family: monospace;\
-    height:30px;\
-    margin-top:5px;\
+    padding-top: 6px;\
 }\
 .navbar > a:hover{\
     background-color: #333;\
