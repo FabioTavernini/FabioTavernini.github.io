@@ -1,34 +1,44 @@
 /* GLOBAL STYLES */
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-    text-align: center;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  text-align: center;
+  background-size: 700px 700px;
+  height: 10000px;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    -webkit-animation: fadein 5s;
+    /* Safari, Chrome and Opera > 12.1 */
+
   }
-  
-  @media screen and (min-width: 1000px) {
-    body {
-      -webkit-animation: fadein 5s;
-      /* Safari, Chrome and Opera > 12.1 */
-    
-    }
-  }
-  
-  /* Safari, Chrome and Opera > 12.1 */
-  @-webkit-keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
   }
 
-  #navabout{
-    background-color: #333;
+  to {
+    opacity: 1;
   }
+}
+
+#navabout {
+  background-color: #333;
+}
 
 
-  #footer{
-    position: absolute;
-  }
+#footer {
+  position: fixed;
+}
+
+.badge {
+  margin-top: 1500px;
+  margin-left: 0px;
+  font-size: 100px;
+}
