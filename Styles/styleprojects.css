@@ -109,8 +109,6 @@ a{
 
 }
 
-
-
 .project-2 {
   background-color: white;
   text-align: center;
@@ -125,6 +123,8 @@ a{
 
 .project-4 {
   background-color: #112d4e;
+  text-align: center;
+  color: #333;
 }
 
 .project-5 {
@@ -143,4 +143,3 @@ a{
   background: url('../images/project-right.jpeg');
   background-size: cover;
 }
-
