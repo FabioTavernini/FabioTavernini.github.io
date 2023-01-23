@@ -31,3 +31,7 @@ html, body {
   #footer{
     position: absolute;
   }
+
+  body{
+    font-family: monospace;
+  }
