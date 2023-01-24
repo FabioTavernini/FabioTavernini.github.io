@@ -24,7 +24,7 @@ document.write('\
 \
 <nav class="navbar">\
     <a id="navindex" href="../../index.html">HOME</a> \
-    <a id="navprojects" href="../../projects.html">PROJEKTE</a> \
+    <a id="navprojects" href="../../projects.html">PROJECTS</a> \
     <a id="navabout" href="../../about.html">ABOUT</a> \
     <a id="navsocial" href="../../social.html">SOCIAL</a> \
 </nav>\
