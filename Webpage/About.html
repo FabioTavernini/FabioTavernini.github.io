@@ -9,7 +9,7 @@
     <link rel="icon" href="inc/favicon/code-solid.svg">
     <title>About</title>
 
-    
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
     <script src="../JS/scriptabout.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
 
@@ -17,21 +17,35 @@
 
 <body>
 
-    <script src="./inc/navbar/navbar.js"></script>
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("inc/navbar/navbar.html");
+        });
+    </script>
+
+    <div id="nav-placeholder"></div>
+
 
 
 
     <h1 class="badge lax lax_preset_scaleInOut:306:0">My digicomp badge</h1>
 
     <div class="badge lax lax_preset_scaleInOut:100:0">
-        <div data-iframe-width="350" data-iframe-height="470" data-share-badge-id="dff584f1-3c6b-4a40-9aff-e7b6cdf7c4b9" data-share-badge-host="https://www.credly.com"></div>
+        <div data-iframe-width="350" data-iframe-height="470" data-share-badge-id="dff584f1-3c6b-4a40-9aff-e7b6cdf7c4b9"
+            data-share-badge-host="https://www.credly.com"></div>
         <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
     </div>
 
 
 
 
-    <script src="./inc/footer/footer.js"></script>
+    <div id="footer-placeholder"></div>
+
+    <script>
+        $(function () {
+            $("#footer-placeholder").load("inc/footer/footer.html");
+        });
+    </script>
 
 </body>
 

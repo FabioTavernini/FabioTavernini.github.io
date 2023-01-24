@@ -8,10 +8,21 @@
     <link rel="stylesheet" href="styleE30.css">
     <link rel="icon" href="../../inc/favicon/code-solid.svg">
     <title>E30</title>
+
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
 </head>
 
 <body>
-    <script src="../inc/navbar/navbar.js"></script>
+    
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("../inc/navbar/navbar.html");
+        });
+    </script>
+    
+    <div id="nav-placeholder"></div>
 
 
 
@@ -23,6 +34,12 @@
 
 
 
-    <script src="../inc/footer/footer.js"></script>
+    <div id="footer-placeholder"></div>
+
+    <script>
+        $(function () {
+            $("#footer-placeholder").load("../inc/footer/footer.html");
+        });
+    </script>
 </body>
 </html>

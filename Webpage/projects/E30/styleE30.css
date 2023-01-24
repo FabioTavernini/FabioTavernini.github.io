@@ -1,38 +1,77 @@
 /* GLOBAL STYLES */
-html, body {
-    margin: 0;
-    padding: 0;
-    background-color: #333;
-    text-align: center;
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #333;
+  text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+  body {
+    -webkit-animation: fadein 5s;
+    /* Safari, Chrome and Opera > 12.1 */
+
   }
-  
-  @media screen and (min-width: 1000px) {
-    body {
-      -webkit-animation: fadein 5s;
-      /* Safari, Chrome and Opera > 12.1 */
-    
-    }
-  }
-  
-  /* Safari, Chrome and Opera > 12.1 */
-  @-webkit-keyframes fadein {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
   }
 
-  #navprojects{
-    background-color: #333;
+  to {
+    opacity: 1;
   }
+}
+
+#navprojects {
+  background-color: #333;
+}
+
+.navbar>a {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: monospace;
+  padding-top: 6px;
+}
+
+.navbar>a:hover {
+  background-color: #333;
+}
+
+.navbar {
+  text-align: center;
+  height: 30px;
+  display: flex;
+  background-color: #222;
+}
 
 
-  #footer{
-    position: absolute;
-  }
+#footerlink {
+  text-decoration: none;
+  color: black;
+}
 
-  h1{
-    font-family: monospace;
-  }
+#footer {
+  clear: both;
+  text-align: center;
+  width: 100%;
+  font-family: monospace;
+  background-color: #222;
+  color: white;
+  bottom: 0px;
+  left: 0px;
+  left: 0;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: absolute;
+}
+
+h1 {
+  font-family: monospace;
+}

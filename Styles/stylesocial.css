@@ -28,7 +28,44 @@ html, body {
   background-color: #333;
 }
 
-#footer{
+.navbar > a {
+  width: 100%;
+  color: white;
+  text-decoration: none;
+  font-size: 15px;
+  font-family: monospace;
+  padding-top: 6px;
+}
+.navbar > a:hover{
+  background-color: #333;
+}
+.navbar{
+  text-align:center;
+  height:30px;
+  display:flex;
+  background-color:#222;
+}
+
+
+
+#footerlink {
+  text-decoration: none;
+  color: black;
+}
+
+#footer {
+  clear: both;
+  text-align: center;
+  width: 100%;
+  font-family: monospace;
+  background-color:#222;
+  color: white;
+  bottom: 0px;
+  left: 0px;
+  left: 0;
+  bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
   position: absolute;
 }
 
