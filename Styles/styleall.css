@@ -1,0 +1,63 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    text-align: center;
+}
+
+@media screen and (min-width: 1000px) {
+    body {
+        -webkit-animation: fadein 5s
+    }
+}
+
+@-webkit-keyframes fadein {
+    from {
+        opacity: 0
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+.navbar>a {
+    width: 100%;
+    color: #fff;
+    text-decoration: none;
+    font-size: 15px;
+    font-family: monospace;
+    padding-top: 6px
+}
+
+.navbar>a:hover {
+    background-color: #333
+}
+
+.navbar {
+    height: 30px;
+    display: flex;
+    background-color: #222
+}
+
+#footerlink {
+    text-decoration: none;
+    color: #000
+}
+
+#footer {
+    clear: both;
+
+    width: 100%;
+    font-family: monospace;
+    background-color: #222;
+    color: #fff;
+    bottom: 0;
+    left: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: unset
+}
