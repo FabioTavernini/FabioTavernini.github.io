@@ -66,13 +66,13 @@ a {
 .project-2 {
   background-color: white;
   text-align: center;
-  color: #333;
+  color: #000;
 }
 
 .project-3 {
   background-color: #209BFF;
   text-align: center;
-  color: #333;
+  color: #000;
 }
 
 .project-4 {
@@ -90,13 +90,10 @@ a {
 }
 
 .project-7 {
-  background-color: #ffffff00;
+  background-color: #000;
+  color: #fff;
 }
 
-.project-8 {
-  background: url('../images/project-right.jpeg');
-  background-size: cover;
-}
 
 
 
