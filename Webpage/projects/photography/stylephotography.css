@@ -11,7 +11,7 @@ body {
 }
 
 #footer {
-  position: fixed;
+  position: unset;
 }
 
 #einleitung {
