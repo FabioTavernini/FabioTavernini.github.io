@@ -11,5 +11,13 @@ body {
 }
 
 #footer {
-  position: absolute;
+  position: fixed;
+}
+
+#einleitung {
+  width: 100%;
+}
+
+img{
+  width: 100%;
 }
