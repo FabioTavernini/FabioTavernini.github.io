@@ -11,7 +11,6 @@
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 
-
 </head>
 
 <body>
@@ -23,22 +22,12 @@
         });
     </script>
 
-
-
-
     <h1>Photography</h1>
 
     <div id="einleitung">
         <a>i know someday i'll have to dort all these...</a>
     </div>
-
     <br>
-
-    <!-- <div>
-        <img src="../../img/projects/photography/_FT01687.JPG">
-        <img src="../../img/projects/photography/_FT01673.JPG">
-    </div> -->
-
 
     <?php
 
@@ -49,15 +38,7 @@
         $Filename = basename($image);
         echo '<img alt="' . $Filename . '" title="' . $Filename . '" src="' . $image . '" /><br />';
     }
-
     ?>
-
-
-
-
-
-
-
 
     <div id="footer-placeholder"></div>
 
@@ -66,10 +47,6 @@
             $("#footer-placeholder").load("../inc/footer/footer.html");
         });
     </script>
-
-
-    <script src="../photography/photography.js"></script>
-
 
 </body>
 
