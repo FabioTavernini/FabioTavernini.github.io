@@ -9,45 +9,29 @@
     <link rel="icon" href="../../inc/favicon/code-solid.svg">
     <title>photography</title>
 
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 
 </head>
 
 <body>
     <div id="nav-placeholder"></div>
-    
+
     <script>
         $(function() {
             $("#nav-placeholder").load("../inc/navbar/navbar.html");
         });
     </script>
-<<<<<<< HEAD:Webpage/projects/photography/photography.php
 
     <h1>Photography</h1>
 
     <div id="einleitung">
-        <a>i know someday i'll have to dort all these...</a>
+        <a>i know someday i'll have to sort all these...</a>
     </div>
     <br>
 
-    <?php
-
-    $dirname = "../../img/projects/photography/";
-    $images = glob($dirname . "*.JPG");
-=======
-    
 
 
 
-    <h1>Photography</h1>
-
->>>>>>> parent of 15218b5 (added pictures to photography):Webpage/projects/photography/photography.html
-
-    foreach ($images as $image) {
-        $Filename = basename($image);
-        echo '<img alt="' . $Filename . '" title="' . $Filename . '" src="' . $image . '" /><br />';
-    }
-    ?>
 
     <div id="footer-placeholder"></div>
 
@@ -58,4 +42,5 @@
     </script>
 
 </body>
+
 </html>

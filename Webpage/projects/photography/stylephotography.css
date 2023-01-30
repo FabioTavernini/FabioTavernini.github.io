@@ -11,6 +11,7 @@ body {
 }
 
 #footer {
+<<<<<<< HEAD
   position: unset;
 }
 
@@ -20,4 +21,7 @@ body {
 
 img{
   width: 100%;
+=======
+  position: absolute;
+>>>>>>> parent of 15218b5 (added pictures to photography)
 }
