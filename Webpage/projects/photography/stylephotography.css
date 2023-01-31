@@ -17,3 +17,8 @@ body {
 img{
   width: 100%;
 }
+
+.img-description{
+  color: #fff;
+  padding-bottom: 2px;
+}
