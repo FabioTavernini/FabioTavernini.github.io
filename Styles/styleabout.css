@@ -2,7 +2,6 @@
 
 body {
   background-size: 700px 700px;
-  height: 10000px;
 }
 
 #navabout {
@@ -13,8 +12,3 @@ body {
   position: fixed;
 }
 
-.badge {
-  margin-top: 1500px;
-  margin-left: 0px;
-  font-size: 80px;
-}
