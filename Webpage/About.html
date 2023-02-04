@@ -9,7 +9,7 @@
     <link rel="icon" href="inc/favicon/code-solid.svg">
     <title>About</title>
 
-        <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
     <script src="../JS/scriptabout.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
 
@@ -25,12 +25,17 @@
 
     <div id="nav-placeholder"></div>
 
-
-    <h3 style="font-family: monospace;">Work in progress :)</h3>
-
-
-
-
+    <div class="CV-container">
+        <object id="CV-pdf" data="../Webpage/docs/cv.pdf" type="application/pdf">
+            <p>Ups, Ihr Browser unterstützt keine pdf-einbettung!</p>
+            <p><a href="../Webpage/docs/cv.pdf">Hier gehts zum download</a></p>
+            <style>
+            #footer{
+                position: fixed;
+            }
+            </style>
+        </object>
+    </div>
 
     <div id="footer-placeholder"></div>
 
@@ -41,6 +46,5 @@
     </script>
 
 </body>
-
 
 </html>

@@ -9,6 +9,21 @@ body {
 }
 
 #footer {
-  position: fixed;
+  position: unset;
+  width: 100%;
 }
 
+.CV-container {
+  width: 90%;
+  margin: 10px auto;
+}
+
+#CV-pdf {
+  height: 1200px;
+  width: 90%;
+  margin: 20px auto;
+}
+
+p,a{
+  font-family: monospace;
+}
