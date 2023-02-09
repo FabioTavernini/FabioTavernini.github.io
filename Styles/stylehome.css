@@ -16,6 +16,22 @@ box-sizing:border-box;
 font-family:monospace
 }
 
+
+body,html{
+    height: 8000px;
+}
+
+#LAX{
+margin-top: 100%;
+}
+
+
+#footer {
+    position: fixed;
+  }
+
+
+
 section {
 min-height:100vh;
 display:flex;
@@ -107,7 +123,7 @@ flex-direction:column
 
 .reveal {
 position:relative;
-opacity:0
+opacity:1
 }
 
 .reveal.active {
@@ -115,21 +131,21 @@ opacity:1
 }
 
 .active.fade-bottom {
-animation:fade-bottom 2s ease-in
+animation:fade-bottom 2s linear
 }
 
 .active.fade-left {
-animation:fade-left 2s linear
+animation:fade-left 1s linear
 }
 
 .active.fade-right {
-animation:fade-right 2s linear
+animation:fade-right 1s linear
 }
 
 @keyframes fade-bottom {
 0% {
 transform:translateY(50px);
-opacity:0
+opacity:1
 }
 
 100% {
@@ -141,7 +157,7 @@ opacity:1
 @keyframes fade-left {
 0% {
 transform:translateX(-100px);
-opacity:0
+opacity:1
 }
 
 100% {
@@ -153,7 +169,7 @@ opacity:1
 @keyframes fade-right {
 0% {
 transform:translateX(100px);
-opacity:0
+opacity:1
 }
 
 100% {
