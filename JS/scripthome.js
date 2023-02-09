@@ -26,12 +26,12 @@ window.onload = function () {
   })
 
   // Add animation bindings to elements
-  lax.addElements('.selector', {
-    scrollY: {
-      translateX: [
-        ["elInY", "elCenterY", "elOutY"],
-        [0, 'screenWidth/2', 'screenWidth'],
-      ]
-    }
-  })
+  // lax.addElements('.selector', {
+  //   scrollY: {
+  //     translateX: [
+  //       ["elInY", "elCenterY", "elOutY"],
+  //       [0, 'screenWidth/2', 'screenWidth'],
+  //     ]
+  //   }
+  // })
 }
