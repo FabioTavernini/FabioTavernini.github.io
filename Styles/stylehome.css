@@ -1,179 +1,197 @@
 @import "./styleall.css";
 
 #navindex {
-background-color:#333
+  background-color: #333
 }
 
 #startpage {
-background-image:url(../Webpage/img/index/BW.webp);
-background-repeat:no-repeat
+  background-image: url(../Webpage/img/index/BW.webp);
+  background-repeat: no-repeat
 }
 
 * {
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:monospace
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: monospace
 }
 
 
-body,html{
-    height: 8000px;
+body,
+html {
+  height: 8000px;
+  overflow-x: hidden;
 }
 
-#LAX{
-margin-top: 100%;
+
+
+.selector{
+  float: left;
+}
+.selector2{
+  float: right;
+}
+
+
+#LAX {
+  margin-top: 500px;
+  background-color: white;
+  width: 200px;
+}
+
+#LAXCenter {
+  text-align: -webkit-center;
 }
 
 
 #footer {
-    position: fixed;
-  }
+  position: fixed;
+}
 
 
 
 section {
-min-height:100vh;
-display:flex;
-justify-content:center;
-align-items:center
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center
 }
 
 section:nth-child(1) {
-color:#000
+  color: #000
 }
 
 section:nth-child(2) {
-color:#000
+  color: #000
 }
 
 section:nth-child(3) {
-color:#000
+  color: #000
 }
 
 section:nth-child(4) {
-color:#000
+  color: #000
 }
 
 section .container {
-margin:100px
+  margin: 100px
 }
 
 section h1 {
-font-size:3rem;
-margin:20px;
-color:#fff
+  font-size: 3rem;
+  margin: 20px;
+  color: #fff
 }
 
 section h2 {
-font-size:40px;
-text-align:center;
-text-transform:uppercase
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase
 }
 
 section .text-container {
-display:flex
+  display: flex
 }
 
 section .text-container .text-box {
-margin:20px;
-padding:20px;
-background:#fff;
-border-radius:20px
+  margin: 20px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 20px
 }
 
 section .text-container .text-box h3 {
-font-size:30px;
-text-align:center;
-text-transform:uppercase;
-margin-bottom:10px
+  font-size: 30px;
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 10px
 }
 
 @media (max-width: 881px) {
-#startpage {
-background-position:center;
-background-size:cover
-}
+  #startpage {
+    background-position: center;
+    background-size: cover
+  }
 }
 
 @media (min-width: 881px) {
-#startpage {
-background-position:center;
-background-size:contain
-}
+  #startpage {
+    background-position: center;
+    background-size: contain
+  }
 }
 
 @media (min-width: 1265px) {
-#startpage {
-background-position:right;
-background-size:contain
-}
+  #startpage {
+    background-position: right;
+    background-size: contain
+  }
 }
 
 @media (max-width: 1265px) {
-section h1 {
-font-size:2rem;
-text-align:center
-}
+  section h1 {
+    font-size: 2rem;
+    text-align: center
+  }
 
-section .text-container {
-flex-direction:column
-}
+  section .text-container {
+    flex-direction: column
+  }
 }
 
 .reveal {
-position:relative;
-opacity:1
+  position: relative;
+  opacity: 1
 }
 
 .reveal.active {
-opacity:1
+  opacity: 1
 }
 
 .active.fade-bottom {
-animation:fade-bottom 2s linear
+  animation: fade-bottom 2s linear
 }
 
 .active.fade-left {
-animation:fade-left 1s linear
+  animation: fade-left 1s linear
 }
 
 .active.fade-right {
-animation:fade-right 1s linear
+  animation: fade-right 1s linear
 }
 
 @keyframes fade-bottom {
-0% {
-transform:translateY(50px);
-opacity:1
-}
+  0% {
+    transform: translateY(50px);
+    opacity: 1
+  }
 
-100% {
-transform:translateY(0);
-opacity:1
-}
+  100% {
+    transform: translateY(0);
+    opacity: 1
+  }
 }
 
 @keyframes fade-left {
-0% {
-transform:translateX(-100px);
-opacity:1
-}
+  0% {
+    transform: translateX(-100px);
+    opacity: 1
+  }
 
-100% {
-transform:translateX(0);
-opacity:1
-}
+  100% {
+    transform: translateX(0);
+    opacity: 1
+  }
 }
 
 @keyframes fade-right {
-0% {
-transform:translateX(100px);
-opacity:1
-}
+  0% {
+    transform: translateX(100px);
+    opacity: 1
+  }
 
-100% {
-transform:translateX(0);
-opacity:1
-}
+  100% {
+    transform: translateX(0);
+    opacity: 1
+  }
 }
