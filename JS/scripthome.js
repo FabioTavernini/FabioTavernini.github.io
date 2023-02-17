@@ -1,28 +1,102 @@
 window.onload = function () {
-  lax.init()
+    lax.init();
 
-  // Add a driver that we use to control our animations
-  lax.addDriver('scrollY', function () {
-      return window.scrollY
-  })
+    lax.addDriver('scrollY', function () {
+        return window.scrollY;
+    },);
 
-  // Add animation bindings to elements
-  lax.addElements('.selector', {
-      scrollY: {
-          translateX: [
-              ["elInY", "elCenterY", "elOutY"],
-              [0, 'pageWidth/2', 'pageWidth'],
-          ]
-      }
-  })
+    lax.addElements('.About_Me', {
+        scrollY: {
+            scale: [
+                ["elInY", "elCenterY", "elOutY"],
+                [0, 2, 0],
+            ],
+            translateX: [
+                ["elInY", "elOutY"],
+                ['-screenWidth', 0],
+                {
+                    easing: 'easeInOutQuint'
+                }
+            ]
+        }
+    });
 
-//   lax.addElements('.selector2', {
-//     scrollY: {
-//         translateX: [
-//             [ "elOutY", "elCenterY", "elInY"],
-//             ['screenWidth','screenWidth/2',0],
-//         ]
-//     }
-// })
+    lax.addElements('.Purpose_Page', {
+        scrollY: {
+            scale: [
+                ["elInY", "elCenterY", "elOutY"],
+                [0, 2, 0],
+            ],
+            translateX: [
+                ["elInY", "elOutY"],
+                ['screenWidth', 0],
+                {
+                    easing: 'easeInOutQuint'
+                }
+            ]
+        }
+    });
+
+
+    lax.addElements('.About_Site', {
+        scrollY: {
+            scale: [
+                ["elInY", "elCenterY", "elOutY"],
+                [0, 2, 0],
+            ]
+        }
+    });
+
+
+
+    lax.addElements('.photography', {
+        scrollY: {
+            scale: [
+                ["elInY", "elCenterY"],
+                [0.5, 1],
+            ]
+        }
+    });
+
+
+    lax.addElements('.fiddling', {
+        scrollY: {
+            translateX: [
+                ["elInY", "elCenterY", "elOutY"],
+                ['-screenWidth', 0, 'screenWidth'],
+                {
+                    easing: 'easeInOutQuint'
+                }
+            ]
+        }
+    });
+
+
+    lax.addElements('.cars', {
+        scrollY: {
+            translateX: [
+                ["elInY", "elCenterY", "elOutY"],
+                ['screenWidth', 0, '-screenWidth'],
+                {
+                    easing: 'easeInOutQuint'
+                }
+            ]
+        }
+    });
+
+
+    lax.addElements('.WorkInProgress , .WorkInProgress1', {
+        scrollY: {
+            translateX: [
+                ["elInY", "elCenterY", "elOutY"],
+                ['screenWidth', 0, '-screenWidth'],
+                {
+                    easing: 'easeInOutQuint'
+                }
+            ]
+        }
+    });
+
+
 
 }
