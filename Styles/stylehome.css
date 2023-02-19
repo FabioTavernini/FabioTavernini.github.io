@@ -1,6 +1,6 @@
 @import "./styleall.css";
 
-body {
+body,html {
   overflow-x: hidden;
   font-family: monospace;
 }
@@ -17,6 +17,19 @@ body {
   position: fixed;
   text-align: center;
 }
+
+
+/* Test for mobile max width */
+iframe {
+  max-width: 100%;
+}
+
+.rst-copyright img {
+  max-width: 100%;
+  height: auto;
+}
+
+
 
 
 #startpage {
