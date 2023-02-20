@@ -11,6 +11,10 @@
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/lax.js"></script>
+
+    <script src="../JS/scripthome.js"></script>
+
 </head>
 
 <body>
@@ -20,126 +24,223 @@
             $("#nav-placeholder").load("inc/navbar/navbar.html");
         });
     </script>
-    
+
     <div id="nav-placeholder"></div>
 
 
 
+    <div id="startpage" style="height: 1500px;">
 
+        <h1>Scroll down to explore &#8595;</h1>
 
-        <section id="startpage">
-
-            <h1>Scroll down to explore &#8595;</h1>
-
-        </section>
-
-
-
-        <section>
-            <div class="container reveal fade-bottom">
-                <h2>Hello</h2>
-                <div class="text-container">
-                    <div class="text-box">
-                        <h3>About me</h3>
-                        <p>
-                            Well, on this webpage id like to keep track of my projects and intrests. <br>
-                            How well thats gonna work out? i dont know yet.
-                        </p>
-                    </div>
-                    <div class="text-box">
-                        <h3>experience</h3>
-                        <p>
-                            I like automating stuff with Powershell and creating GUI's to make life easier.<br>
-                            I've made various Forms with PHP and HTML, MSSQL/MySQL, CSS, a bit of Javascirpt and a pinch
-                            of Jquery. <br>
-                            Occasionally, I like to dabble in other things like VB.NET, Python<br>
-
-                        </p>
-                    </div>
-                    <div class="text-box">
-                        <h3>This site</h3>
-                        <p>
-                            This website and its content is stored on github, built and deployed to netlify.
-
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container reveal fade-left">
-                <h2>Intrests</h2>
-                <div class="text-container">
-                    <div class="text-box">
-                        <h3>Amateur Photography</h3>
-                        <p>
-                            What can i say - I like to take pictures, digital and on film!<br>
-                            i'll try and cover most of this on my projects page - under "photography":)
-                        </p>
-                    </div>
-                    <div class="text-box">
-                        <h3>Cars</h3>
-                        <p>
-                            Ever since owning my BMW e30, i wanted to make a webpage to keep track of progress and
-                            changes to the car. <br>
-                            I'll dedicate a Projects page to this car.
-                        </p>
-                    </div>
-                    <div class="text-box">
-                        <h3>fiddling around</h3>
-                        <p>
-                            I love to mess around with all sorts of stuff. <br> From repairing Phones, to small
-                            electronics, mechanical things, to messing around with servers in my room.<br>
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section>
-            <div class="container reveal fade-right">
-                <h2>working</h2>
-                <div class="text-container">
-                    <div class="text-box">
-                        <h3>Still</h3>
-                        <p>
-                            Just about everything in life takes time. <br>
-                            This Site will hopefully grow, as i keep adding content of interesting things i am working on, or have in mind.
-                        </p>
-                    </div>
-                    <div class="text-box">
-                        <h3>in</h3>
-                        <p>
-                            I am keeping track of my curriculum vitae in the "About" - Tab, which i am currently building.
-                        </p>
-                    </div>
-                    <div class="text-box">
-                        <h3>progress</h3>
-                        <p>
-                            My social networks can be found in the "Social" Tab. Feel free to contact me any way you feel.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
+    </div>
 
 
 
-        <div id="footer-placeholder"></div>
-
-        <script>
-            $(function () {
-                $("#footer-placeholder").load("inc/footer/footer.html");
-            });
-        </script>
 
 
-        <script src="../JS/scripthome.js"></script>
+    <section class="About_Me About">
+
+        <div>
+            <h3>About me</h3>
+            <p>
+                I like automating stuff with Powershell and creating GUI's to make life easier.
+                I've made various Forms with PHP and HTML, MSSQL/MySQL, CSS, a bit of Javascirpt and a pinch of Jquery.
+                Occasionally, I like to dabble in other things like VB.NET, Python
+            </p>
+        </div>
+
+    </section>
+
+
+    <section class="Purpose_Page About">
+
+        <div>
+            <h3>This site</h3>
+            <p>
+                Well, on this webpage id like to keep track of my projects and intrests.
+                How well thats gonna work out? i dont know yet.
+            </p>
+        </div>
+
+    </section>
+
+
+    <section class="About_Site About">
+
+        <div>
+            <h3>About this</h3>
+            <p>
+                This website and its content is stored on github, built and deployed to netlify.
+                The Animations are implemented with LAX.js, check it out here: <a
+                    href="https://github.com/alexfoxy/lax.js" target="_blank">LAX.JS</a>
+            </p>
+        </div>
+
+    </section>
+
+
+
+
+    <div class="title">
+
+        <h1 class="Intrests">Intrests</h1>
+
+    </div>
+
+
+
+
+    <section class="photography Intrests">
+
+        <h3>Amateur Photography</h3>
+        <p>
+            What can i say - I like to take pictures, digital and on film!<br>
+            i'll try and cover most of this on my projects page - under "photography":)
+        </p>
+    </section>
+
+
+
+    <section class="fiddling Intrests">
+        <h3>fiddling around</h3>
+        <p>
+            I love to mess around with all sorts of stuff. <br> From repairing Phones, to small
+            electronics, mechanical things, to messing around with servers in my room.<br>
+        </p>
+    </section>
+
+
+
+    <section class="cars Intrests">
+        <h3>Cars</h3>
+        <p>
+            Ever since owning my BMW e30, i wanted to make a webpage to keep track of progress and
+            changes to the car. <br>
+            I'll dedicate a Projects page to this car.
+        </p>
+    </section>
+
+
+
+
+    <div class="title">
+
+        <h1 class="WIP">Work in Progress</h1>
+
+    </div>
+
+
+
+    <section class="WorkInProgress1 WIP">
+
+        <h3>Still</h3>
+        <p>
+            Just about everything in life takes time. <br>
+            This site will hopefully grow, as i keep adding content of interesting things i am working on, or have in
+            mind.
+        </p>
+    </section>
+
+
+
+    <section class="WorkInProgress WIP">
+        <h3>in</h3>
+        <p>
+            I am keeping track of my curriculum vitae in the "About" - Tab, which i am currently building.
+        </p>
+    </section>
+
+
+    <section class="WorkInProgress WIP">
+        <h3>progress</h3>
+        <p>
+            My social networks can be found in the "Social" Tab. Feel free to contact me any way you feel.
+        </p>
+    </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div style="height: 1500px;">
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        $(function () {
+            $("#footer-placeholder").load("inc/footer/footer.html");
+        });
+    </script>
+
+
+
+
+
+
 
 
 </body>
-
-
 
 </html>
