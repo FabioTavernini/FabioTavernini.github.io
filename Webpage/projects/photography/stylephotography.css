@@ -23,10 +23,6 @@ body {
   padding-bottom: 2px;
 } */
 
-
-
-
-
 /* 
 .row {
   display: flex;
@@ -73,10 +69,6 @@ body {
   -moz-column-gap:5px;
   column-count:5;
   column-gap:5px;
-
-
-
-
 }
 
 #gallery img {
@@ -128,4 +120,3 @@ body {
 #gallery img:hover {
   filter:none;
 }
-
