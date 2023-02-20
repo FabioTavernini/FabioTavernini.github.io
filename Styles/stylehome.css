@@ -20,8 +20,6 @@ html {
   width: -webkit-fill-available;
 }
 
-
-/* Test for mobile max width */
 iframe {
   max-width: 100%;
 }
@@ -31,32 +29,22 @@ iframe {
   height: auto;
 }
 
-
-
-
 #startpage {
-
   color: #fff;
-
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   background-image: url(../Webpage/img/index/BW.webp);
   background-repeat: no-repeat;
-
-
   background-position: right;
   background-size: contain;
-
 }
-
 
 h3 {
   font-size: 30px;
   text-transform: uppercase;
 }
-
 
 .About {
   background-color: #fff;
@@ -85,16 +73,13 @@ h3 {
     margin-left: 20%;
     margin-right: 20%;
   }
-
   .About{
     margin-left: 20%;
     margin-right: 20%;
   }
-
   #startpage{
     background-position: top;
   }
-
 }
 
 @media only screen and (min-width: 1050px) {
@@ -102,13 +87,10 @@ h3 {
     margin-left: 40%;
     margin-right: 40%;
   }
-
   #startpage{
     background-position: right;
   }
-
 }
-
 
 .Intrests {
   background-color: #fff;
