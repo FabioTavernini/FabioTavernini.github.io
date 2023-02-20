@@ -53,7 +53,7 @@ window.onload = function () {
               {
                   500: [0, 1, 0], // Screen width < 500
                   900: [0, 1, 0], // Screen width > 500 and < 900
-                  1400: [0, 2, 0], // Screen width > 900
+                  1400: [0, 1.5, 0], // Screen width > 900
                 },
           ]
       }
