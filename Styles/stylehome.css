@@ -60,8 +60,6 @@ h3 {
 
 .About {
   background-color: #fff;
-  margin-left: 30%;
-  margin-right: 30%;
   padding: 10px 10px 10px 10px;
   border-radius: 25px;
 }
@@ -87,13 +85,28 @@ h3 {
     margin-left: 20%;
     margin-right: 20%;
   }
+
+  .About{
+    margin-left: 30%;
+    margin-right: 30%;
+  }
+
+  #startpage{
+    background-position: top;
+  }
+
 }
 
 @media only screen and (min-width: 1050px) {
-  .Intrests,.WIP {
+  .Intrests,.WIP,.About {
     margin-left: 40%;
     margin-right: 40%;
   }
+
+  #startpage{
+    background-position: right;
+  }
+
 }
 
 
