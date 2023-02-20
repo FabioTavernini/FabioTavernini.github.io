@@ -1,6 +1,7 @@
 @import "./styleall.css";
 
-body,html {
+body,
+html {
   overflow-x: hidden;
   font-family: monospace;
 }
@@ -16,6 +17,7 @@ body,html {
 #footer {
   position: fixed;
   text-align: center;
+  width: -webkit-fill-available;
 }
 
 
@@ -56,7 +58,7 @@ h3 {
 }
 
 
-.About{
+.About {
   background-color: #fff;
   margin-left: 30%;
   margin-right: 30%;
@@ -68,38 +70,50 @@ h3 {
   margin-top: 300px;
 }
 
-.Purpose_Page{
+.Purpose_Page {
   margin-top: 500px;
 }
 
-.About_Site{
+.About_Site {
   margin-top: 900px;
 }
 
-.title{
+.title {
   margin-top: 900px;
 }
 
-.Intrests{
+@media only screen and (max-width: 1050px) {
+  .Intrests,.WIP {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+  .Intrests,.WIP {
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+}
+
+
+.Intrests {
   background-color: #fff;
-  margin-left: 40%;
-  margin-right: 40%;
   padding: 10px 10px 10px 10px;
   border-radius: 25px;
 }
 
-.cars , .fiddling{
-margin-top: 10px;
+.cars,
+.fiddling {
+  margin-top: 10px;
 }
 
-.WIP{
+.WIP {
   background-color: #fff;
-  margin-left: 40%;
-  margin-right: 40%;
   padding: 10px 10px 10px 10px;
   border-radius: 25px;
 }
 
-.WorkInProgress{
+.WorkInProgress {
   margin-top: 10px;
 }
