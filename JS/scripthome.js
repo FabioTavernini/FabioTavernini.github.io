@@ -109,17 +109,17 @@ window.onload = function () {
         }
     });
 
-    lax.addElements('#thanks', {
-        scrollY: {
-            translateY: [
-                ["elInY", "elOutY"],
-                ['-screenWidth/2', 'screenWidth'],
-            ],
-            "rotate": [
-                ["elInY", "elOutY"],
-                ['screenWidth', '-screenWidth'],
-            ]
-        }
-    });
+    // lax.addElements('#thanks', {
+    //     scrollY: {
+    //         translateY: [
+    //             ["elInY", "elOutY"],
+    //             ['-screenWidth/2', 'screenWidth'],
+    //         ],
+    //         "rotate": [
+    //             ["elInY", "elOutY"],
+    //             ['screenWidth', '-screenWidth'],
+    //         ]
+    //     }
+    // });
 
 }
