@@ -113,7 +113,7 @@ window.onload = function () {
         scrollY: {
             translateY: [
                 ["elInY", "elOutY"],
-                ['-screenWidth', 'screenWidth'],
+                ['-screenWidth/2', 'screenWidth'],
             ],
             "rotate": [
                 ["elInY", "elOutY"],
