@@ -123,31 +123,4 @@ window.onload = function () {
     // });
 
 
-
-    window.addEventListener("load", function() {
-        lax.setup(); // initialize Lax.js
-        
-        lax.addDriver("scrollY", function() {
-          return window.scrollY;
-        }); // define the scroll driver
-        
-        lax.addElements(".spinner", { // add the animation to the .spinner element
-          translateY: [
-            ["elInY", "elCenterY", "elOutY"], // animation stages
-            [0, "screenHeight/2", 0] // corresponding translateY values
-          ],
-          opacity: [
-            ["elInY", "elCenterY", "elOutY"], // animation stages
-            [1, 0.5, 0] // corresponding opacity values
-          ],
-          rotate: [
-            ["elInY", "elCenterY", "elOutY"], // animation stages
-            [0, 360, 0] // corresponding rotate values
-          ]
-        });
-      });
-
-
-
-
 }
