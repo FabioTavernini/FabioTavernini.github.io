@@ -1,105 +1,101 @@
-@import url("./styleall.css");
+@import "./styleall.css";
 
 #navsocial {
-  background-color: #333;
+  background-color: #333
 }
 
 #footer {
+  position: absolute
+}
+
+@media screen and (min-width: 600px) {
+  ul {
+    display: flex
+  }
+}
+
+@media screen and (max-width: 600px) {
+  li {
+    padding-top: 20px
+  }
+}
+
+#containersocial {
+  text-align: center
+}
+
+ul {
   position: absolute;
-}
-
-.wrapper {
-  margin-top: 20%;
-}
-
-.wrapper .icon {
-  position: relative;
-  background-color: #ffffff;
-  border-radius: 50%;
-  margin: 10px;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  font-size: 22px;
-  display: inline-block;
-  align-items: center;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  cursor: pointer;
-  transition: all 0.2s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-  color: #333;
-  text-decoration: none;
-}
-
-.wrapper .tooltip {
-  position: absolute;
-  top: 0;
-  line-height: 1.5;
-  font-size: 14px;
-  background-color: #ffffff;
-  color: #ffffff;
-  padding: 5px 8px;
-  border-radius: 5px;
-  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-  opacity: 0;
-  pointer-events: none;
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
-}
-
-.wrapper .tooltip::before {
-  position: absolute;
-  content: "";
-  height: 8px;
-  width: 8px;
-  background-color: #ffffff;
-  bottom: -3px;
+  top: 50%;
   left: 50%;
-  transform: translate(-50%) rotate(45deg);
-  transition: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transform: translate(-50%, -50%);
+  padding-inline-start: 0
 }
 
-.wrapper .icon:hover .tooltip {
-  top: -45px;
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
+ul li {
+  list-style: none
 }
 
-.wrapper .icon:hover span,
-.wrapper .icon:hover .tooltip {
-  text-shadow: 0px -1px 0px rgba(0, 0, 0, 0.1);
+ul li a {
+  width: 80px;
+  height: 80px;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80px;
+  font-size: 35px;
+  margin: 0 10px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 3px solid #fff;
+  z-index: 1
 }
 
-.wrapper .mail:hover,
-.wrapper .mail:hover .tooltip,
-.wrapper .mail:hover .tooltip::before {
-  background-color: #d7333b;
-  color: #ffffff;
+ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: .5s;
+  z-index: 3
 }
 
-.wrapper .linkedin:hover,
-.wrapper .linkedin:hover .tooltip,
-.wrapper .linkedin:hover .tooltip::before {
-  background-color: #3b5999;
-  color: #ffffff;
+ul li a:hover .icon {
+  color: #fff;
+  transform: rotateY(360deg)
 }
 
-.wrapper .whatsapp:hover,
-.wrapper .whatsapp:hover .tooltip,
-.wrapper .whatsapp:hover .tooltip::before {
-  background-color: #25d366;
-  color: #ffffff;
+ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: red;
+  transition: .5s;
+  z-index: 2
 }
 
-.wrapper .telegram:hover,
-.wrapper .telegram:hover .tooltip,
-.wrapper .telegram:hover .tooltip::before {
-  background-color: #28a8e9;
-  color: #ffffff;
+ul li a:hover:before {
+  top: 0
 }
 
-.wrapper .github:hover,
-.wrapper .github:hover .tooltip,
-.wrapper .github:hover .tooltip::before {
-  background-color: #333333;
-  color: #ffffff;
+ul li:nth-child(1) a:before {
+  background: #dd4b39
+}
+
+ul li:nth-child(2) a:before {
+  background: #3b5999
+}
+
+ul li:nth-child(3) a:before {
+  background-color: #25d366
+}
+
+ul li:nth-child(4) a:before {
+  background: #333
+}
+
+ul li:nth-child(5) a:before {
+  background-color: #28a8e9
 }
