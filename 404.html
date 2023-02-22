@@ -2,232 +2,157 @@
 <html lang="de">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="./Webpage/inc/favicon/code-solid.svg">
-    <title>404</title>
-
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-
-    <script type="application/javascript" src="./JS/lax.min.js"></script>
-    <script type="application/javascript">
-  
-      window.onload = function () {
-        lax.init()
-  
-        // Setup mouse move listener
-        document.addEventListener('mousemove', function (e) {
-          lax.__cursorX = e.clientX
-          lax.__cursorY = e.clientY
-        }, false)
-  
-        // Add lax driver for cursorX
-        lax.addDriver('cursorX', function () {
-          return lax.__cursorX || 0
-        })
-  
-        // Add lax driver for cursorY
-        lax.addDriver('cursorY', function () {
-          return lax.__cursorY || 0
-        })
-  
-        // Add lax driver for cursorXY
-        lax.addDriver('cursorDistanceFromCenter', function () {
-          var pageHeight = document.body.scrollHeight
-          var pageWidth = document.body.scrollWidth
-  
-          var pageCenterX = pageWidth / 2
-          var pageCenterY = pageHeight / 2
-  
-          var absDistanceFromCenterY = Math.abs((lax.__cursorY || 0) - pageCenterY) / pageCenterY
-          var absDistanceFromCenterX = Math.abs((lax.__cursorX || 0) - pageCenterX) / pageCenterX
-  
-          return absDistanceFromCenterX + absDistanceFromCenterY
-        })
-  
-        lax.addElements(".text", {
-          'cursorX': {
-            "translateX": [
-              [0, 'screenWidth'],
-              ['index * 10', 'index * -10'],
-            ],
-          },
-          'cursorY': {
-            "translateY": [
-              [0, 'screenHeight'],
-              ['index * 10', 'index * -10'],
-            ],
-          },
-          'cursorDistanceFromCenter': {
-            "scale": [
-              [0, 1],
-              [1, '1 + (index * 0.05 )'],
-            ],
-          }
-        })
-  
-        lax.addElements(".container", {
-          'cursorX': {
-            "filter": [
-              [0, 'screenWidth'],
-              [0, 'screenWidth/2'],
-
-
-            ],
-          },
-        })
-      }
-  
-    </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="Webpage/inc/favicon/code-solid.svg">
+  <title>404</title>
 </head>
 
 <body>
 
-    <style>
-        @import "./Styles/styleall.css";
+  <style>
+    @import "Styles/styleall.css";
 
-        #footer-placeholder {
-            position: fixed;
-            bottom: 0;
-            display: table;
-            width: 100%;
-        }
-
-        #error {
-            color: #FFF;
-            font-size: 80px;
-            font-family: monospace;
-            margin-top: 30vh;
-        }
-    </style>
-
-
-
-<style>
-    body {
-      padding: 0;
-      margin: 0;
-      font-family: Arial, Helvetica, sans-serif;
-    }
-  
-    .text {
-      width: 100vw;
-      text-align: center;
+    #footer {
       position: fixed;
-      top: 0;
-      left: 0;
-      margin-top: calc(50vh - 40px);
-      z-index: 1000;
-      font-size: 100px;
-      transform-origin: 50% 50%;
+      bottom: 0;
+      display: table;
+      width: 100%
     }
-  
-    .text.a {
-      color: #a94fe4;
+
+    .titletext {
+      position: absolute;
+      top: 50vh;
+      font-family: 'Overpass', sans-serif;
+      margin-left: 47%;
+      font-weight: 900;
+      font-style: italic;
+      mix-blend-mode: lighten
     }
-  
-    .text.b {
-      color: #68e4f1;
+
+    .text-cyan {
+      color: #0ff;
+      animation: title-cyan 20s linear infinite
     }
-  
-    .text.c {
-      color: #ffe773;
+
+    .text-yellow {
+      color: #ff0;
+      animation: title-yellow 20s linear infinite
     }
-  
-    .text.d {
-      color: #f544ad;
+
+    .text-magenta {
+      color: #f0f;
+      animation: title-magenta 20s linear infinite
     }
-  
-    .container {
-      background-color: #f5922c;
-      position: fixed;
-      width: 100vw;
-      height: 100vh;
+
+    @keyframes title-cyan {
+      0% {
+        transform: translate(calc(-50% + 6px), calc(-50% + 6px))
+      }
+
+      25% {
+        transform: translate(calc(-50% + 2px), calc(-50% + -6px))
+      }
+
+      50% {
+        transform: translate(calc(-50% + -6px), calc(-50% + 0px))
+      }
+
+      75% {
+        transform: translate(calc(-50% + 0px), calc(-50% + -4px))
+      }
+
+      100% {
+        transform: translate(calc(-50% + 6px), calc(-50% + 6px))
+      }
+    }
+
+    @keyframes title-yellow {
+      0% {
+        transform: translate(calc(-50% + 8px), calc(-50% + -8px))
+      }
+
+      25% {
+        transform: translate(calc(-50% + -4px), calc(-50% + 0px))
+      }
+
+      50% {
+        transform: translate(calc(-50% + 2px), calc(-50% + -14px))
+      }
+
+      75% {
+        transform: translate(calc(-50% + 12px), calc(-50% + 6px))
+      }
+
+      100% {
+        transform: translate(calc(-50% + 8px), calc(-50% + -8px))
+      }
+    }
+
+    @keyframes title-magenta {
+      0% {
+        transform: translate(calc(-50% + -4px), calc(-50% + 0px))
+      }
+
+      25% {
+        transform: translate(calc(-50% + 8px), calc(-50% + -14px))
+      }
+
+      50% {
+        transform: translate(calc(-50% + 16px), calc(-50% + -14px))
+      }
+
+      75% {
+        transform: translate(calc(-50% + 6px), calc(-50% + 12px))
+      }
+
+      100% {
+        transform: translate(calc(-50% + -4px), calc(-50% + 0px))
+      }
+    }
+
+    @media screen and (min-width: 750px) {
+      .titletext {
+        font-size: 300px
+      }
+    }
+
+    @media screen and (max-width: 749px) {
+      .titletext {
+        font-size: 200px
+      }
+    }
+
+    @media screen and (max-width: 460px) {
+      .titletext {
+        font-size: 100px
+      }
     }
   </style>
 
+  <nav class="navbar">
+    <a id="navindex" href="Webpage/index.html">HOME</a>
+    <a id="navprojects" href="Webpage/Projects.html">PROJECTS</a>
+    <a id="navabout" href="Webpage/About.html">ABOUT</a>
+    <a id="navsocial" href="Webpage/social.html">SOCIAL</a>
+  </nav>
 
+  <div class="title">
+    <div class="titletext text-cyan">
+      404
+    </div>
+    <div class="titletext text-yellow">
+      404
+    </div>
+    <div class="titletext text-magenta">
+      404
+    </div>
+  </div>
 
-<nav class="navbar">
-    <a id="navindex" href="Webpage/index.html">HOME</a> 
-    <a id="navprojects" href="Webpage/projects.html">PROJECTS</a> 
-    <a id="navabout" href="Webpage/About.html">ABOUT</a> 
-    <a id="navsocial" href="Webpage/social.html">SOCIAL</a> 
-</nav>
-
-    <div id="nav-placeholder"></div>
-
-<!-- 
-    <div>
-        <p id="error">404</p>
-    </div> -->
-
-
-
-
-
-
-    <div class="container">
-        <h1 class='text a'>404</h1>
-        <h1 class='text b'>404</h1>
-        <h1 class='text c'>404</h1>
-        <h1 class='text d'>404</h1>
-        <h1 class='text a'>404</h1>
-        <h1 class='text b'>404</h1>
-        <h1 class='text c'>404</h1>
-        <h1 class='text d'>404</h1>
-        <h1 class='text a'>404</h1>
-        <h1 class='text b'>404</h1>
-        <h1 class='text c'>404</h1>
-        <h1 class='text d'>404</h1>
-        <h1 class='text a'>404</h1>
-        <h1 class='text b'>404</h1>
-        <h1 class='text c'>404</h1>
-        <h1 class='text d'>404</h1>
-        <h1 class='text a'>404</h1>
-        <h1 class='text b'>404</h1>
-        <h1 class='text c'>404</h1>
-        <h1 class='text d'>404</h1>
-      </div>
-
-
-
-
-
-
-    <div id="footer-placeholder"></div>
-
-    <script>
-        $(function () {
-            $("#footer-placeholder").load("./Webpage/inc/footer/footer.html");
-        });
-    </script>
-
-
+  <footer id="footer">
+    <a>Fabio Tavernini - 2023</a>
+  </footer>
 
 </body>
 
