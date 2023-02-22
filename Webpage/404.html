@@ -10,7 +10,7 @@
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 
-    <script type="application/javascript" src="./JS/lax.min.js"></script>
+    <script type="application/javascript" src="../JS/lax.min.js"></script>
     <script type="application/javascript">
   
       window.onload = function () {
@@ -108,7 +108,7 @@
 <body>
 
     <style>
-        @import "./Styles/styleall.css";
+        @import "../Styles/styleall.css";
 
         #footer-placeholder {
             position: fixed;
@@ -172,12 +172,11 @@
 
 
 
-<nav class="navbar">
-    <a id="navindex" href="Webpage/index.html">HOME</a> 
-    <a id="navprojects" href="Webpage/projects.html">PROJECTS</a> 
-    <a id="navabout" href="Webpage/About.html">ABOUT</a> 
-    <a id="navsocial" href="Webpage/social.html">SOCIAL</a> 
-</nav>
+<script>
+  $(function () {
+      $("#nav-placeholder").load("inc/navbar/navbar.html");
+  });
+</script>
 
     <div id="nav-placeholder"></div>
 
@@ -223,7 +222,7 @@
 
     <script>
         $(function () {
-            $("#footer-placeholder").load("./Webpage/inc/footer/footer.html");
+            $("#footer-placeholder").load("inc/footer/footer.html");
         });
     </script>
 
