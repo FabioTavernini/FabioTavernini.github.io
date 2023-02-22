@@ -1,5 +1,5 @@
 // Add event listener on keydown
-document.addEventListener('keydown', (event) => {
+window.addEventListener('DOMContentLoaded', (event) => {
     var name = event.key;
     var code = event.code;
 
