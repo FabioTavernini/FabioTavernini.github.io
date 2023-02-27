@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style3dprinting.css">
+    <link rel="icon" href="../../inc/favicon/3dPrint.ico">
+    <title>3D-Printing</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="nav-placeholder"></div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("../inc/navbar/navbar.html");
+        });
+    </script>
+
+    <h1>3D-Printing</h1>
+
+    <div id="einleitung">
+        <a>I bought a 3D-Printer :)</a>
+        <br>
+        <a>A Creatily Ender 3 V2 Neo:</a>
+    </div>
+
+    <h2>Unboxing</h2>
+
+    <div class="Images">
+        <img class="einleitungIMG" src="../../img/projects/3DPrinting/Package.jpg">
+        <img class="einleitungIMG" src="../../img/projects/3DPrinting/TopView.jpg">
+    </div>
+
+
+    <h2>Initial Setup</h2>
+
+
+    <div class="Text SetupText">
+        <a>The initial setup was quite easy. <br>
+            It was a simle task of screwing in the gantry frame to the base and attaching the screen. <br>
+            After that, just hook it up to power and you can start :) <br>
+            I followed the guide in the provided manual <a target="_blank"
+                href="https://cdn.competec.ch/documents2/0/9/5/231752590/231752590.pdf">here </a> <br>
+            <a>The first thing i did was level the bed and set the Z-Axis offset. <br>
+            </a>
+    </div>
+
+    <h2>First Prints</h2>
+
+    <div class="Text FirstPrints">
+        <a>
+            On the included Micro-SD-Card were two .gcode files for test-printing.<br>
+            However, i wantet to print something myself. So i went to Thingiverse and searched for some calibration
+            prints.<br>
+            In the end, i used <a target="_blank" href="https://www.thingiverse.com/thing:1278865">this</a>
+            <a> cube for my first print. <br>
+                Now to be able to print the .stl file, we first need a slicer, to prepare the file for the printer.<br>
+                For the time being im using the creatily slicer, its powerful enough for me.<br>
+                There are other options like cura, simplify3D and many more. - you cant go wrong with any of them<br>
+            </a>
+    </div>
+
+
+
+
+
+
+    <br>
+    <br>
+    <br>
+
+
+
+
+
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        $(function () {
+            $("#footer-placeholder").load("../inc/footer/footer.html");
+        });
+    </script>
+
+
+</body>
+
+</html>

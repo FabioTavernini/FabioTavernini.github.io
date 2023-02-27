@@ -11,7 +11,7 @@ body {
 }
 
 #footer {
-  position: fixed;
+  position: unset;
 }
 
 #gallery {
@@ -22,19 +22,13 @@ body {
   -moz-column-gap:5px;
   column-count:5;
   column-gap:5px;
-
-
 }
 
 #gallery img {
   width: 100% !important;
   height: auto !important;
   margin-bottom:5px; /* to match column gap */
-
-
-
   filter: grayscale(100%);
-
   transition: filter .5s;
 }
 
@@ -46,8 +40,6 @@ body {
   }
 }
 
-
-
 @media (max-width: 1000px) {
   #gallery {
    -moz-column-count:    3;
@@ -56,7 +48,6 @@ body {
   }
 }
 
-
 @media (max-width: 800px) {
   #gallery {
    -moz-column-count:    2;
@@ -64,7 +55,6 @@ body {
    column-count:         2;
   }
 }
-
 
 @media (max-width: 400px) {
   #gallery {

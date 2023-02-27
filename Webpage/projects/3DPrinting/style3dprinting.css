@@ -1,0 +1,41 @@
+@import "../../../Styles/styleall.css";
+
+html,
+body {
+  text-align: center;
+  font-family: monospace;
+}
+
+#navprojects {
+  background-color: #333;
+}
+
+#footer {
+  position: unset;
+}
+
+h1,h2,a{
+  color: #fff;
+}
+
+.Images{
+  display: flex;
+  justify-content: center;
+}
+
+img{
+  width: 30%;
+  padding: 5px;
+  border-radius: 15px;
+}
+
+.Text {
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+#SetupText{
+  text-align: center;
+  /* margin-left: 18%;
+  margin-right: 10%; */
+}
