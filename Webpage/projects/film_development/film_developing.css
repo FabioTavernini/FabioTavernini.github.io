@@ -21,12 +21,16 @@ h3 {
   color: #fff;
 }
 
+
+
 hr {
   width: 50%;
 }
 
 p {
   font-size: 15px;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 
 img {
@@ -39,6 +43,8 @@ li {
   margin-bottom: -15px;
 }
 
-ul{
+ul {
   display: inline-block;
+  width: 50%;
+  padding-left: 0px;
 }
