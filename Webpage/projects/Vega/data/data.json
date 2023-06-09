@@ -1,0 +1,1441 @@
+[
+  {
+    "id": 1,
+    "name": "Applikationen"
+  },
+  {
+    "id": 2,
+    "name": "C - Unterstützungsaufgaben",
+    "parent": 1
+  },
+  {
+    "id": 3,
+    "name": "B - Kernaufgabe",
+    "parent": 1
+  },
+  {
+    "id": 4,
+    "name": "0100 Finanzen",
+    "parent": 2
+  },
+  {
+    "id": 5,
+    "name": "0500 Soziale Sicherheit",
+    "parent": 3
+  },
+  {
+    "id": 6,
+    "name": "0700 Umweltschutz und Raumordnung",
+    "parent": 3
+  },
+  {
+    "id": 7,
+    "name": "0500 Geschäftsabwicklung",
+    "parent": 2
+  },
+  {
+    "id": 8,
+    "name": "0200 Personal",
+    "parent": 2
+  },
+  {
+    "id": 9,
+    "name": "0400 Informatik",
+    "parent": 2
+  },
+  {
+    "id": 10,
+    "name": "0400 Gesundheit",
+    "parent": 3
+  },
+  {
+    "id": 11,
+    "name": "0600 Verkehr und Nachrichtenübermittlung",
+    "parent": 3
+  },
+  {
+    "id": 12,
+    "name": "0000 Allgemeine Verwaltung",
+    "parent": 3
+  },
+  {
+    "id": 13,
+    "name": "0200 Bildung",
+    "parent": 3
+  },
+  {
+    "id": 14,
+    "name": "0100 Öffentliche Ordnung und Sicherheit, Verteidigung",
+    "parent": 3
+  },
+  {
+    "id": 15,
+    "name": "0800 Volkswirtschaft",
+    "parent": 3
+  },
+  {
+    "id": 16,
+    "name": "0800 Geo-informationen",
+    "parent": 2
+  },
+  {
+    "id": 17,
+    "name": "0700 Immobilien",
+    "parent": 2
+  },
+  {
+    "id": 18,
+    "name": "0300 Kultur, Sport und Freizeit Kirche",
+    "parent": 3
+  },
+  {
+    "id": 19,
+    "name": "0110 Finanzen",
+    "parent": 4
+  },
+  {
+    "id": 20,
+    "name": "0570 Sozialhilfe und Asylwesen",
+    "parent": 5
+  },
+  {
+    "id": 21,
+    "name": "0790 Raumordnung",
+    "parent": 6
+  },
+  {
+    "id": 22,
+    "name": "0510 Geschäftsabwicklung",
+    "parent": 7
+  },
+  {
+    "id": 23,
+    "name": "0210 Personal",
+    "parent": 8
+  },
+  {
+    "id": 24,
+    "name": "0410 Informatik",
+    "parent": 9
+  },
+  {
+    "id": 25,
+    "name": "0410 Spitäler, Kranken- und Pflegeheime",
+    "parent": 10
+  },
+  {
+    "id": 26,
+    "name": "0550 Arbeitslosigkeit",
+    "parent": 5
+  },
+  {
+    "id": 27,
+    "name": "0610 Strassenverkehr",
+    "parent": 11
+  },
+  {
+    "id": 28,
+    "name": "0020 Allgemeine Dienste",
+    "parent": 12
+  },
+  {
+    "id": 29,
+    "name": "0040 Einwohner",
+    "parent": 12
+  },
+  {
+    "id": 30,
+    "name": "0290 Übriges Bildungswesen",
+    "parent": 13
+  },
+  {
+    "id": 31,
+    "name": "0130 Strafvollzug",
+    "parent": 14
+  },
+  {
+    "id": 32,
+    "name": "0870 Brennstoffe und Energie",
+    "parent": 15
+  },
+  {
+    "id": 33,
+    "name": "0770 Übriger Umweltschutz",
+    "parent": 6
+  },
+  {
+    "id": 34,
+    "name": "0050 Unternehmen",
+    "parent": 12
+  },
+  {
+    "id": 35,
+    "name": "0620 Öffentlicher Verkehr",
+    "parent": 11
+  },
+  {
+    "id": 36,
+    "name": "0760 Bekämpfung von Umweltverschmutzung",
+    "parent": 6
+  },
+  {
+    "id": 37,
+    "name": "0120 Rechtssprechung",
+    "parent": 14
+  },
+  {
+    "id": 38,
+    "name": "0140 Allgemeindes Rechtswesen",
+    "parent": 14
+  },
+  {
+    "id": 39,
+    "name": "0850 Industrie, Gewerbe, Handel",
+    "parent": 15
+  },
+  {
+    "id": 40,
+    "name": "0430 Gesundheitsprävention",
+    "parent": 10
+  },
+  {
+    "id": 41,
+    "name": "0810 Geo-informationen",
+    "parent": 16
+  },
+  {
+    "id": 42,
+    "name": "0250 Allgemeinbildende Schulen",
+    "parent": 13
+  },
+  {
+    "id": 43,
+    "name": "0710 Immobilien",
+    "parent": 17
+  },
+  {
+    "id": 44,
+    "name": "0110 Öffentliche Sicherheit",
+    "parent": 14
+  },
+  {
+    "id": 45,
+    "name": "0830 Jagd und Fischerei",
+    "parent": 15
+  },
+  {
+    "id": 46,
+    "name": "0730 Abfallwirtschaft",
+    "parent": 6
+  },
+  {
+    "id": 47,
+    "name": "0540 Familie und Jugend",
+    "parent": 5
+  },
+  {
+    "id": 48,
+    "name": "0490 Gesundheitswesen, n.a.g.",
+    "parent": 10
+  },
+  {
+    "id": 49,
+    "name": "0810 Landwirtschaft",
+    "parent": 15
+  },
+  {
+    "id": 50,
+    "name": "0210 Obligatorische Schule",
+    "parent": 13
+  },
+  {
+    "id": 51,
+    "name": "0320 Kultur, übrige",
+    "parent": 18
+  },
+  {
+    "id": 52,
+    "name": "0160 Verteidungung",
+    "parent": 14
+  },
+  {
+    "id": 53,
+    "name": "0420 Ambulante Krankenpflege",
+    "parent": 10
+  },
+  {
+    "id": 54,
+    "name": "0010 Legislative und Exective",
+    "parent": 12
+  },
+  {
+    "id": 55,
+    "name": "0510 Krankheit und Unfall",
+    "parent": 5
+  },
+  {
+    "id": 56,
+    "name": "0150 Feuerwehr",
+    "parent": 14
+  },
+  {
+    "id": 57,
+    "name": "0111 Finanzen",
+    "parent": 19
+  },
+  {
+    "id": 58,
+    "name": "0575 Opferhilfe",
+    "parent": 20
+  },
+  {
+    "id": 59,
+    "name": "0799 Bauen - andere Dienste",
+    "parent": 21
+  },
+  {
+    "id": 60,
+    "name": "0511 Geschäftsabwicklung",
+    "parent": 22
+  },
+  {
+    "id": 61,
+    "name": "0211 Personal",
+    "parent": 23
+  },
+  {
+    "id": 62,
+    "name": "0411 Informatik",
+    "parent": 24
+  },
+  {
+    "id": 63,
+    "name": "0411 Spitäler",
+    "parent": 25
+  },
+  {
+    "id": 64,
+    "name": "0559 Arbeitslosigkeit, n.a.g.",
+    "parent": 26
+  },
+  {
+    "id": 65,
+    "name": "0611 Nationalstrassen",
+    "parent": 27
+  },
+  {
+    "id": 66,
+    "name": "0021 Finanz- und Steuerverwaltung",
+    "parent": 28
+  },
+  {
+    "id": 67,
+    "name": "0048 Andere Register - Einwohner",
+    "parent": 29
+  },
+  {
+    "id": 68,
+    "name": "0299 Bildung, n.a.g.",
+    "parent": 30
+  },
+  {
+    "id": 69,
+    "name": "0412 Kranken-, Alters- und Pflegeheime",
+    "parent": 25
+  },
+  {
+    "id": 70,
+    "name": "0131 Strafvollzug",
+    "parent": 31
+  },
+  {
+    "id": 71,
+    "name": "0879 Energie, n.a.g.",
+    "parent": 32
+  },
+  {
+    "id": 72,
+    "name": "0044 Einwohnerregister",
+    "parent": 29
+  },
+  {
+    "id": 73,
+    "name": "0779 Umweltschutz, n.a.g.",
+    "parent": 33
+  },
+  {
+    "id": 74,
+    "name": "0024 Grundbuch",
+    "parent": 28
+  },
+  {
+    "id": 75,
+    "name": "0022 Allgemeine Dienste, übrige",
+    "parent": 28
+  },
+  {
+    "id": 76,
+    "name": "0052 Handelsregister",
+    "parent": 34
+  },
+  {
+    "id": 77,
+    "name": "0622 Regionalverkehr",
+    "parent": 35
+  },
+  {
+    "id": 78,
+    "name": "0761 Luftreinhaltung und Klimaschutz",
+    "parent": 36
+  },
+  {
+    "id": 79,
+    "name": "0572 Wirtschaftliche Hilfe",
+    "parent": 20
+  },
+  {
+    "id": 80,
+    "name": "0042 Einbürgerung und Staatsbürgerschaft",
+    "parent": 29
+  },
+  {
+    "id": 81,
+    "name": "0121 Rechtssprechung",
+    "parent": 37
+  },
+  {
+    "id": 82,
+    "name": "0140 Allgemeindes Rechtswesen",
+    "parent": 38
+  },
+  {
+    "id": 83,
+    "name": "0851 Industrie, Gewerbe, Handel",
+    "parent": 39
+  },
+  {
+    "id": 84,
+    "name": "0433 Schulgesundheitsdienst",
+    "parent": 40
+  },
+  {
+    "id": 85,
+    "name": "0122 Betreibungen und Konkurse",
+    "parent": 37
+  },
+  {
+    "id": 86,
+    "name": "0793 Baupolizei und Feuerpolizei",
+    "parent": 21
+  },
+  {
+    "id": 87,
+    "name": "0794 Baubewilligungen",
+    "parent": 21
+  },
+  {
+    "id": 88,
+    "name": "0811 Geo-informationen",
+    "parent": 41
+  },
+  {
+    "id": 89,
+    "name": "0251 Gymnaisale Matruitätsstufe",
+    "parent": 42
+  },
+  {
+    "id": 90,
+    "name": "0711 Immobilien",
+    "parent": 43
+  },
+  {
+    "id": 91,
+    "name": "0113 Strassenverkehr- und Schiffahrtsamt",
+    "parent": 44
+  },
+  {
+    "id": 92,
+    "name": "0830 Jagd und Fischerei",
+    "parent": 45
+  },
+  {
+    "id": 93,
+    "name": "0730 Abfallwirtschaft",
+    "parent": 46
+  },
+  {
+    "id": 94,
+    "name": "0544 Jugendschutz",
+    "parent": 47
+  },
+  {
+    "id": 95,
+    "name": "0571 Beihilfen",
+    "parent": 20
+  },
+  {
+    "id": 96,
+    "name": "0492 Tierhaltung (Veterinärwesen)",
+    "parent": 48
+  },
+  {
+    "id": 97,
+    "name": "0811 Verwaltung, Vollzug und Kontrolle",
+    "parent": 49
+  },
+  {
+    "id": 98,
+    "name": "0434 Lebensmittelkontrolle",
+    "parent": 40
+  },
+  {
+    "id": 99,
+    "name": "0545 Leistungan an Familien",
+    "parent": 47
+  },
+  {
+    "id": 100,
+    "name": "0219 Obligatorische Schule, n.a.g.",
+    "parent": 50
+  },
+  {
+    "id": 101,
+    "name": "0321 Bibliothek",
+    "parent": 51
+  },
+  {
+    "id": 102,
+    "name": "0162 Zivile Verteidigung",
+    "parent": 52
+  },
+  {
+    "id": 103,
+    "name": "0421 Ambulante Krankenpflege",
+    "parent": 53
+  },
+  {
+    "id": 104,
+    "name": "0162 Zivile Verteitgung",
+    "parent": 52
+  },
+  {
+    "id": 105,
+    "name": "0215 Schuldienste",
+    "parent": 50
+  },
+  {
+    "id": 106,
+    "name": "0011 Legislative",
+    "parent": 54
+  },
+  {
+    "id": 107,
+    "name": "0579 Führsoge, n.a.g.",
+    "parent": 20
+  },
+  {
+    "id": 108,
+    "name": "0791 Raumordung",
+    "parent": 21
+  },
+  {
+    "id": 109,
+    "name": "0513 Unfallversicherungen",
+    "parent": 55
+  },
+  {
+    "id": 110,
+    "name": "0322 Konzert und Theater",
+    "parent": 51
+  },
+  {
+    "id": 111,
+    "name": "0150 Feuerwehr",
+    "parent": 56
+  },
+  {
+    "id": 112,
+    "name": "0161 Militärische Verteitigung",
+    "parent": 52
+  },
+  {
+    "id": 113,
+    "name": "0045 Zivilstand",
+    "parent": 29
+  },
+  {
+    "id": 114,
+    "name": "SVZVJFKJ",
+    "parent": 57
+  },
+  {
+    "id": 115,
+    "name": "ESVUMUFS",
+    "parent": 57
+  },
+  {
+    "id": 116,
+    "name": "FFNTXBAO",
+    "parent": 57
+  },
+  {
+    "id": 117,
+    "name": "DHHNYHOE",
+    "parent": 57
+  },
+  {
+    "id": 118,
+    "name": "NWUUVOWM",
+    "parent": 57
+  },
+  {
+    "id": 119,
+    "name": "MDYRVPVQ",
+    "parent": 58
+  },
+  {
+    "id": 120,
+    "name": "TAKFDBSG",
+    "parent": 59
+  },
+  {
+    "id": 121,
+    "name": "FIIIRVUD",
+    "parent": 60
+  },
+  {
+    "id": 122,
+    "name": "ZJWJQLRX",
+    "parent": 61
+  },
+  {
+    "id": 123,
+    "name": "QCUIVJZA",
+    "parent": 62
+  },
+  {
+    "id": 124,
+    "name": "GJINVCMZ",
+    "parent": 60
+  },
+  {
+    "id": 125,
+    "name": "WZIPWBGW",
+    "parent": 60
+  },
+  {
+    "id": 126,
+    "name": "CCUZDSLX",
+    "parent": 63
+  },
+  {
+    "id": 127,
+    "name": "MNVAWFWM",
+    "parent": 64
+  },
+  {
+    "id": 128,
+    "name": "WQBRKPOF",
+    "parent": 61
+  },
+  {
+    "id": 129,
+    "name": "MKNUJCWX",
+    "parent": 60
+  },
+  {
+    "id": 130,
+    "name": "LJESKKOC",
+    "parent": 62
+  },
+  {
+    "id": 131,
+    "name": "GTSRYYRO",
+    "parent": 65
+  },
+  {
+    "id": 132,
+    "name": "KCLHBSUO",
+    "parent": 66
+  },
+  {
+    "id": 133,
+    "name": "SPYNRGGL",
+    "parent": 62
+  },
+  {
+    "id": 134,
+    "name": "LFSTDZNI",
+    "parent": 67
+  },
+  {
+    "id": 135,
+    "name": "PSBPUOXY",
+    "parent": 68
+  },
+  {
+    "id": 136,
+    "name": "BEQJRVDA",
+    "parent": 69
+  },
+  {
+    "id": 137,
+    "name": "CSXLSYIQ",
+    "parent": 57
+  },
+  {
+    "id": 138,
+    "name": "IPCIPOOX",
+    "parent": 57
+  },
+  {
+    "id": 139,
+    "name": "BTNZQUZO",
+    "parent": 67
+  },
+  {
+    "id": 140,
+    "name": "CEUXJSTS",
+    "parent": 64
+  },
+  {
+    "id": 141,
+    "name": "RKQRGCMM",
+    "parent": 70
+  },
+  {
+    "id": 142,
+    "name": "NTPSQZPL",
+    "parent": 68
+  },
+  {
+    "id": 143,
+    "name": "KDQPPMMS",
+    "parent": 71
+  },
+  {
+    "id": 144,
+    "name": "AVJVYMQZ",
+    "parent": 57
+  },
+  {
+    "id": 145,
+    "name": "AJNBDGAF",
+    "parent": 57
+  },
+  {
+    "id": 146,
+    "name": "XKJEANHD",
+    "parent": 72
+  },
+  {
+    "id": 147,
+    "name": "CVUXXRWD",
+    "parent": 73
+  },
+  {
+    "id": 148,
+    "name": "BJREOBFN",
+    "parent": 74
+  },
+  {
+    "id": 149,
+    "name": "ONRAVIKZ",
+    "parent": 69
+  },
+  {
+    "id": 150,
+    "name": "CHPYUISG",
+    "parent": 69
+  },
+  {
+    "id": 151,
+    "name": "EVYEMCXW",
+    "parent": 60
+  },
+  {
+    "id": 152,
+    "name": "MNZCXTZC",
+    "parent": 60
+  },
+  {
+    "id": 153,
+    "name": "ILJKLXRN",
+    "parent": 60
+  },
+  {
+    "id": 154,
+    "name": "VLLHGVGD",
+    "parent": 75
+  },
+  {
+    "id": 155,
+    "name": "DNRTIYAG",
+    "parent": 62
+  },
+  {
+    "id": 156,
+    "name": "VHREDWPE",
+    "parent": 76
+  },
+  {
+    "id": 157,
+    "name": "ATQMZIPA",
+    "parent": 62
+  },
+  {
+    "id": 158,
+    "name": "MDORMIIK",
+    "parent": 61
+  },
+  {
+    "id": 159,
+    "name": "WHZCQQIL",
+    "parent": 77
+  },
+  {
+    "id": 160,
+    "name": "BJJTQECQ",
+    "parent": 72
+  },
+  {
+    "id": 161,
+    "name": "BPLADSNC",
+    "parent": 61
+  },
+  {
+    "id": 162,
+    "name": "CBHKFJWE",
+    "parent": 77
+  },
+  {
+    "id": 163,
+    "name": "QLHJVWFR",
+    "parent": 77
+  },
+  {
+    "id": 164,
+    "name": "QKQMXKWF",
+    "parent": 77
+  },
+  {
+    "id": 165,
+    "name": "UDJQEJJV",
+    "parent": 62
+  },
+  {
+    "id": 166,
+    "name": "BYABJHPE",
+    "parent": 60
+  },
+  {
+    "id": 167,
+    "name": "KZWOIWRQ",
+    "parent": 60
+  },
+  {
+    "id": 168,
+    "name": "RLELKQGN",
+    "parent": 78
+  },
+  {
+    "id": 169,
+    "name": "IDHEABEH",
+    "parent": 69
+  },
+  {
+    "id": 170,
+    "name": "KEOZDNUX",
+    "parent": 79
+  },
+  {
+    "id": 171,
+    "name": "QUQTGKKW",
+    "parent": 66
+  },
+  {
+    "id": 172,
+    "name": "QSLJDXBU",
+    "parent": 69
+  },
+  {
+    "id": 173,
+    "name": "CZRFEUJM",
+    "parent": 62
+  },
+  {
+    "id": 174,
+    "name": "DEINSBON",
+    "parent": 67
+  },
+  {
+    "id": 175,
+    "name": "JPKXFGSF",
+    "parent": 67
+  },
+  {
+    "id": 176,
+    "name": "XWZBPWVP",
+    "parent": 80
+  },
+  {
+    "id": 177,
+    "name": "NPJXZLXN",
+    "parent": 80
+  },
+  {
+    "id": 178,
+    "name": "QNPYLWEM",
+    "parent": 81
+  },
+  {
+    "id": 179,
+    "name": "YWDUTMBC",
+    "parent": 81
+  },
+  {
+    "id": 180,
+    "name": "PCQLNTVO",
+    "parent": 80
+  },
+  {
+    "id": 181,
+    "name": "NJHUWFJM",
+    "parent": 62
+  },
+  {
+    "id": 182,
+    "name": "WHJQKOYS",
+    "parent": 62
+  },
+  {
+    "id": 183,
+    "name": "RHZMUYYU",
+    "parent": 80
+  },
+  {
+    "id": 184,
+    "name": "JGBYHGRP",
+    "parent": 82
+  },
+  {
+    "id": 185,
+    "name": "OHXMAHPR",
+    "parent": 72
+  },
+  {
+    "id": 186,
+    "name": "SYGLMKGI",
+    "parent": 83
+  },
+  {
+    "id": 187,
+    "name": "XWOLZRSB",
+    "parent": 57
+  },
+  {
+    "id": 188,
+    "name": "GCYJWVDD",
+    "parent": 57
+  },
+  {
+    "id": 189,
+    "name": "FKZNQSFR",
+    "parent": 84
+  },
+  {
+    "id": 190,
+    "name": "BSIQFSPQ",
+    "parent": 85
+  },
+  {
+    "id": 191,
+    "name": "NBZXMHKH",
+    "parent": 85
+  },
+  {
+    "id": 192,
+    "name": "TNGWCSKO",
+    "parent": 57
+  },
+  {
+    "id": 193,
+    "name": "FTMCWDXW",
+    "parent": 57
+  },
+  {
+    "id": 194,
+    "name": "PWBUSLOJ",
+    "parent": 57
+  },
+  {
+    "id": 195,
+    "name": "SXSERHEO",
+    "parent": 57
+  },
+  {
+    "id": 196,
+    "name": "YZAJJLAY",
+    "parent": 57
+  },
+  {
+    "id": 197,
+    "name": "BPEDHNVG",
+    "parent": 57
+  },
+  {
+    "id": 198,
+    "name": "WKROOBLI",
+    "parent": 59
+  },
+  {
+    "id": 199,
+    "name": "ZZTPRPSR",
+    "parent": 59
+  },
+  {
+    "id": 200,
+    "name": "RLTMWQTI",
+    "parent": 57
+  },
+  {
+    "id": 201,
+    "name": "GMATPWOJ",
+    "parent": 84
+  },
+  {
+    "id": 202,
+    "name": "DCPVKCPG",
+    "parent": 57
+  },
+  {
+    "id": 203,
+    "name": "OISOOKPB",
+    "parent": 57
+  },
+  {
+    "id": 204,
+    "name": "PNGJSIAP",
+    "parent": 60
+  },
+  {
+    "id": 205,
+    "name": "GIVAEDQA",
+    "parent": 62
+  },
+  {
+    "id": 206,
+    "name": "FHCGEBPT",
+    "parent": 59
+  },
+  {
+    "id": 207,
+    "name": "RXVANKVQ",
+    "parent": 86
+  },
+  {
+    "id": 208,
+    "name": "HZOKJFYM",
+    "parent": 86
+  },
+  {
+    "id": 209,
+    "name": "VCOLBZLQ",
+    "parent": 87
+  },
+  {
+    "id": 210,
+    "name": "ERFKZRBO",
+    "parent": 57
+  },
+  {
+    "id": 211,
+    "name": "TSLMYLMJ",
+    "parent": 57
+  },
+  {
+    "id": 212,
+    "name": "DIUDRUYW",
+    "parent": 72
+  },
+  {
+    "id": 213,
+    "name": "GGRXTBCM",
+    "parent": 57
+  },
+  {
+    "id": 214,
+    "name": "QHKDEFHK",
+    "parent": 57
+  },
+  {
+    "id": 215,
+    "name": "TWJQNNKD",
+    "parent": 57
+  },
+  {
+    "id": 216,
+    "name": "EUKXCUDF",
+    "parent": 62
+  },
+  {
+    "id": 217,
+    "name": "KPKAFFJW",
+    "parent": 57
+  },
+  {
+    "id": 218,
+    "name": "RMSMRJUA",
+    "parent": 57
+  },
+  {
+    "id": 219,
+    "name": "CTBQMLRM",
+    "parent": 72
+  },
+  {
+    "id": 220,
+    "name": "VZLFWZUF",
+    "parent": 82
+  },
+  {
+    "id": 221,
+    "name": "NDKHHNGE",
+    "parent": 82
+  },
+  {
+    "id": 222,
+    "name": "XQDIXSFV",
+    "parent": 82
+  },
+  {
+    "id": 223,
+    "name": "OUZBDEZE",
+    "parent": 82
+  },
+  {
+    "id": 224,
+    "name": "OFKJLLBM",
+    "parent": 82
+  },
+  {
+    "id": 225,
+    "name": "HZKRKRXH",
+    "parent": 82
+  },
+  {
+    "id": 226,
+    "name": "XBLEIOJQ",
+    "parent": 88
+  },
+  {
+    "id": 227,
+    "name": "BZVTQOFX",
+    "parent": 59
+  },
+  {
+    "id": 228,
+    "name": "VBQQZTBF",
+    "parent": 89
+  },
+  {
+    "id": 229,
+    "name": "WCTLGBFM",
+    "parent": 69
+  },
+  {
+    "id": 230,
+    "name": "FPCPUQHW",
+    "parent": 62
+  },
+  {
+    "id": 231,
+    "name": "CWBTIJZQ",
+    "parent": 57
+  },
+  {
+    "id": 232,
+    "name": "PIOMLXGX",
+    "parent": 62
+  },
+  {
+    "id": 233,
+    "name": "YJLNGNKI",
+    "parent": 57
+  },
+  {
+    "id": 234,
+    "name": "UFTMBOKF",
+    "parent": 68
+  },
+  {
+    "id": 235,
+    "name": "IAUEJOVH",
+    "parent": 90
+  },
+  {
+    "id": 236,
+    "name": "MUZZLODC",
+    "parent": 57
+  },
+  {
+    "id": 237,
+    "name": "UXERANZN",
+    "parent": 90
+  },
+  {
+    "id": 238,
+    "name": "WJNJISEK",
+    "parent": 91
+  },
+  {
+    "id": 239,
+    "name": "SMERGZVG",
+    "parent": 59
+  },
+  {
+    "id": 240,
+    "name": "CAZHVITA",
+    "parent": 72
+  },
+  {
+    "id": 241,
+    "name": "CUOUBWMW",
+    "parent": 77
+  },
+  {
+    "id": 242,
+    "name": "DQZKROGL",
+    "parent": 62
+  },
+  {
+    "id": 243,
+    "name": "QRRBPXMD",
+    "parent": 62
+  },
+  {
+    "id": 244,
+    "name": "TCOOIROK",
+    "parent": 62
+  },
+  {
+    "id": 245,
+    "name": "HWXGULIO",
+    "parent": 92
+  },
+  {
+    "id": 246,
+    "name": "OIVEGCGB",
+    "parent": 81
+  },
+  {
+    "id": 247,
+    "name": "KWEGJWXP",
+    "parent": 62
+  },
+  {
+    "id": 248,
+    "name": "CXXSUTHV",
+    "parent": 93
+  },
+  {
+    "id": 249,
+    "name": "ZDATVUCX",
+    "parent": 62
+  },
+  {
+    "id": 250,
+    "name": "ZBVATOKF",
+    "parent": 94
+  },
+  {
+    "id": 251,
+    "name": "XWUQXJPS",
+    "parent": 95
+  },
+  {
+    "id": 252,
+    "name": "YNOKSAWN",
+    "parent": 95
+  },
+  {
+    "id": 253,
+    "name": "ORHZHQUY",
+    "parent": 95
+  },
+  {
+    "id": 254,
+    "name": "ZIZADQSM",
+    "parent": 95
+  },
+  {
+    "id": 255,
+    "name": "RNQPQFHO",
+    "parent": 95
+  },
+  {
+    "id": 256,
+    "name": "PMSPPQWW",
+    "parent": 93
+  },
+  {
+    "id": 257,
+    "name": "ZOOMVCKB",
+    "parent": 96
+  },
+  {
+    "id": 258,
+    "name": "EABURTXE",
+    "parent": 62
+  },
+  {
+    "id": 259,
+    "name": "YVYXHGBG",
+    "parent": 59
+  },
+  {
+    "id": 260,
+    "name": "TFYSHARZ",
+    "parent": 97
+  },
+  {
+    "id": 261,
+    "name": "CZFHDOCY",
+    "parent": 61
+  },
+  {
+    "id": 262,
+    "name": "IPMKLQYT",
+    "parent": 77
+  },
+  {
+    "id": 263,
+    "name": "UOMAYQHH",
+    "parent": 62
+  },
+  {
+    "id": 264,
+    "name": "KELKOIZV",
+    "parent": 90
+  },
+  {
+    "id": 265,
+    "name": "CYMDUPWM",
+    "parent": 98
+  },
+  {
+    "id": 266,
+    "name": "RKWDXZCB",
+    "parent": 90
+  },
+  {
+    "id": 267,
+    "name": "NFQAISSD",
+    "parent": 69
+  },
+  {
+    "id": 268,
+    "name": "JIPTSCSG",
+    "parent": 60
+  },
+  {
+    "id": 269,
+    "name": "OZQOWIUS",
+    "parent": 62
+  },
+  {
+    "id": 270,
+    "name": "YEZOPIZW",
+    "parent": 69
+  },
+  {
+    "id": 271,
+    "name": "LHRLMPKH",
+    "parent": 80
+  },
+  {
+    "id": 272,
+    "name": "RZMHDHMO",
+    "parent": 100
+  },
+  {
+    "id": 273,
+    "name": "QKSUHXLO",
+    "parent": 60
+  },
+  {
+    "id": 274,
+    "name": "QKBQOZDM",
+    "parent": 72
+  },
+  {
+    "id": 275,
+    "name": "THZGEVYE",
+    "parent": 72
+  },
+  {
+    "id": 276,
+    "name": "BIKSJDBO",
+    "parent": 57
+  },
+  {
+    "id": 277,
+    "name": "XYXTFHYK",
+    "parent": 57
+  },
+  {
+    "id": 278,
+    "name": "TUREPVKV",
+    "parent": 57
+  },
+  {
+    "id": 279,
+    "name": "LPHRHWYT",
+    "parent": 59
+  },
+  {
+    "id": 280,
+    "name": "HTLBMQVF",
+    "parent": 57
+  },
+  {
+    "id": 281,
+    "name": "OKOVGLCY",
+    "parent": 61
+  },
+  {
+    "id": 282,
+    "name": "XPUVCBUZ",
+    "parent": 61
+  },
+  {
+    "id": 283,
+    "name": "SERRTEHK",
+    "parent": 62
+  },
+  {
+    "id": 284,
+    "name": "VYDQATGE",
+    "parent": 61
+  },
+  {
+    "id": 285,
+    "name": "WDNUFYSN",
+    "parent": 77
+  },
+  {
+    "id": 286,
+    "name": "MKJNYGAH",
+    "parent": 62
+  },
+  {
+    "id": 287,
+    "name": "CFDZYVSA",
+    "parent": 107
+  },
+  {
+    "id": 288,
+    "name": "DHXPBYPP",
+    "parent": 111
+  }
+]

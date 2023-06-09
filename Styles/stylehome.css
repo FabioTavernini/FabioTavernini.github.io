@@ -1,0 +1,136 @@
+body,
+html {
+  overflow-x: hidden;
+  font-family: monospace;
+}
+
+.darkmode {
+  background-color: white;
+}
+
+.darkmodescroll {
+  color: #000;
+}
+
+.navbar {
+  text-align: center;
+}
+
+#navindex {
+  background-color: #333
+}
+
+iframe {
+  max-width: 100%;
+}
+
+.rst-copyright img {
+  max-width: 100%;
+  height: auto;
+}
+
+#startpage {
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url(../Webpage/img/index/BW.webp);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+}
+
+h3 {
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+.About {
+  background-color: #fff;
+  padding: 10px 10px 10px 10px;
+  border-radius: 25px;
+}
+
+.About_Me {
+  margin-top: 300px;
+}
+
+.Purpose_Page {
+  margin-top: 500px;
+}
+
+.About_Site {
+  margin-top: 900px;
+}
+
+.title {
+  margin-top: 900px;
+}
+
+@media only screen and (max-width: 1050px) {
+
+  .Intrests,
+  .WIP {
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+
+  .About {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  #startpage {
+    background-position: top;
+  }
+}
+
+@media only screen and (min-width: 1050px) {
+
+  .Intrests,
+  .WIP,
+  .About {
+    margin-left: 40%;
+    margin-right: 40%;
+  }
+
+  #startpage {
+    background-position: right;
+  }
+}
+
+.Intrests {
+  background-color: #fff;
+  padding: 10px 10px 10px 10px;
+  border-radius: 25px;
+}
+
+.cars,
+.fiddling {
+  margin-top: 10px;
+}
+
+.WIP {
+  background-color: #fff;
+  padding: 10px 10px 10px 10px;
+  border-radius: 25px;
+}
+
+.WorkInProgress {
+  margin-top: 10px;
+}
+
+#spacerbottom {
+  height: 100vh;
+}
+
+
+
+#darkmodecontainer {
+  text-align: right;
+}
+
+#darkmodeimg {
+  height: 40px;
+}

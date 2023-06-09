@@ -1,0 +1,17 @@
+html,
+body {
+  text-align: center;
+  font-family: monospace;
+}
+
+#navprojects {
+  background-color: #333;
+}
+
+#footer {
+  position: absolute;
+}
+
+h1{
+  color: #fff;
+}

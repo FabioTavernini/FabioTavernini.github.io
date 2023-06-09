@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../Styles/styleall.css">
+    <link rel="stylesheet" href="styleVega.css">
+    <link rel="icon" href="../../inc/favicon/code-solid.svg">
+    <title>Vega visualization</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/vega@5/build-es5/vega.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vega-embed@6/build-es5/vega-embed.js"></script>
+</head>
+
+<body>
+
+    <div id="nav-placeholder"></div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("../inc/navbar/navbar.html");
+        });
+    </script>
+
+    <h1>Vega Visualization</h1>
+
+    <div id="einleitung">
+        <a>Im experimenting with visualizing data using "Vega"</a>
+        <br>
+        <p>The documentation to Vega can be found <a href="https://vega.github.io/vega/docs/">here</a></p>
+    </div>
+
+    <div>
+        <p>
+            To make this visual, i had an excel sheet with the data. <br>
+            It contained the applications and their categorization by "ECH" standard. <br>
+            I made a Powershell-script to transform this data into the vega standard JSON format. - See <a
+                href="./data/data.json">here</a> <br>
+            The script can be found in my <a target="_blank"
+                href="https://github.com/FabioTavernini/Powershell-Projects/blob/main/Vega-Script/vega.ps1">powershell-github
+                repository</a> <br>
+            Its also a major pain in the butt to get the view right with mobile devices, so if you're having trouble
+            viewing this page correctly on mobile, try it on a desktop, or view it in fullscreen <a href="./vega.html" target="_blank">here</a>
+        </p>
+    </div>
+
+        <div id="view"></div>
+
+
+
+    <script>
+        vegaEmbed(
+            '#view',
+            './data/vega-schema.json'
+        );
+
+        
+    </script>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        $(function () {
+            $("#footer-placeholder").load("../inc/footer/footer.html");
+        });
+    </script>
+
+
+</body>
+
+</html>

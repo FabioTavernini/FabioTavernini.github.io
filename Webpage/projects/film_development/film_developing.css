@@ -1,0 +1,44 @@
+html,
+body {
+  text-align: center;
+  font-family: monospace;
+}
+
+#navprojects {
+  background-color: #333;
+}
+
+#footer {
+  position: unset;
+}
+
+p,
+a,
+small,
+h1,
+h2,
+h3 {
+  color: #fff;
+}
+
+hr {
+  width: 50%;
+}
+
+p {
+  font-size: 15px;
+}
+
+img {
+  width: 40%;
+}
+
+li {
+  color: #fff;
+  text-align: left;
+  margin-bottom: -15px;
+}
+
+ul{
+  display: inline-block;
+}

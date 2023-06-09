@@ -1,0 +1,93 @@
+/* GLOBAL STYLES */
+body {
+    background: #333;
+    padding-top: 5em;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+}
+
+#footerlink {
+    text-decoration: none;
+    color: black;
+}
+
+#footer {
+    clear: both;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    font-family: monospace;
+    color: black;
+    bottom: 5px;
+    left: 0px;
+}
+
+/* DEMO-SPECIFIC STYLES */
+.typewriter h1 {
+    color: #fff;
+    font-family: monospace;
+    overflow: hidden;
+    font-weight: bolder;
+    /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid white;
+    /* The typwriter cursor */
+    white-space: nowrap;
+    /* Keeps the content on a single line */
+    margin: 0 auto;
+    /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .18em;
+    /* Adjust as needed */
+    animation:
+        typing 1.3s steps(7, end),
+        blink-caret .5s step-end infinite;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: white
+    }
+}
+
+
+#redirect {
+    margin-top: 50px;
+    font-size: 25px;
+    font-family: monospace;
+    letter-spacing: .05em;
+    margin-left: -135px;
+    text-align: center;
+    -webkit-animation: 3s ease 0s normal forwards 1 fadein;
+    animation: 3s ease 0s normal forwards 1 fadein;
+
+}
+
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:1; }
+}

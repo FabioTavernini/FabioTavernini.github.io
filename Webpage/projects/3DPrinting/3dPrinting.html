@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../../Styles/styleall.css">
+    <link rel="stylesheet" href="style3dprinting.css">
+    <link rel="icon" href="../../inc/favicon/3dPrint.ico">
+    <title>3D-Printing</title>
+
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+
+</head>
+
+<body>
+
+    <div id="nav-placeholder"></div>
+
+    <script>
+        $(function () {
+            $("#nav-placeholder").load("../inc/navbar/navbar.html");
+        });
+    </script>
+
+    <h1>3D-Printing</h1>
+
+    <div id="einleitung">
+        <a>I bought a 3D-Printer :)</a>
+        <br>
+        <a>A Creatily Ender 3 V2 Neo:</a>
+    </div>
+
+    <hr>
+    <h2>Unboxing</h2>
+
+
+    <div class="Images">
+        <img class="einleitungIMG" src="../../img/projects/3DPrinting/Package.jpg">
+        <img class="einleitungIMG" src="../../img/projects/3DPrinting/TopView.jpg">
+    </div>
+
+    <hr>
+    <h2>Initial Setup</h2>
+ 
+
+    <div class="Text SetupText">
+        <a>The initial setup was quite easy.
+            It was a simple task of screwing in the gantry frame to the base and attaching the screen.
+            After that, just hook it up to power and you can start :)
+            I followed the guide in the provided manual <a target="_blank"
+                href="https://cdn.competec.ch/documents2/0/9/5/231752590/231752590.pdf">here</a>
+            <a>The first thing i did was level the bed and set the Z-Axis offset. Sadly, i realized a few prints later,
+                that the print head was not fixed,
+                resulting in Z-Axis wobble and inconsistent Z-offset.
+            </a>
+    </div>
+
+    <hr>
+    <h2>First Prints</h2>
+
+    <div class="Text FirstPrints">
+        <a>
+            On the included Micro-SD-Card were two .gcode files for test-printing.
+            However, i wanted to print something myself. So i went to Thingiverse and searched for some calibration
+            prints.
+            In the end, i used <a target="_blank" href="https://www.thingiverse.com/thing:1278865">this</a>
+            <a> cube for my first print.
+                Now to be able to print the .stl file, we first need a slicer, to convert the File into GCode, wich the
+                printer can interpret.
+                For the time being im using the creatily slicer.
+                Of course there are other options like cura, simplify3D and many more.
+            </a>
+    </div>
+
+    <hr>
+    <h2>Further Prints</h2>
+
+    <div class="Text FurtherPrints">
+        <a>The next prints i did were some of my own designs, if you want to check them out, you can do so </a><a target="_blank"
+            href="https://www.thingiverse.com/ftave/designs">here</a><a>.</a>
+        <a>I also ordered black filament, wich is more suitable for my usages. For my designs i used FreeCAD. The
+            modelling in CAD software took me the longest, since im unfamiliar with CAD software, but i managed to find
+            my way around the software :)</a>
+
+        <h3 id="ListTitle">CAD-Models ive done so far:</h3>
+        <ul>
+            <li><a target="_blank" href="https://www.thingiverse.com/thing:5923376">Alfa-Romeo radio cover</a></li>
+            <li><a>JVC head unit frame</a></li>
+            <li><a target="_blank" href="https://www.viewstl.com/?embedded&url=https%3A%2F%2Ftavernini.online%2Fwebpage%2Fprojects%2F3dprinting%2Fprints%2Fschanier.stl">Technics SL-D3 hinge </a></li>
+        </ul>
+    </div>
+
+    <hr>
+    <h2>OctoPrint setup</h2>
+
+    <div class="Text OctoPI">
+        <a>To be able to upload files to the 3d Printer directly,
+            i hooked up my Raspberry PI to the micro usb port on the printer.
+            The Raspberry PI uses a Raspberry distribution called "OctoPI". with this,
+            im able to control the printer via Web-Interface, upload .gcode to the raspberry
+            and print directly and view gcode in real time.
+            OctoPI is an OpenSource Project. <a target="_blank"
+                href="https://octoprint.org">more information</a></a><a>.
+        </a>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <div id="footer-placeholder"></div>
+
+    <script>
+        $(function () {
+            $("#footer-placeholder").load("../inc/footer/footer.html");
+        });
+    </script>
+
+
+</body>
+
+</html>

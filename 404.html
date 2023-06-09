@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" href="https://tavernini.online/Webpage/inc/favicon/code-solid.svg">
+  <title>404</title>
+</head>
+
+<body>
+
+  <style>
+    
+    @import "https://tavernini.online/Styles/styleall.css";
+
+    #footer {
+      position: fixed;
+      bottom: 0;
+      display: table;
+      width: 100%
+    }
+
+    .titletext {
+      position: absolute;
+      top: 50vh;
+      font-family: 'Overpass', sans-serif;
+      margin-left: 47%;
+      font-weight: 900;
+      font-style: italic;
+      mix-blend-mode: lighten
+    }
+
+    .text-cyan {
+      color: #0ff;
+      animation: title-cyan 20s linear infinite
+    }
+
+    .text-yellow {
+      color: #ff0;
+      animation: title-yellow 20s linear infinite
+    }
+
+    .text-magenta {
+      color: #f0f;
+      animation: title-magenta 20s linear infinite
+    }
+
+    @keyframes title-cyan {
+      0% {
+        transform: translate(calc(-50% + 6px), calc(-50% + 6px))
+      }
+
+      25% {
+        transform: translate(calc(-50% + 2px), calc(-50% + -6px))
+      }
+
+      50% {
+        transform: translate(calc(-50% + -6px), calc(-50% + 0px))
+      }
+
+      75% {
+        transform: translate(calc(-50% + 0px), calc(-50% + -4px))
+      }
+
+      100% {
+        transform: translate(calc(-50% + 6px), calc(-50% + 6px))
+      }
+    }
+
+    @keyframes title-yellow {
+      0% {
+        transform: translate(calc(-50% + 8px), calc(-50% + -8px))
+      }
+
+      25% {
+        transform: translate(calc(-50% + -4px), calc(-50% + 0px))
+      }
+
+      50% {
+        transform: translate(calc(-50% + 2px), calc(-50% + -14px))
+      }
+
+      75% {
+        transform: translate(calc(-50% + 12px), calc(-50% + 6px))
+      }
+
+      100% {
+        transform: translate(calc(-50% + 8px), calc(-50% + -8px))
+      }
+    }
+
+    @keyframes title-magenta {
+      0% {
+        transform: translate(calc(-50% + -4px), calc(-50% + 0px))
+      }
+
+      25% {
+        transform: translate(calc(-50% + 8px), calc(-50% + -14px))
+      }
+
+      50% {
+        transform: translate(calc(-50% + 16px), calc(-50% + -14px))
+      }
+
+      75% {
+        transform: translate(calc(-50% + 6px), calc(-50% + 12px))
+      }
+
+      100% {
+        transform: translate(calc(-50% + -4px), calc(-50% + 0px))
+      }
+    }
+
+    @media screen and (min-width: 750px) {
+      .titletext {
+        font-size: 300px
+      }
+    }
+
+    @media screen and (max-width: 749px) {
+      .titletext {
+        font-size: 200px
+      }
+    }
+
+    @media screen and (max-width: 460px) {
+      .titletext {
+        font-size: 100px
+      }
+    }
+  </style>
+
+  <nav class="navbar">
+    <a id="navindex" href="https://tavernini.online/Webpage/index.html">HOME</a>
+    <a id="navprojects" href="https://tavernini.online/Webpage/Projects.html">PROJECTS</a>
+    <a id="navabout" href="https://tavernini.online/Webpage/About.html">ABOUT</a>
+    <a id="navsocial" href="https://tavernini.online/Webpage/social.html">SOCIAL</a>
+  </nav>
+
+  <div class="title">
+    <div class="titletext text-cyan">
+      404
+    </div>
+    <div class="titletext text-yellow">
+      404
+    </div>
+    <div class="titletext text-magenta">
+      404
+    </div>
+  </div>
+
+  <footer id="footer">
+    <a>Fabio Tavernini - 2023</a>
+  </footer>
+
+</body>
+
+</html>

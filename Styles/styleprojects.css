@@ -1,0 +1,147 @@
+#navprojects {
+  background-color: #333;
+}
+
+#footer {
+  position: fixed;
+}
+
+.einleitung {
+  text-align: center;
+}
+
+#leittext {
+  text-decoration: none;
+  color: #fff;
+  font-family: monospace;
+}
+
+a {
+  text-decoration: none;
+}
+
+.projecttiles {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  height: 100%;
+}
+
+.column-4 {
+  float: left;
+  width: 21%;
+  padding: 10px;
+  margin: 20px;
+  font-family: monospace;
+  border-radius: 20px;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.column-4:hover {
+  transform: scale(1.14);
+}
+
+.project-text {
+  text-align: center;
+}
+
+.project-1 {
+  background: url('../Webpage/img/projects/e30/E30Tile.JPG');
+  color: #fff;
+  box-sizing: border-box;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.project-2 {
+  background-color: rgb(186, 81, 81);
+  text-align: center;
+  color: #000;
+}
+
+.project-3 {
+  background-color: #209BFF;
+  text-align: center;
+  color: #000;
+}
+
+.project-4 {
+  background-color: #72257d;
+  text-align: center;
+  color: #fff;
+}
+
+.project-5 {
+  background-color:green;
+  text-align: center;
+  color: #fff;
+  vertical-align: middle;
+}
+
+.project-6 {
+  background-color: #333;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  background-image: url(../Webpage/img/projects/vega-view/vega-demo.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.project-7 {
+
+  color: #fff;
+  background-image: url('../Webpage/img/projects/35mm/film_top.png'),url('../Webpage/img/projects/35mm/film_bottom.png'),url('../Webpage/img/projects/35mm/developing.jpg');
+  background-position: top,bottom;
+  background-repeat: no-repeat;
+  background-size: 101% 17%,101% 17%,cover;
+}
+
+.project-8 {
+
+  color: rgb(234, 153, 83) ;
+  background-image: url('../Webpage/img/projects/35mm/film_top.png'),url('../Webpage/img/projects/35mm/film_bottom.png'),url('../Webpage/img/projects/35mm/scan.jpg');
+  background-position: top,bottom,center;
+  background-repeat: no-repeat;
+  background-size: 101% 17%,101% 17%,cover;
+}
+
+@media (max-width:477px) {
+  .project-text {
+    font-size: 12px;
+  }
+
+  .project-1 {
+    color: #333;
+  }
+
+  #footer {
+    position: unset;
+  }
+
+}
+
+@media (min-width:477px) {
+  .project-text {
+    font-size: 15px;
+  }
+}
+
+@media (min-width:1000px) {
+  .project-text {
+    font-size: 30px;
+  }
+}
+
+@media (min-width:1300px) {
+  .project-text {
+    font-size: 50px;
+  }
+}
