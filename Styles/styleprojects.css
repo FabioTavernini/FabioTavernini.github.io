@@ -62,7 +62,11 @@ a {
 .project-2 {
   background-color: rgb(186, 81, 81);
   text-align: center;
-  color: #000;
+  color: #fff;
+
+  background-image: url('../Webpage/img/projects/github.png');
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .project-3 {
@@ -96,7 +100,6 @@ a {
 }
 
 .project-7 {
-
   color: #fff;
   background-image: url('../Webpage/img/projects/35mm/film_top.png'),url('../Webpage/img/projects/35mm/film_bottom.png'),url('../Webpage/img/projects/35mm/developing.jpg');
   background-position: top,bottom;
