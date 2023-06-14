@@ -18,7 +18,7 @@
 body {
   font-family: monospace;
   color: #fff;
-  background: #252323;
+  background: #333;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-y: scroll;
@@ -90,7 +90,7 @@ button:focus {
   left: 50%;
   width: 1px;
   height: 100%;
-  background: rgba(255, 255, 255, 0.1);
+  background: #333;
   content: '';
   -webkit-transform: rotate3d(0, 0, 1, 22.5deg);
   transform: rotate3d(0, 0, 1, 22.5deg);
@@ -230,7 +230,7 @@ button:focus {
   top: 0;
   left: 0;
   pointer-events: none;
-  background: #252323 url(../img/loading.svg) no-repeat 50% 75px;
+  background: #333 url(../../img/projects/photography/loading/loading.svg) no-repeat 50% 75px;
   background-size: 60px auto;
   -webkit-transition: opacity 0.3s;
   transition: opacity 0.3s;
