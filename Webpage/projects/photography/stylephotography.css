@@ -1,3 +1,9 @@
+#footer{
+  position: fixed;
+}
+
+
+
 *,
 *:after,
 *:before {
@@ -202,21 +208,6 @@ button:focus {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .grid {
   position: relative;
   margin: 0 auto;
@@ -293,7 +284,7 @@ button:focus {
   width: 100vw;
   height: 100vh;
   opacity: 0;
-  background: #1f1d1d;
+  background: #333;
   -webkit-transition: opacity 0.6s;
   transition: opacity 0.6s;
 }
