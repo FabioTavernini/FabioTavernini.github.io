@@ -6,77 +6,175 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../Styles/styleall.css">
+
     <link rel="stylesheet" href="stylephotography.css">
+
+
     <link rel="icon" href="../../inc/favicon/camera.ico">
     <title>photography</title>
 
     <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
 
+	<script src="js/modernizr-custom.js"></script>
+
+
+
 </head>
 
-<body>
-    <div id="nav-placeholder"></div>
+    <body class="demo-3">
 
-    <script>
-        $(function () {
-            $("#nav-placeholder").load("../inc/navbar/navbar.html");
-        });
-    </script>
 
-    <h1>Photography</h1>
+        <div id="nav-placeholder"></div>
 
-    <div id="einleitung">
-        <a>i know someday i'll have to sort these...</a>
-    </div>
+        <script>
+            $(function () {
+                $("#nav-placeholder").load("../inc/navbar/navbar.html");
+            });
+        </script>
 
-    <br>
 
-    <div id="gallery">
-        <div class="hoverwrap">
-            <img src="../../img/projects/photography/Parking-Ticket.JPG">
-            <div class="hovercap">Parking ticket - Nikon D750 50mm f1.8</div>
+        <div class="container">
+            <header class="codrops-header">
+            </header>
+            <div class="content">
+                <div class="grid">
+                    <div class="grid__item" data-size="1280x853">
+                        <a href="../../img/projects/photography/original/balcony.JPG" class="img-wrap"><img src="../../img/projects/photography/thumb/balcony.JPG" alt="img01" loading="lazy" />
+                            <div class="description description--grid">Balcony - Nikon F80 Ilford HP5+</div>
+                        </a>
+                    </div>
+                    <div class="grid__item" data-size="958x1280">
+                        <a href="../../img/projects/photography/original/Parking-Ticket.JPG" class="img-wrap"><img src="../../img/projects/photography/thumb/Parking-Ticket.JPG" alt="img02" />
+                            <div class="description description--grid">Parking Ticket - Nikon D750 50mm 1.8</div>
+                        </a>
+                    </div>
+                    <div class="grid__item" data-size="837x1280">
+                        <a href="../../img/projects/photography/original/Alfa_portrait.jpg" class="img-wrap"><img src="../../img/projects/photography/thumb/Alfa_portrait.jpg" alt="img03" />
+                            <div class="description description--grid">Alfa Romeo GTV6 - Nikon D750 70mm</div>
+                        </a>
+                    </div>
+                    <div class="grid__item" data-size="1280x961">
+                        <a href="../../img/projects/photography/original/antlope_canyon.jpg" class="img-wrap"><img src="../../img/projects/photography/thumb/antlope_canyon.jpg" alt="img04" />
+                            <div class="description description--grid">Antelope Canyon - Huawei P20 Pro</div>
+                        </a>
+                    </div>
+                    <div class="grid__item" data-size="1280x1131">
+                        <a href="../../img/projects/photography/original/roadstop.jpg" class="img-wrap"><img src="../../img/projects/photography/thumb/roadstop.jpg" alt="img05" />
+                            <div class="description description--grid">Road Stop Cal-Vegas - Huawei P20 Pro</div>
+                        </a>
+                    </div>
+                    <div class="grid__item" data-size="1280x857">
+                        <a href="../../img/projects/photography/original/Falera_summer.jpg" class="img-wrap"><img src="../../img/projects/photography/thumb/Falera_summer.jpg" alt="img06" />
+                            <div class="description description--grid">Falera - Huawei P20 Pro</div>
+                        </a>
+                    </div>
+                    <div class="grid__item" data-size="1280x1280">
+                        <a href="../../img/projects/photography/original/Well.JPG" class="img-wrap"><img src="../../img/projects/photography/thumb/Well.JPG" alt="img07" />
+                            <div class="description description--grid">Well - Nikon F80</div>
+                        </a>
+                    </div>
+                    <div class="grid__item" data-size="1280x853">
+                        <a href="../../img/projects/photography/original/Alfa_landscape.jpg" class="img-wrap"><img src="../../img/projects/photography/thumb/Alfa_landscape.jpg" alt="img08" />
+                            <div class="description description--grid">Alfa Romeo GTV6 - Nikon D750 ~120mm</div>
+                        </a>
+                    </div>
+                    <div class="grid__item" data-size="865x1280">
+                        <a href="../../img/projects/photography/original/gas_station.JPG" class="img-wrap"><img src="../../img/projects/photography/thumb/gas_station.JPG" alt="img09" />
+                            <div class="description description--grid">Gas Station E30 - Nikon D3500 14mm</div>
+                        </a>
+                    </div>
+                    <div class="grid__item" data-size="1280x1280">
+                        <a href="../../img/projects/photography/original/monument_valley.jpg" class="img-wrap"><img src="../../img/projects/photography/thumb/monument_valley.jpg" alt="img10" />
+                            <div class="description description--grid">Monument valley - Huawei P20 Pro</div>
+                        </a>
+                    </div>
+                    <div class="grid__item" data-size="1280x850">
+                        <a href="../../img/projects/photography/original/grand_canyon.jpg" class="img-wrap"><img src="../../img/projects/photography/thumb/grand_canyon.jpg" alt="img11" />
+                            <div class="description description--grid">Grand Canyon Panorama - Huawei P20 Pro</div>
+                        </a>
+                    </div>
+                    
+
+                </div>
+                <!-- /grid -->
+                <div class="preview">
+                    <button class="action action--close"><i class="fa fa-times"></i><span class="text-hidden">Close</span></button>
+                    <div class="description description--preview"></div>
+                </div>
+                <!-- /preview -->
+            </div>
+
+
         </div>
-        <div class="hoverwrap">
-            <img src="../../img/projects/photography/Alfa_landscape.jpg">
-            <div class="hovercap">Pops GTV6 - Nikon D750 210mm f5</div>
-        </div>
-        <div class="hoverwrap">
-            <img src="../../img/projects/photography/balcony.JPG">
-            <div class="hovercap">Balcony - Nikon F80 70mm f8 Ilford HP5+</div>
-        </div>
-        <div class="hoverwrap">
-            <img src="../../img/projects/photography/roadstop.jpg">
-            <div class="hovercap">Roadstop USA - Huawei P20 Pro</div>
-        </div>
-        <div class="hoverwrap">
-            <img src="../../img/projects/photography/antlope_canyon.jpg">
-            <div class="hovercap">Antelope Canyon - Huawei P20 Pro</div>
-        </div>
-        <div class="hoverwrap">
-            <img src="../../img/projects/photography/monument_valley.jpg">
-            <div class="hovercap">Monument Valley - Huawei P20 Pro</div>
-        </div>
-        <div class="hoverwrap">
-            <img src="../../img/projects/photography/Well.JPG">
-            <div class="hovercap">Well - Nikon F80 50mm f1.8 Ilford HP5+</div>
-        </div>
-        <div class="hoverwrap">
-            <img src="../../img/projects/photography/grand_canyon.jpg">
-            <div class="hovercap">Grand Canyon - Huawei P20 Pro</div>
-        </div>
-        <div class="hoverwrap">
-            <img src="../../img/projects/photography/gas_station.JPG">
-            <div class="hovercap">Gas Station - Nikon D3500 14mm f2.8</div>
-        </div>
-        <div class="hoverwrap">
-            <img src="../../img/projects/photography/Alfa_portrait.jpg">
-            <div class="hovercap">Pops Alfa romeo - Nikon D750 70mm f8</div>
-        </div>
-        <div class="hoverwrap">
-            <img src="../../img/projects/photography/Falera_summer.jpg">
-            <div class="hovercap">Falera - Huawei P20 Pro</div>
-        </div>
-    </div>
+        <!-- /container -->
+        <script src="js/imagesloaded.pkgd.min.js"></script>
+        <script src="js/masonry.pkgd.min.js"></script>
+        <script src="js/classie.js"></script>
+        <script src="js/main.js"></script>
+        <script>
+            (function() {
+                var support = { transitions: Modernizr.csstransitions },
+                    // transition end event name
+                    transEndEventNames = { 'WebkitTransition': 'webkitTransitionEnd', 'MozTransition': 'transitionend', 'OTransition': 'oTransitionEnd', 'msTransition': 'MSTransitionEnd', 'transition': 'transitionend' },
+                    transEndEventName = transEndEventNames[ Modernizr.prefixed( 'transition' ) ],
+                    onEndTransition = function( el, callback ) {
+                        var onEndCallbackFn = function( ev ) {
+                            if( support.transitions ) {
+                                if( ev.target != this ) return;
+                                this.removeEventListener( transEndEventName, onEndCallbackFn );
+                            }
+                            if( callback && typeof callback === 'function' ) { callback.call(this); }
+                        };
+                        if( support.transitions ) {
+                            el.addEventListener( transEndEventName, onEndCallbackFn );
+                        }
+                        else {
+                            onEndCallbackFn();
+                        }
+                    };
+    
+                new GridFx(document.querySelector('.grid'), {
+                    imgPosition : {
+                        x : 1,
+                        y : 0.75
+                    },
+                    pagemargin : 50,
+                    onOpenItem : function(instance, item) {
+                        instance.items.forEach(function(el) {
+                            if(item != el) {
+                                var delay = Math.floor(Math.random() * 150);
+                                el.style.WebkitTransition = 'opacity .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1), -webkit-transform .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+                                el.style.transition = 'opacity .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1), transform .4s ' + delay + 'ms cubic-bezier(.7,0,.3,1)';
+                                
+                                el.style.WebkitTransform = 'translate3d(0,400px,0)';
+                                el.style.transform = 'translate3d(0,400px,0)';
+                                el.style.opacity = 0;
+                            }
+                        });
+                    },
+                    onCloseItem : function(instance, item) {
+                        instance.items.forEach(function(el) {
+                            if(item != el) {
+                                el.style.WebkitTransition = 'opacity .3s, -webkit-transform .3s';
+                                el.style.transition = 'opacity .3s, transform .3s';
+    
+                                el.style.WebkitTransform = 'translate3d(0,0,0)';
+                                el.style.transform = 'translate3d(0,0,0)';
+                                el.style.opacity = 1;
+    
+                                onEndTransition(el, function() {
+                                    el.style.transition = 'none';
+                                    el.style.WebkitTransform = 'none';
+                                });
+                            }
+                        });
+                    }
+                });
+            })();
+        </script>
+
+
+
 
     <div id="footer-placeholder"></div>
 
