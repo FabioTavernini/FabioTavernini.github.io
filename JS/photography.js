@@ -11,7 +11,8 @@ function showBig(x) {
 
         canvas.style.display = "block"
         canvas.innerHTML = "<p>" + x.alt + "</p>"
-        canvas.innerHTML += "<a href='" + x.src + "'><img style='" + css + "' src='" + x.src + "'></a>"
+        //canvas.innerHTML += "<a href='" + x.src + "'><img style='" + css + "' src='" + x.src + "'></a>"
+        canvas.innerHTML += "<img style='" + css + "' src='" + x.src + "'>"
 
         gallery.style.display = "none";
 
