@@ -8,7 +8,7 @@ body {
 
 #footer {
   margin-top: 5vh;
-  /* position: fixed; */
+  position: fixed; 
 }
 
 #afsCert-container {
