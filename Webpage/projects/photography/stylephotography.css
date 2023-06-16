@@ -9,10 +9,13 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
-p{
+a{
   color: #fff;
   font-family: monospace;
   font-size: larger;
+  text-decoration: underline;
+  display: block;
+  margin-bottom: 2vh;
 }
 
 #footer{
