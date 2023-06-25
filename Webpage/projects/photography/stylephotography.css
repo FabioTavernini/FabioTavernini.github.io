@@ -15,7 +15,7 @@ a{
   font-size: larger;
   text-decoration: underline;
   display: block;
-  margin-bottom: 2vh;
+  /* margin-bottom: 2vh; */
 }
 
 #footer{
