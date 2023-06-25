@@ -9,6 +9,10 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
+.ImgDescription{
+  margin-bottom: 2vh;
+}
+
 a{
   color: #fff;
   font-family: monospace;
