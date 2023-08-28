@@ -63,26 +63,25 @@ a {
   background-color: rgb(186, 81, 81);
   text-align: center;
   color: #fff;
-
   background-image: url('../Webpage/img/projects/github.png');
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 .project-3 {
-  background-color: #209BFF;
+  background-color: #EFE1CE;
   text-align: center;
   color: #000;
 }
 
 .project-4 {
-  background-color: #72257d;
+  background-color: #DC793E;
   text-align: center;
   color: #fff;
 }
 
 .project-5 {
-  background-color:green;
+  background-color: #6B5876;
   text-align: center;
   color: #fff;
   vertical-align: middle;
@@ -100,13 +99,14 @@ a {
 }
 
 .project-7 {
-  background-color: #92A8D1;
+  background-color: cadetblue;
+
   color: #fff;
 }
 
 .project-8 {
-background-color: #F7CAC9;
-  color: rgb(234, 153, 83) ;
+  background-color: #F7CAC9;
+  color: rgb(234, 153, 83);
 }
 
 @media (max-width:477px) {
