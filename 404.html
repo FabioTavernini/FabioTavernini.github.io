@@ -12,7 +12,6 @@
 <body>
 
   <style>
-    
     @import "https://tavernini.online/Styles/styleall.css";
 
     #footer {
@@ -152,8 +151,15 @@
   </div>
 
   <footer id="footer">
-    <a>Fabio Tavernini - 2023</a>
+    <p id="footertext"></p>
   </footer>
+
+  <script>
+    const date = new Date();
+    let year = date.getFullYear();
+
+    document.getElementById('footertext').innerHTML = ("Fabio Tavernini - " + year);
+  </script>
 
 </body>
 
