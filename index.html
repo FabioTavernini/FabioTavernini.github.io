@@ -25,7 +25,14 @@
 
     <footer id="footer">
         <p id="footertext"></p>
-        <script src="JS/ALL.js"></script>
+        <script>
+
+            const date = new Date();
+            let year = date.getFullYear();
+
+            document.getElementById('footertext').innerHTML = ("Fabio Tavernini - " + year);
+
+        </script>
     </footer>
 
 </body>
