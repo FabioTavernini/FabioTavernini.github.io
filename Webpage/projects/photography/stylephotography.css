@@ -22,6 +22,11 @@ a{
   /* margin-bottom: 2vh; */
 }
 
+p#einleittext{
+  color: #fff;
+  font-family: monospace;
+}
+
 #footer{
   margin-top: 5vh;
 }
