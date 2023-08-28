@@ -10,8 +10,6 @@
     <link rel="icon" href="../../inc/favicon/code-solid.svg">
     <title>Vega visualization</title>
 
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-
     <script src="https://cdn.jsdelivr.net/npm/vega@5/build-es5/vega.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vega-embed@6/build-es5/vega-embed.js"></script>
 </head>
@@ -20,11 +18,7 @@
 
     <div id="nav-placeholder"></div>
 
-    <script>
-        $(function () {
-            $("#nav-placeholder").load("../inc/navbar/navbar.html");
-        });
-    </script>
+ 
 
     <h1>Vega Visualization</h1>
 
@@ -44,11 +38,12 @@
                 href="https://github.com/FabioTavernini/Powershell-Projects/blob/main/Vega-Script/vega.ps1">powershell-github
                 repository</a> <br>
             Its also a major pain in the ... to get the view right with mobile devices, so if you're having trouble
-            viewing this page correctly on mobile, try it on a desktop, or view it in fullscreen <a href="./vega.html" target="_blank">here</a>
+            viewing this page correctly on mobile, try it on a desktop, or view it in fullscreen <a href="./vega.html"
+                target="_blank">here</a>
         </p>
     </div>
 
-        <div id="view"></div>
+    <div id="view"></div>
 
     <script>
         vegaEmbed(
@@ -56,16 +51,13 @@
             './data/vega-schema.json'
         );
 
-        
+
     </script>
 
-    <div id="footer-placeholder"></div>
-
-    <script>
-        $(function () {
-            $("#footer-placeholder").load("../inc/footer/footer.html");
-        });
-    </script>
+    <footer id="footer">
+        <p id="footertext"></p>
+        <script src="../../../JS/ALL.js"></script>
+    </footer>
 
 
 </body>
