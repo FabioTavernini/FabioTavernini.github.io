@@ -129,6 +129,7 @@ h3 {
   text-align: right;
 }
 
-#darkmodeimg {
+img#darkmodeimg {
   height: 40px;
+  width: 40px;
 }
