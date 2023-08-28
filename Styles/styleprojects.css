@@ -51,7 +51,7 @@ a {
 }
 
 .project-1 {
-  background: url('../Webpage/img/projects/e30/E30Tile.JPG');
+  background: url('../Webpage/img/projects/e30/E30Tile.webp');
   color: #fff;
   box-sizing: border-box;
   background-size: cover;
@@ -63,7 +63,7 @@ a {
   background-color: rgb(186, 81, 81);
   text-align: center;
   color: #fff;
-  background-image: url('../Webpage/img/projects/github.png');
+  background-image: url('../Webpage/img/projects/github.webp');
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -92,7 +92,7 @@ a {
   color: #000;
   text-decoration: none;
   text-align: center;
-  background-image: url(../Webpage/img/projects/vega-view/vega-demo.png);
+  background-image: url('../Webpage/img/projects/vega-view/vega-demo.webp');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
