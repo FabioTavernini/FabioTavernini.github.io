@@ -20,11 +20,6 @@ html {
 	background-size: contain
 }
 
-h3 {
-	font-size: 30px;
-	text-transform: uppercase
-}
-
 #scroll2explore {
 	color: #e14848
 }
@@ -61,6 +56,11 @@ h3 {
 		margin-right: 20%
 	}
 
+	h3 {
+		font-size: 20px;
+		text-transform: uppercase
+	}
+
 	/* h3{
 		font-size: 20px;
 	} */
@@ -78,6 +78,11 @@ h3 {
 		font-size: 24px;
 		margin-left: 20%;
 		margin-right: 20%
+	}
+
+	h3 {
+		font-size: 30px;
+		text-transform: uppercase
 	}
 
 	#startpage {
@@ -117,10 +122,4 @@ h3 {
 img#darkmodeimg {
 	height: 40px;
 	width: 40px
-}
-
-@media (max-width:719px) {
-	p {
-		font-size: 1rem
-	}
 }
