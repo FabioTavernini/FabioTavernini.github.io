@@ -15,7 +15,8 @@
     <link rel="icon" href="inc/favicon/code-solid.svg">
 
 
-    <script src="../JS/lax.min.js"></script>
+    <script src="../JS/stickymate.js"></script>
+
     <script src="../JS/scripthome.js"></script>
 
     <title>Home</title>
@@ -30,18 +31,27 @@
         <h1 id="scroll2explore">Scroll down to explore &#8595;</h1>
     </div>
 
-    <section class="About_Me About">
+    <section class="About_Me About" data-sticky="from: -40vh, duration: 100vh"
+        data-animation="opacity: {-50vh: 1, 50vh: 0}">
         <div>
             <h3>About me</h3>
             <p>
                 I like automating stuff with Powershell and creating GUI's to make life easier.
-                I've made various Forms with PHP and HTML, MSSQL/MySQL, CSS, a bit of Javascirpt and a pinch of Jquery.
-                Occasionally, I like to dabble in other things like VB.NET, Python and even things like FreeCAD and more
+                I've made various Forms with PHP and HTML, MSSQL/MySQL, CSS, a bit of Javascirpt and a pinch of
+                Jquery.
+                Occasionally, I like to dabble in other things like VB.NET, Python and even things like FreeCAD and
+                more
             </p>
         </div>
     </section>
 
-    <section class="Purpose_Page About">
+
+
+    <section class="Purpose_Page About" data-sticky="from: -40vh, duration: 200vh" data-animation="transform: {
+            -50vh:  translate(0, 0),
+            75vh:  translate(0, 0),
+            150vh: translate(250%, 0)
+        }">
         <div>
             <h3>This site</h3>
             <p>
@@ -51,7 +61,13 @@
         </div>
     </section>
 
-    <section class="About_Site About">
+
+
+    <section class="About_Site About" data-sticky="from: -40vh, duration: 200vh" data-animation="transform: {
+            -50vh:  translate(0, 0),
+            75vh:  translate(0, 0),
+            150vh: translate(-250%, 0)
+        }">
         <div>
             <h3>About this</h3>
             <p>
@@ -60,67 +76,109 @@
                     href="https://github.com/alexfoxy/lax.js" target="_blank">LAX.JS</a>
             </p>
         </div>
-
     </section>
 
-    <div class="title">
-        <h1 class="Intrests">Intrests</h1>
+    <div data-sticky="from: -10vh, duration: 700vh">
+
+        <div class="title">
+            <h1 class="Intrests">Intrests</h1>
+        </div>
+
+
+        <section class="photography Intrests" data-animation="transform: {
+            -100vh:  translate(0, 200vh),
+            100vh:  translate(0, 0)
+        }">
+
+            <h3>Amateur Photography</h3>
+            <p>
+                What can i say - I like to take pictures, digital and on film!<br>
+                i'll try and cover most of this on my projects page - under "photography":)
+            </p>
+        </section>
+
+
+
+        <section class="fiddling Intrests" data-animation="transform: {
+            100vh:  translate(0, 200vh),
+            300vh:  translate(0, 0)
+        }">
+            <h3>fiddling around</h3>
+            <p>
+                I love to mess around with all sorts of stuff. <br> From repairing Phones, to small
+                electronics, mechanical things, to messing around with servers in my bedroom.<br>
+            </p>
+        </section>
+
+
+
+        <section class="cars Intrests" data-animation="transform: {
+            300vh:  translate(0, 200vh),
+            500vh:  translate(0, 0)
+        }">
+            <h3>Cars</h3>
+            <p>
+                Ever since owning my BMW e30, i wanted to make a webpage to keep track of progress and
+                changes to the car. <br>
+                I'll dedicate a projects page to this car.
+            </p>
+        </section>
+
     </div>
 
-    <section class="photography Intrests">
+    <div data-sticky="from: -10vh, duration: 500vh">
 
-        <h3>Amateur Photography</h3>
-        <p>
-            What can i say - I like to take pictures, digital and on film!<br>
-            i'll try and cover most of this on my projects page - under "photography":)
-        </p>
-    </section>
+        <div class="title">
+            <h1 class="WIP">Work in Progress</h1>
+        </div>
 
-    <section class="fiddling Intrests">
-        <h3>fiddling around</h3>
-        <p>
-            I love to mess around with all sorts of stuff. <br> From repairing Phones, to small
-            electronics, mechanical things, to messing around with servers in my bedroom.<br>
-        </p>
-    </section>
 
-    <section class="cars Intrests">
-        <h3>Cars</h3>
-        <p>
-            Ever since owning my BMW e30, i wanted to make a webpage to keep track of progress and
-            changes to the car. <br>
-            I'll dedicate a projects page to this car.
-        </p>
-    </section>
+        <section class="WorkInProgress WIP" data-animation="opacity: {
+            -10vh: 0,
+             50vh: 1
+            }">
 
-    <div class="title">
-        <h1 class="WIP">Work in Progress</h1>
+            <h3>Still</h3>
+            <p>
+                Just about everything in life takes time. <br>
+                This site will hopefully grow, as i keep adding content of interesting things i am
+                working on, or have
+                in
+                mind.
+            </p>
+        </section>
+
+
+
+        <section class="WorkInProgress WIP" data-animation="opacity: {
+            -10vh: 0,
+            150vh:0,
+            200vh: 1
+        }">
+            <h3>in</h3>
+            <p>
+                I am keeping track of my curriculum vitae in the "About" - Tab, which i am currently
+                building.
+            </p>
+        </section>
+
+
+
+        <section class="WorkInProgress WIP" data-animation="opacity: {
+            -10vh: 0,
+             300vh: 0,
+             350vh:1
+        }">
+            <h3>progress</h3>
+            <p>
+                My social networks can be found in the "Social" Tab. Feel free to contact me any way you
+                feel. <br>
+                Thank you for scrolling &#60;3
+            </p>
+        </section>
+
     </div>
 
-    <section class="WorkInProgress1 WIP">
-
-        <h3>Still</h3>
-        <p>
-            Just about everything in life takes time. <br>
-            This site will hopefully grow, as i keep adding content of interesting things i am working on, or have in
-            mind.
-        </p>
-    </section>
-
-    <section class="WorkInProgress WIP">
-        <h3>in</h3>
-        <p>
-            I am keeping track of my curriculum vitae in the "About" - Tab, which i am currently building.
-        </p>
-    </section>
-
-    <section class="WorkInProgress WIP">
-        <h3>progress</h3>
-        <p>
-            My social networks can be found in the "Social" Tab. Feel free to contact me any way you feel. <br>
-            Thank you for scrolling &#60;3
-        </p>
-    </section>
 
     <div id="spacerbottom">
     </div>
@@ -133,6 +191,7 @@
         <p id="footertext"></p>
         <script src="../JS/ALL.js"></script>
     </footer>
+
 
 </body>
 
