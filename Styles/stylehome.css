@@ -8,6 +8,10 @@ html {
 	background-color: #fff
 }
 
+section{
+  overflow-x: hidden;
+}
+
 #startpage {
 	color: #fff;
 	min-height: 100vh;
