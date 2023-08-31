@@ -8,7 +8,13 @@ html {
 	background-color: #fff
 }
 
-section {
+
+h1.WIP, h1.Intrests,section{
+	color: #fff;
+	background-color: #000;
+	border-style: solid;
+	border-width: 2px;
+	border-color: #fff;
 	overflow-x: hidden;
 }
 
@@ -29,7 +35,7 @@ section {
 }
 
 .About {
-	background-color: #fff;
+	/* background-color: #fff; */
 	padding: 10px 10px 10px 10px;
 	border-radius: 25px
 }
@@ -95,7 +101,7 @@ section {
 }
 
 .Intrests {
-	background-color: #fff;
+	/* background-color: #fff; */
 	padding: 10px 10px 10px 10px;
 	border-radius: 25px
 }
@@ -106,7 +112,7 @@ section {
 }
 
 .WIP {
-	background-color: #fff;
+	/* background-color: #fff; */
 	padding: 10px 10px 10px 10px;
 	border-radius: 25px
 }
