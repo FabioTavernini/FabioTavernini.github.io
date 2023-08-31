@@ -13,6 +13,3 @@ document.getElementById('nav-placeholder').innerHTML = (`<nav class="navbar">
 </nav>`);
 
 document.getElementById('footertext').innerHTML = ("Fabio Tavernini - " + year);
-
-
-
