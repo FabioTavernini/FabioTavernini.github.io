@@ -8,6 +8,10 @@ html {
 	background-color: #fff
 }
 
+a{
+	color: #fff;
+	text-decoration: underline;
+}
 
 h1.WIP, h1.Intrests,section{
 	color: #fff;
