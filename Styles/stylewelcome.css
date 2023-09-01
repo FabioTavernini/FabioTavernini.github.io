@@ -1,5 +1,6 @@
 /* GLOBAL STYLES */
 body {
+    background-color: #000;
     padding-top: 5em;
     display: flex;
     justify-content: center;
@@ -20,6 +21,10 @@ body {
     color: black;
     bottom: 5px;
     left: 0px;
+}
+
+#footertext{
+color: #fff;
 }
 
 /* DEMO-SPECIFIC STYLES */
