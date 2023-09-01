@@ -18,11 +18,11 @@ body {
   justify-content: center;
 }
 
-/* img{
-  width:400px;
-  height: 550px;
-  margin: 10px;
-} */
+.certs{
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 10px;
+}
 
 img {
   width: 350px;
