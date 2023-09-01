@@ -14,7 +14,7 @@
 
 @media screen and (max-width: 600px) {
   li {
-    padding-top: 20px
+    padding-top: 15px
   }
 }
 
@@ -24,7 +24,7 @@
 
 ul {
   position: absolute;
-  top: 50%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding-inline-start: 0
