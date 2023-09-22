@@ -1,38 +1,66 @@
 body {
-  background-size: 700px 700px;
+  background-size: 700px 700px
 }
 
 #navabout {
-  background-color: #333;
+  background-color: #333
 }
 
 #footer {
   margin-top: 5vh;
-  position: fixed; 
+  position: unset
 }
 
 #afsCert-container {
   display: inline-flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: center
 }
 
-.certs{
+.certs {
   padding-right: 5px;
   padding-left: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 10px
 }
 
 img {
   width: 350px;
   height: 500px;
-  border-radius:25px;
+  border-radius: 25px
 }
 
 p,
 a {
   font-family: monospace;
   text-decoration: none;
+  color: #fff
+}
+
+iframe {
+  width: 50vw;
+  height: 50vh;
+  overflow: hidden;
+  border-radius: 25px;
+  margin-left: 12px
+}
+
+#linkCV {
+  display: block
+}
+
+#textCVLink {
+  color: #6f6ffd;
+  text-decoration: underline;
+}
+
+#textCVLink,
+#CVInfo {
+  margin-left: 10vw;
+  margin-right: 10vw;
+  font-size: calc(100% + 0.5vw);
+}
+
+#textCVLink:hover{
   color: #fff;
 }
