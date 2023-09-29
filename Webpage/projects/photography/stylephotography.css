@@ -1,22 +1,13 @@
 img {
-	padding-bottom: 20px;
-
-	max-width: 100%;
-	max-height: 100%;
-	object-fit: cover;
-
+	margin-bottom: 20px;
 	cursor: pointer;
 	transition: transform 0.3s ease;
-
-	position: relative;
-	overflow: hidden;
-	background-size: 40px; /* Set the size of the loading spinner */
-	background-repeat: no-repeat;
+	background-color: #000;
+	background-image: url('../../inc/img/loading.gif');
+	background-size: 30px 30px;
 	background-position: center;
-	/* Add other styles as needed */
-
+	background-repeat: no-repeat;
 }
-
 
 .modal {
 	position: fixed;
@@ -37,10 +28,6 @@ img {
 	object-fit: contain;
 }
 
-.modal {
-	display: none;
-}
-
 .modal.active {
 	display: flex;
 }
@@ -52,6 +39,7 @@ img {
 body {
 	font-family: sans-serif;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 h1 {
@@ -77,30 +65,20 @@ h4 {
 	margin-bottom: 10px;
 }
 
-#canvas {
-	height: 100vh;
-	width: 100%;
-}
-
-.gallery {
-
+#gallery {
 	-webkit-column-count: 4;
 	-moz-column-count: 4;
 	column-count: 4;
 	-webkit-column-gap: 1em;
 	-moz-column-gap: 1em;
 	column-gap: 1em;
-
 	padding: 0;
 	-moz-column-gap: 1.5em;
 	-webkit-column-gap: 1.5em;
-
 	font-size: .85em;
-
-	width: 80vw;
-	margin-left: 10vw;
-	margin-right: 10vw;
-
+	width: 90vw;
+	margin-left: 5vw;
+	margin-right: 5vw;
 }
 
 .item img {
@@ -140,28 +118,5 @@ h4 {
 		-moz-column-count: 4;
 		-webkit-column-count: 4;
 		column-count: 4;
-	}
-}
-
-
-
-
-.loading-spinner {
-	display: inline-block;
-	width: 40px;
-	height: 40px;
-	border: 4px solid rgba(255, 255, 255, 0.3);
-	border-radius: 50%;
-	border-top: 4px solid #ffffff;
-	animation: spin 1s linear infinite;
-}
-
-@keyframes spin {
-	0% {
-		transform: rotate(0deg);
-	}
-
-	100% {
-		transform: rotate(360deg);
 	}
 }
