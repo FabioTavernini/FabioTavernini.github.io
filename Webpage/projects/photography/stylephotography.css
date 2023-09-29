@@ -3,10 +3,10 @@ img {
 	cursor: pointer;
 	transition: transform 0.3s ease;
 	background-color: #000;
-	background-image: url('../../inc/img/loading.gif');
+	/* background-image: url('../../inc/img/loading.gif');
 	background-size: 30px 30px;
 	background-position: center;
-	background-repeat: no-repeat;
+	background-repeat: no-repeat; */
 }
 
 .modal {
@@ -77,8 +77,8 @@ h4 {
 	-webkit-column-gap: 1.5em;
 	font-size: .85em;
 	width: 90vw;
-	margin-left: 5vw;
-	margin-right: 5vw;
+	margin-left: 4vw;
+	margin-right: calc(5vw +12px);
 }
 
 .item img {
@@ -90,7 +90,7 @@ h4 {
 }
 
 @media only screen and (max-width: 320px) {
-	.gallery {
+	#gallery {
 		-moz-column-count: 1;
 		-webkit-column-count: 1;
 		column-count: 1;
@@ -98,7 +98,7 @@ h4 {
 }
 
 @media only screen and (min-width: 321px) and (max-width: 768px) {
-	.gallery {
+	#gallery {
 		-moz-column-count: 2;
 		-webkit-column-count: 2;
 		column-count: 2;
@@ -106,7 +106,7 @@ h4 {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1200px) {
-	.gallery {
+	#gallery {
 		-moz-column-count: 3;
 		-webkit-column-count: 3;
 		column-count: 3;
@@ -114,7 +114,7 @@ h4 {
 }
 
 @media only screen and (min-width: 1201px) {
-	.gallery {
+	#gallery {
 		-moz-column-count: 4;
 		-webkit-column-count: 4;
 		column-count: 4;
