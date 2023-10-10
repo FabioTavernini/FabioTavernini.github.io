@@ -1,12 +1,26 @@
+body {
+	font-family: sans-serif;
+	margin: 0;
+	overflow-x: hidden;
+	font-family: monospace;
+}
+
 img {
 	margin-bottom: 20px;
 	cursor: pointer;
 	transition: transform 0.3s ease;
 	background-color: #000;
-	/* background-image: url('../../inc/img/loading.gif');
-	background-size: 30px 30px;
-	background-position: center;
-	background-repeat: no-repeat; */
+}
+
+h1 {
+	text-align: center;
+	margin-top: 50px;
+}
+
+h4 {
+	text-align: center;
+	line-height: 80px;
+	font-weight: normal;
 }
 
 .modal {
@@ -36,39 +50,25 @@ img {
 	overflow: hidden;
 }
 
-body {
-	font-family: sans-serif;
-	margin: 0;
-	overflow-x: hidden;
+.ImgDescription {
+	color: #fff;
+	display: block;
+	margin-bottom: 10px;
 }
 
-h1 {
-	text-align: center;
-	margin-top: 50px;
+.item img {
+	max-width: 100%;
 }
 
 #einleittext {
 	color: #fff;
-	font-family: monospace;
-}
-
-h4 {
-	text-align: center;
-	line-height: 80px;
-	font-weight: normal;
-}
-
-.ImgDescription {
-	color: #fff;
-	display: block;
-	font-family: monospace;
-	margin-bottom: 10px;
+	font-size: 1.5em;
 }
 
 #gallery {
-	-webkit-column-count: 4;
-	-moz-column-count: 4;
-	column-count: 4;
+	-webkit-column-count: 3;
+	-moz-column-count: 3;
+	column-count: 3;
 	-webkit-column-gap: 1em;
 	-moz-column-gap: 1em;
 	column-gap: 1em;
@@ -79,10 +79,6 @@ h4 {
 	width: 90vw;
 	margin-left: 4vw;
 	margin-right: calc(5vw +12px);
-}
-
-.item img {
-	max-width: 100%;
 }
 
 #footer {
@@ -115,8 +111,8 @@ h4 {
 
 @media only screen and (min-width: 1201px) {
 	#gallery {
-		-moz-column-count: 4;
-		-webkit-column-count: 4;
-		column-count: 4;
+		-moz-column-count: 3;
+		-webkit-column-count: 3;
+		column-count: 3;
 	}
 }

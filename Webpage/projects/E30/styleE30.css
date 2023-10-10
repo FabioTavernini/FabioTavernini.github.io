@@ -2,6 +2,11 @@ html,
 body {
   text-align: center;
   font-family: monospace;
+  overflow-x: hidden;
+}
+
+html{
+  height: 100vh;
 }
 
 #navprojects {
@@ -9,9 +14,56 @@ body {
 }
 
 #footer {
-  position: absolute;
+  position: fixed;
 }
 
 h1{
   color: #fff;
+}
+
+img{
+  max-width: 95%;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
+}
+
+.projecttext{
+  font-size: calc(100% + 0.5vw);
+}
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: 80vw;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+
+  margin-left: 10vw;
+  margin-right: 10vw;
+
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.content {
+  /* padding: 0 18px; */
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+  margin-left: 10vw;
+  margin-right: 10vw;
+
+  width: 80vw;
+  
+}
+
+#lastcollapsible{
+  margin-bottom: 10vh;
 }

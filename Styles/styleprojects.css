@@ -60,12 +60,12 @@ a {
 }
 
 .project-2 {
-  background-color: rgb(186, 81, 81);
+  background-color: rgb(73, 73, 73);
   text-align: center;
   color: #fff;
-  background-image: url('../Webpage/img/projects/github.webp');
+  /* background-image: url('../Webpage/img/projects/github.webp');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 
 .project-3 {

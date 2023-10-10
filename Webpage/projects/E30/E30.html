@@ -10,30 +10,62 @@
     <link rel="icon" href="../../inc/favicon/code-solid.svg">
     <title>E30</title>
 
-
 </head>
 
 <body>
 
-
- 
-
     <div id="nav-placeholder"></div>
-
-
 
     <h1>E30</h1>
 
+    <button class="collapsible">Adding USB-charging Port</button>
+    <div class="content">
+        <p class="projecttext">
+            I wanted to have the option to charge my phone or any other device inside the car, so a usb port was needed.
+            <br>
+            Now since the cigarette-lighter-port is always on and has 12V from the car battery and is relatively easy to
+            access, i chose to alter the wiring from there instead of the radio. <br>
+            First, i had to make a bracket that fits into the interior, i found this on thingiverse: <br>
+            <img
+                src="https://img.thingiverse.com/cdn-cgi/image/fit=contain,quality=50/https://cdn.thingiverse.com/renders/8f/b7/94/59/bd/E30_switch_Blank_display_large.jpg">
+            <br>
+            Thanks to <a href="https://www.thingiverse.com/nathan_parr/designs">nathan_parr</a> for the stl file. <br>
+            Next, i ordered a usb port and a power Switch from alixpress.
 
+            Adding to that, USB requires 5V, not 12v, so i added a step down module that also supports fast charging (CKCY U1A):
+            <br>
 
+            <img
+                src="https://m.media-amazon.com/images/S/aplus-media/sc/48f59e87-5f58-4f31-93be-b7ca19624c04.__CR0,0,970,300_PT0_SX970_V1___.jpg">
+            <br>
 
+            In the end, my design for the blank plate looked like this: <br>
+            <img src="../../img/projects/e30/plate_e30.png"> <br>
 
+            With the plate printed, the usb port and switch installed it looks like this: <br>
+            <img src="../../img/projects/e30/usbport_e30.jpg">
+
+        </p>
+
+    </div>
+
+    <button class="collapsible">Installing cassette radio and amp</button>
+    <div class="content">
+        <p class="projecttext">coming soon...</p>
+    </div>
+    
+    <button class="collapsible">Changing Hardy disc</button>
+    <div class="content" id="lastcollapsible">
+        <p class="projecttext">coming soon...</p>
+    </div>
 
     <footer id="footer">
         <p id="footertext"></p>
         <script src="../../../JS/ALL.js"></script>
     </footer>
-    
+
+    <script src="./e30.js"></script>
+
 </body>
 
 </html>

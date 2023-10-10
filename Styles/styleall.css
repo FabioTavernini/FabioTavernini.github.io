@@ -4,6 +4,8 @@ body {
     padding: 0;
     background-color: #0d0d0d;
     text-align: center;
+
+    
 }
 
 @media screen and (min-width: 1000px) {
