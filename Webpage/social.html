@@ -28,6 +28,7 @@
                 <a href="https://www.linkedin.com/in/fabio-tavernini-429750256/" target="_blank"><i
                         class="fab fa-linkedin icon"></i></a>
             </li>
+
             <li>
                 <a
                     href="https://api.whatsapp.com/send/?phone=%2B41774028394&text=Pläuderle:)&type=phone_number&app_absent=0"><i
@@ -36,45 +37,37 @@
             <li>
                 <a href="https://github.com/fabiotavernini" target="_blank"><i class="fab fa-github icon"></i></a>
             </li>
-            <!-- <li>
-                <a href="https://t.me/ftave">
-                    <i class="fab fa-telegram icon"></i></a>
-            </li> -->
         </ul>
     </div>
 
+    <h2>Or send me a message with this form :)</h2>
 
-        <form id="contactform" name="contact" action="/Webpage/success.html" method="POST" data-netlify="true">
+    <form id="contactform" name="contact" action="/Webpage/success.html" method="POST" data-netlify="true">
 
-            <label>Your Name:</label>
-            <input type="text" name="name" />
+        <label>Your Name:</label>
+        <input type="text" name="name" required />
 
-            <label>Your Email: </label>
-            <input type="email" name="email" />
+        <label>Your Email: </label>
+        <input type="email" name="email" required />
 
-            <label>Message:</label>
-            <textarea id="message" name="message"></textarea>
+        <label>Message:</label>
+        <textarea id="message" name="message" required></textarea>
 
-            <br>
+        <br>
 
-            <button type="submit">Send</button>
+        <button type="submit">Send</button>
 
-        </form>
-
-
-
+    </form>
 
 
 
 
-
-
-
-
-    <footer id="footer">
-        <p id="footertext"></p>
-        <script src="../JS/ALL.js"></script>
-    </footer>
 </body>
+
+
+<footer id="footer">
+    <p id="footertext"></p>
+    <script src="../JS/ALL.js"></script>
+</footer>
 
 </html>
