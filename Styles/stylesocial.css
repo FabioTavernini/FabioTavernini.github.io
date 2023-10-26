@@ -10,6 +10,10 @@ html,body{
   position: unset;
 }
 
+#thanks{
+  margin-bottom: 91vh;
+}
+
 input,
 button,
 textarea {
