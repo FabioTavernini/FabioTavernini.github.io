@@ -19,4 +19,8 @@ if (document.readyState === 'complete') {
         location.href = "./webpage/index.html";
     }, false);
 
+    document.addEventListener('click', () => {
+        location.href = "./webpage/index.html";
+    });
+
 }
