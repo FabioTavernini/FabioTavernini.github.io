@@ -1,5 +1,6 @@
 body {
-  background-size: 700px 700px
+  background-size: 700px 700px;
+  height: 100vh;
 }
 
 #navabout {
@@ -8,41 +9,7 @@ body {
 
 #footer {
   margin-top: 5vh;
-  position: unset
-}
-
-#afsCert-container {
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center
-}
-
-.certs {
-  padding-right: 5px;
-  padding-left: 5px;
-  padding-bottom: 10px
-}
-
-img {
-  width: 350px;
-  height: 500px;
-  border-radius: 25px
-}
-
-p,
-a {
-  font-family: monospace;
-  text-decoration: none;
-  color: #fff
-}
-
-iframe {
-  width: 50vw;
-  height: 50vh;
-  overflow: hidden;
-  border-radius: 25px;
-  margin-left: 12px
+  position: fixed
 }
 
 #linkCV {
