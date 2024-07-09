@@ -53,7 +53,6 @@ a {
 .project-1 {
   background: url('../Webpage/img/projects/e30/E30Tile.webp');
   color: #fff;
-  box-sizing: border-box;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -108,6 +107,20 @@ a {
   background-color: #F7CAC9;
   color: rgb(234, 153, 83);
 }
+
+.project-9 {
+  background-image: url(https://teoemil.art/inc/img/favicon.ico);
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: center;
+  color: #ff8400;
+
+  border-style: solid;
+  border-width: 2px;
+  border-color: #ff8400;
+}
+
+
 
 @media (max-width:477px) {
   .project-text {
