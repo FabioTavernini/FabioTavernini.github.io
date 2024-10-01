@@ -31,3 +31,22 @@ body {
 #textCVLink:hover{
   color: #fff;
 }
+
+#CredlyWrapper {
+
+  margin-top: 2vh;
+  margin-left: 25vw;
+  height: 400px;
+  width: 50vw;
+
+  display: flex;
+  background-color: #fff9e7;
+  box-shadow: inset 0px 0px 25px 25px #0d0d0d;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+
+  align-items: center;
+
+}
