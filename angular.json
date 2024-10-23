@@ -13,11 +13,6 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
-            "assets": {
-              "glob": "_redirects",
-              "input": "src",
-              "output": "/"
-            },
             "outputPath": "dist/fabio-tavernini",
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -27,7 +22,8 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              "src/_redirects"
             ],
             "styles": [
               "src/styles.css"
