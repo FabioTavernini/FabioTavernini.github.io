@@ -1,0 +1,62 @@
+<nav class="bg-gray-800 p-4">
+  <div class="container mx-auto flex justify-between items-center">
+    <!-- Brand -->
+
+    <div class="block">
+      <img class="rounded-full" src="https://picsum.photos/75/75">
+      <h1 class="text-white font-bold text-xl">Fabio Tavernini</h1>
+    </div>
+
+    <!-- Nav Links -->
+    <div class="hidden md:flex space-x-4 relative">
+      <a href="/" class="text-gray-300 hover:text-white">Home</a>
+      <a href="/about" class="text-gray-300 hover:text-white">About</a>
+
+      <!-- Dropdown Menu -->
+      <div class="relative group" (mouseenter)="dropdownOpen = true">
+        <div class="text-gray-300 hover:text-white cursor-pointer">
+          Services
+        </div>
+        <div *ngIf="dropdownOpen" (mouseleave)="dropdownOpen = false"
+          class="absolute left-0 mt-2 w-48 bg-gray-700 rounded-md shadow-lg z-10">
+          <a href="/service1" class="block px-4 py-2 text-gray-300 hover:bg-gray-600">Service 1</a>
+          <a href="/service2" class="block px-4 py-2 text-gray-300 hover:bg-gray-600">Service 2</a>
+          <a href="/service3" class="block px-4 py-2 text-gray-300 hover:bg-gray-600">Service 3</a>
+        </div>
+      </div>
+
+      <a href="/contact" class="text-gray-300 hover:text-white">Contact</a>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <div class="md:hidden">
+      <button class="text-gray-300 hover:text-white focus:outline-none" (click)="toggleMenu()">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile Menu -->
+  <div *ngIf="menuOpen" class="md:hidden">
+    <div class="flex flex-col space-y-2 px-2 pt-2 pb-3">
+      <a href="/" class="text-gray-300 hover:text-white">Home</a>
+      <a href="/about" class="text-gray-300 hover:text-white">About</a>
+
+      <!-- Mobile Dropdown -->
+      <div class="relative">
+        <div class="text-gray-300 hover:text-white cursor-pointer" (click)="dropdownOpen = !dropdownOpen">
+          Services
+        </div>
+        <div *ngIf="dropdownOpen" class="flex flex-col space-y-2 px-2 pt-2 pb-3 bg-gray-700 rounded-md shadow-lg">
+          <a href="/service1" class="block text-gray-300 hover:bg-gray-600">Service 1</a>
+          <a href="/service2" class="block text-gray-300 hover:bg-gray-600">Service 2</a>
+          <a href="/service3" class="block text-gray-300 hover:bg-gray-600">Service 3</a>
+        </div>
+      </div>
+
+      <a href="/contact" class="text-gray-300 hover:text-white">Contact</a>
+    </div>
+  </div>
+</nav>
