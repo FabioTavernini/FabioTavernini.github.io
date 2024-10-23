@@ -13,6 +13,11 @@
         "build": {
           "builder": "@angular-devkit/build-angular:application",
           "options": {
+            "assets": {
+              "glob": "_redirects",
+              "input": "src",
+              "output": "/"
+            },
             "outputPath": "dist/fabio-tavernini",
             "index": "src/index.html",
             "browser": "src/main.ts",
