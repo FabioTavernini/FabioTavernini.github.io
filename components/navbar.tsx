@@ -11,7 +11,7 @@ import {
 } from "@nextui-org/navbar";
 
 import { Link } from "@nextui-org/link";
-import { usePathname } from "next/navigation"; // Ensure this import is correct
+import { usePathname } from "next/navigation"; // Make sure you are using this hook
 import React from "react";
 
 export const Navbar = () => {
@@ -30,7 +30,7 @@ export const Navbar = () => {
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
-          onClick={() => setIsMenuOpen(!isMenuOpen)} // Ensure menu toggle works
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
         />
         <NavbarBrand>
           <p className="font-bold text-inherit">Fabio Tavernini</p>
@@ -41,9 +41,9 @@ export const Navbar = () => {
         {menuItems.map((item) => (
           <NavbarItem key={item.href} isActive={pathname === item.href}>
             <Link
-              color={pathname === item.href ? "primary" : "foreground"} // Change to blue if active
+              color={pathname === item.href ? "primary" : "foreground"}
               href={item.href}
-              aria-current={pathname === item.href ? "page" : undefined}
+              aria-current={pathname === item.href ? "page" : undefined} // Consistently set aria-current
             >
               {item.name}
             </Link>
@@ -53,12 +53,12 @@ export const Navbar = () => {
 
       <NavbarMenu>
         {menuItems.map((item) => (
-          <NavbarMenuItem key={item.href}>
+          <NavbarMenuItem key={item.href} isActive={pathname === item.href}>
             <Link
-              color="foreground"
-              className="w-full"
+              color={pathname === item.href ? "primary" : "foreground"}
               href={item.href}
-              size="lg"
+              onClick={() => setIsMenuOpen(false)} // Close the menu when an item is clicked
+              aria-current={pathname === item.href ? "page" : undefined} // Ensure consistency
             >
               {item.name}
             </Link>
