@@ -16,7 +16,7 @@ export default function ContactPage() {
         <Input type="text" label="Subject" className="m-4" />
         <Textarea label="Your message for me" minRows={15} className="m-4" />
 
-        <Button size="md" color="primary" type="submit">Submit</Button>  
+        <Button size="md" color="primary" type="submit" className="m-4">Submit</Button>  
 
       </form>
 
