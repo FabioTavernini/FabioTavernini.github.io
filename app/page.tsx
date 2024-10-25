@@ -3,7 +3,6 @@ import { Snippet } from "@nextui-org/snippet";
 import { Code } from "@nextui-org/code";
 import { button as buttonStyles } from "@nextui-org/theme";
 
-import { siteConfig } from "@/config/site";
 import { title, subtitle } from "@/components/primitives";
 
 
@@ -20,21 +19,6 @@ export default function Home() {
         <div className={subtitle({ class: "mt-4" })}>
           Beautiful, fast and modern React UI library.
         </div>
-      </div>
-
-      <div className="flex gap-3">
-        <Link
-          isExternal
-          className={buttonStyles({
-            color: "primary",
-            radius: "full",
-            variant: "shadow",
-          })}
-          href={siteConfig.links.docs}
-        >
-          Documentation
-        </Link>
-
       </div>
 
       <div className="mt-8">
