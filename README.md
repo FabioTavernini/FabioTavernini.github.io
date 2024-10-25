@@ -1,3 +1,5 @@
+[![Netlify Status](https://api.netlify.com/api/v1/badges/fcce7287-6005-4167-9386-623b9e74ffa0/deploy-status)](https://app.netlify.com/sites/ftave/deploys)
+
 # Next.js & NextUI Template
 
 This is a template for creating applications using Next.js 14 (app directory) and NextUI (v2).
