@@ -1,7 +1,7 @@
 // components/Footer.tsx
 "use client";
 
-import { FaBeer } from 'react-icons/fa';
+import { FaBeer, FaDiscord, FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
 
 export const Footer = () => {
   return (
@@ -19,15 +19,28 @@ export const Footer = () => {
 
 
           <div className="flex space-x-6">
-            <a href="https://twitter.com" aria-label="Twitter">
-              <FaBeer size={25} />
+
+            <a href="https://github.com/FabioTavernini" target='_blank' aria-label="GitHub">
+            <FaGithub size={25} />
             </a>
-            <a href="https://github.com" aria-label="GitHub">
-            <FaBeer size={25} />
+
+            <a href="https://instagram.com/F_Tavernini" target='_blank' aria-label="Twitter">
+              <FaInstagram size={25} />
             </a>
-            <a href="https://discord.com" aria-label="Discord">
-            <FaBeer size={25} />
+
+
+            <a href="mailto:fabiomeo.tavernini@gmail.com" target='_blank' aria-label="Twitter">
+              <FaEnvelope size={25} />
             </a>
+
+
+
+
+            {/* <a href="https://www.linkedin.com/in/fabio-tavernini-429750256/" target='_blank' aria-label="Discord">
+            <FaLinkedin size={25} /> 
+            </a> */}
+
+            
           </div>
 
 
