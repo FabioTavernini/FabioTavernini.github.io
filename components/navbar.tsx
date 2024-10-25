@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import {
   Navbar as NextUINavbar,
@@ -11,64 +11,53 @@ import {
 } from "@nextui-org/navbar";
 
 import { Link } from "@nextui-org/link";
-
-
-import React from "react";
+import React, { useState } from "react";
 
 export const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [activePage, setActivePage] = useState("Home");
 
+  const menuItems = ["Home", "Projects", "Contact"];
 
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-
-  const menuItems = [
-    "Home",
-    "Projects",
-    "Contact"
-  ];
-
+  const handleSetActive = (page) => {
+    setActivePage(page);
+  };
 
   return (
     <NextUINavbar shouldHideOnScroll maxWidth="xl" position="sticky">
-
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
+          onClick={() => setIsMenuOpen(!isMenuOpen)}
         />
         <NavbarBrand>
-
           <p className="font-bold text-inherit">Fabio Tavernini</p>
-
         </NavbarBrand>
       </NavbarContent>
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link color="foreground" href="/home">
-            Home
-          </Link>
-        </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="/projects" aria-current="page">
-            Projects
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link color="foreground" href="/contact">
-          Contact
-          </Link>
-        </NavbarItem>
+        {menuItems.map((item) => (
+          <NavbarItem key={item} isActive={activePage === item}>
+            <Link
+              color={activePage === item ? "primary" : "foreground"}
+              href={`/${item.toLowerCase()}`}
+              onClick={() => handleSetActive(item)}
+            >
+              {item}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
 
       <NavbarMenu>
         {menuItems.map((item, index) => (
           <NavbarMenuItem key={`${item}-${index}`}>
             <Link
-              color={
-                "foreground"
-              }
+              color={activePage === item ? "primary" : "foreground"}
               className="w-full"
-              href={item.toLocaleLowerCase()}
+              href={`/${item.toLowerCase()}`}
+              onClick={() => handleSetActive(item)}
               size="lg"
             >
               {item}
@@ -76,7 +65,6 @@ export const Navbar = () => {
           </NavbarMenuItem>
         ))}
       </NavbarMenu>
-
     </NextUINavbar>
   );
 };
