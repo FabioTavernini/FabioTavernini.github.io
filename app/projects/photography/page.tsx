@@ -5,7 +5,8 @@ import React, { useState } from "react";
 
 const images = [
 
-  "/images/alfa_portrait.jpg",
+  "/images/parking-ticket.jpg",
+  "/images/well.jpg",
   "/images/alfa_landscape.jpg",
   "/images/antelope_canyon.jpg",
   "/images/balcony.jpg",
@@ -17,13 +18,13 @@ const images = [
   "/images/MB-BMW.jpg",
   "/images/monument_valley.jpg",
   "/images/mühlentalstrasse.jpg",
-  "/images/parking-ticket.jpg",
   "/images/plitvice1.jpg",
-  "/images/plitvice2.jpg",
+  "/images/alfa_portrait.jpg",
   "/images/roadstop.jpg",
   "/images/stahlgiesserei.jpg",
   "/images/stars.jpg",
-  "/images/well.jpg",
+  "/images/plitvice2.jpg",
+
 ];
 
 const ImageGallery = () => {
@@ -40,9 +41,8 @@ const ImageGallery = () => {
           <img
             key={index}
             src={src}
-            alt={`Gallery Image ${index + 1}`}
-            className="h-96 w-auto object-cover cursor-pointer rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300"
-            onClick={() => setSelectedImage(src)}
+            className="h-96 w-auto object-cover cursor-pointer rounded-lg shadow-lg hover:shadow-xl justify-self-center transition-shadow duration-300"
+            // onMouseDown={() => setSelectedImage(src)}
           />
         ))}
       </div>
@@ -53,11 +53,10 @@ const ImageGallery = () => {
           <div className="relative">
             <img
               src={selectedImage}
-              alt="Selected Image"
-              className="max-w-full max-h-screen rounded-lg"
+              className="max-w-full max-h-screen rounded-lg justify-self-center"
             />
             <button
-              onClick={() => setSelectedImage(null)}
+              // onMouseDown={() => setSelectedImage(null)}
               className="absolute top-2 right-2 text-white text-xl font-bold"
             >
               ✕
