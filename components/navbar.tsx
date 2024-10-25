@@ -49,12 +49,12 @@ export const Navbar = () => {
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="/projects" aria-current="page">
+          <Link href="/Projects" aria-current="page">
             Projects
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/contact">
+          <Link color="foreground" href="/Contact">
           Contact
           </Link>
         </NavbarItem>
