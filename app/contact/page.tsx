@@ -7,8 +7,8 @@ export default function ContactPage() {
   return (
 
     <div>
+      <h2 className="m-4 text-2xl font-bold leading-7 text-white sm:truncate sm:text-3xl sm:tracking-tight">Contact</h2>
 
-      <h1 className={title()}>Contact</h1>
 
       <form name="contact" className="w-80 w-auto pr-5">
 
