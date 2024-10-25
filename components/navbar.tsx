@@ -15,11 +15,11 @@ import React, { useState } from "react";
 
 export const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activePage, setActivePage] = useState("Home");
+  const [activePage, setActivePage] = useState<"Home" | "Projects" | "Contact">("Home");
 
-  const menuItems = ["Home", "Projects", "Contact"];
+  const menuItems = ["Home", "Projects", "Contact"] as const;
 
-  const handleSetActive = (page) => {
+  const handleSetActive = (page: typeof menuItems[number]) => {
     setActivePage(page);
   };
 
