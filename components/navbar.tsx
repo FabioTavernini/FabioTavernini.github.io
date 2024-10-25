@@ -44,17 +44,17 @@ export const Navbar = () => {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
         <NavbarItem>
-          <Link color="foreground" href="/">
+          <Link color="foreground" href="/home">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="/Projects" aria-current="page">
+          <Link href="/projects" aria-current="page">
             Projects
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/Contact">
+          <Link color="foreground" href="/contact">
           Contact
           </Link>
         </NavbarItem>
