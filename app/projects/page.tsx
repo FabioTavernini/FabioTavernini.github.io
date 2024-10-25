@@ -2,8 +2,6 @@
 
 import {Card, CardHeader, CardBody, CardFooter, Image, Button} from "@nextui-org/react";  
 import Link from "next/link";
-
-
 import { FaGithub } from 'react-icons/fa';
 
 export default function ProjectsPage() {
@@ -37,7 +35,7 @@ export default function ProjectsPage() {
         removeWrapper
         alt="Card background"
         className="z-0 w-full h-full object-cover"
-        src="https://nextui.org/images/card-example-4.jpeg"
+        src="/images/antelope_canyon.jpg"
       />  
       
        </Card>
@@ -104,9 +102,6 @@ export default function ProjectsPage() {
         <div>
           <p className="text-black text-tiny">Available soon.</p>
         </div>
-        {/* <Button className="text-tiny" color="primary" radius="full" size="sm">
-          Notify Me
-        </Button> */}
       </CardFooter>
     </Card>
 
@@ -121,7 +116,7 @@ export default function ProjectsPage() {
         removeWrapper
         alt="Relaxing app background"
         className="z-0 w-full h-full object-cover"
-        src="https://nextui.org/images/card-example-5.jpeg"
+        src="/gifs/githubcard.gif"
       />
       <CardFooter className="absolute bg-black/40 bottom-0 z-10 border-t-1 border-default-600 dark:border-default-100">
         <div className="flex flex-grow gap-2 items-center">

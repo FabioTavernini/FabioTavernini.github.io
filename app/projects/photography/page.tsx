@@ -2,6 +2,8 @@
 "use client";
 
 import React, { useState } from "react";
+import { useEffect } from "react";
+import { Button } from "@nextui-org/button";
 
 const images = [
 
@@ -27,8 +29,37 @@ const images = [
 
 ];
 
+
+
+
+
+
+
 const ImageGallery = () => {
+
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+
+
+  useEffect(() => {
+    // Function to handle keydown events
+    const handleKeyDown = (event: KeyboardEvent) => {
+      if (event.key === "Escape") {
+        setSelectedImage(null); // Clear selected image on Escape key press
+      }
+    };
+
+    // Add event listener
+    window.addEventListener("keydown", handleKeyDown);
+
+    // Cleanup event listener on component unmount
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+    };
+  }, []);
+
+
+
+
 
   return (
     <div className="flex flex-col items-center">
@@ -38,12 +69,17 @@ const ImageGallery = () => {
       {/* Image Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 m-4 w-screen pl-5 pr-5 justify-center">
         {images.map((src, index) => (
-          <img
-            key={index}
-            src={src}
-            className="h-96 w-auto object-cover cursor-pointer rounded-lg shadow-lg hover:shadow-xl justify-self-center transition-shadow duration-300"
-            // onMouseDown={() => setSelectedImage(src)}
-          />
+          <Button
+  key={index}
+  onPress={() => setSelectedImage(src)}
+  className="h-96 w-auto object-cover cursor-pointer rounded-lg shadow-lg hover:shadow-xl justify-self-center transition-shadow duration-300" // Removes padding
+  style={{ background: 'none', border: 'none' }} // Remove default button styles
+>
+  <img
+    src={src}
+    className="h-96 w-auto object-cover cursor-pointer rounded-lg shadow-lg hover:shadow-xl justify-self-center transition-shadow duration-300"
+  />
+</Button>
         ))}
       </div>
 
@@ -55,17 +91,24 @@ const ImageGallery = () => {
               src={selectedImage}
               className="max-w-full max-h-screen rounded-lg justify-self-center"
             />
-            <button
-              // onMouseDown={() => setSelectedImage(null)}
-              className="absolute top-2 right-2 text-white text-xl font-bold"
+
+
+            <Button
+               onPress={() => setSelectedImage(null)}
+              className="absolute top-2 right-2 text-white text-xl font-bold bg-red-500"
             >
               ✕
-            </button>
+            </Button>
+
+
           </div>
         </div>
       )}
     </div>
   );
 };
+
+
+
 
 export default ImageGallery;
