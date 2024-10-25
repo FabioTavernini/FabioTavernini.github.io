@@ -68,7 +68,7 @@ export const Navbar = () => {
                 "foreground"
               }
               className="w-full"
-              href={item}
+              href={item.toLocaleLowerCase()}
               size="lg"
             >
               {item}
