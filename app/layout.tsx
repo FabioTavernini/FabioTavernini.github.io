@@ -21,7 +21,10 @@ export const viewport: Viewport = {
 
 export default function RootLayout({children}: { children: React.ReactNode }) { return (
     <html suppressHydrationWarning lang="en">
-      <head />
+      
+      <head>
+      </head>
+
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",

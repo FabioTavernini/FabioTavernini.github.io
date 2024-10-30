@@ -9,6 +9,7 @@
 		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
 	},
 	"dependencies": {
+		"@icons-pack/react-simple-icons": "^10.1.0",
 		"@nextui-org/button": "2.0.38",
 		"@nextui-org/code": "2.0.33",
 		"@nextui-org/input": "2.2.5",

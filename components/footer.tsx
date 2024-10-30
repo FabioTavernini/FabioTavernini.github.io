@@ -1,7 +1,8 @@
 // components/Footer.tsx
 "use client";
 
-import { FaBeer, FaDiscord, FaEnvelope, FaGithub, FaInstagram, FaLinkedin } from 'react-icons/fa';
+import {  FaEnvelope, FaGithub, FaInstagram } from 'react-icons/fa';
+import { SiWhatsapp, SiNextdotjs, SiReact, SiTailwindcss } from '@icons-pack/react-simple-icons';
 
 export const Footer = () => {
   return (
@@ -15,32 +16,23 @@ export const Footer = () => {
             </p>
           </div>
 
-
-
-
           <div className="flex space-x-6">
 
             <a href="https://github.com/FabioTavernini" target='_blank' aria-label="GitHub">
             <FaGithub size={25} />
             </a>
 
-            <a href="https://instagram.com/F_Tavernini" target='_blank' aria-label="Twitter">
+            <a href="https://instagram.com/F_Tavernini" target='_blank' aria-label="Instagram">
               <FaInstagram size={25} />
             </a>
 
-
-            <a href="mailto:fabiomeo.tavernini@gmail.com" target='_blank' aria-label="Twitter">
+            <a href="mailto:fabiomeo.tavernini@gmail.com" target='_blank' aria-label="Mail">
               <FaEnvelope size={25} />
             </a>
-
-
-
-
-            {/* <a href="https://www.linkedin.com/in/fabio-tavernini-429750256/" target='_blank' aria-label="Discord">
-            <FaLinkedin size={25} /> 
-            </a> */}
-
-            
+            <a href="https://wa.me/41774028394?text=pläuderle" target='_blank' aria-label="Whatsapp">
+            <SiWhatsapp size={24} />
+            </a>
+           
           </div>
 
 
@@ -50,7 +42,8 @@ export const Footer = () => {
 
         <div className="text-center mt-8">
           <p className="text-sm text-gray-500">
-            Built with Next.js, Tailwind CSS & ❤️ 
+            Made with Next.js + React , TailwindCSS & ❤️ <br></br>
+            Hosted on netlify
           </p>
         </div>
 
