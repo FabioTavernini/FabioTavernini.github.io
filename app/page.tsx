@@ -40,8 +40,6 @@ const AccordionItem: React.FC<{
 };
 
 const HomePage: React.FC = () => {
-  const defaultContent =
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.";
 
   const [openIndex, setOpenIndex] = useState<number | null>(null);
 
@@ -67,28 +65,33 @@ const HomePage: React.FC = () => {
         <div className="w-full">
           <div className="w-3/4 max-h-full border rounded-lg">
             <AccordionItem
-              title="Accordion 1"
+              title="Why this page"
+              subtitle="about this page"
               isOpen={openIndex === 0}
-              subtitle={<span>Press to expand <strong>key 1</strong></span>}
               onToggle={() => toggleAccordion(0)}
             >
-              {defaultContent}
+              I wanted to try out some new web technologies, thats part of why this site was created.<br></br>
+              Normally dabble in Powershell scripting, Legacy PHP Web-Apps and old VB Code.
+              So for a change i wanted to test myself with some of the new stuff :)
+
             </AccordionItem>
             <AccordionItem
-              title="Accordion 2"
+              title="What i do"
               isOpen={openIndex === 1}
-              subtitle={<span>Press to expand <strong>key 2</strong></span>}
+              subtitle={<span>Read about me</span>}
               onToggle={() => toggleAccordion(1)}
             >
-              {defaultContent}
+              Im an Application Manager at <a target="_blank" className="text-blue-600" href="https://itsh.ch">itsh.ch</a> and am responsible for a number of legacy PHP apps, aswell as many diffrent Powershell automation Jobs.
+              if you'd like to see my CV, you can do so here: <a target="_blank" className="text-blue-600" href="https://cv.tavernini.online">CV</a>.
             </AccordionItem>
             <AccordionItem
-              title="Accordion 3"
+              title="Some more Stuff"
               isOpen={openIndex === 2}
-              subtitle={<span>Press to expand <strong>key 3</strong></span>}
+              subtitle={<span>extras</span>}
               onToggle={() => toggleAccordion(2)}
             >
-              {defaultContent}
+              Lately i tried out diffrent JS Frameworks, im trying to get a better skillset in modern web-stacks.<br></br>
+              Angular and NextJS seem pretty nice to get my feet wet. This site is built with NextJS and TailwindCSS. <br></br>
             </AccordionItem>
           </div>
         </div>
