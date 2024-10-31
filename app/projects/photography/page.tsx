@@ -45,7 +45,7 @@ const ImageGallery = () => {
     <div className="flex flex-col items-center">
       
       <h2 className="text-xl font-bold leading-7 text-white sm:truncate sm:text-2xl sm:tracking-tight">Image Gallery</h2>
-
+  
       {/* Image Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 m-4 w-screen pl-5 pr-5 justify-center overflow-y-hidden">
         {images.map((src, index) => (
@@ -58,12 +58,12 @@ const ImageGallery = () => {
             <img
               src={src}
               className="h-96 w-auto object-cover cursor-pointer rounded-lg shadow-lg hover:shadow-xl justify-self-center transition-shadow duration-300"
-              alt={`Gallery image ${index + 1}`} // Add alt text for accessibility
+             
             />
           </Button>
         ))}
       </div>
-
+  
       {/* Modal */}
       {selectedImage && (
         <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
@@ -71,7 +71,7 @@ const ImageGallery = () => {
             <img
               src={selectedImage}
               className="max-w-full max-h-screen rounded-lg justify-self-center"
-              alt="Selected" // Add alt text for the selected image
+              
             />
             <Button
               onPress={() => setSelectedImage(null)}
