@@ -1,26 +1,72 @@
-import { Button } from "@nextui-org/button";
-import { Input, Textarea } from "@nextui-org/input";
+"use client";
 
-export default function Contact() {
+import { useState } from 'react';
+
+interface FormPost {
+  firstname?: string;
+  lastname?: string;
+  email?: string;
+}
+
+const Form = () => {
+  const encode = (data: any) => {
+    return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+  };
+
+  const [state, setState] = useState<FormPost>({});
+  const [submitted, setSubmitted] = useState(false);
+
+  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault(); // Prevent default submission
+
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", ...state })
+    })
+      .then(() => {
+        console.log("Success!");
+        setSubmitted(true); // Set submitted state after successful submission
+      })
+      .catch(error => console.log(error));
+  }
+
+  const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
+    const { id, value } = e.currentTarget;
+    setState(prevState => ({
+      ...prevState,
+      [id]: value,
+    }));
+  };
 
   return (
-
-    <div className="">
-
-      <h2 className="m-4 text-2xl font-bold leading-7 text-white sm:truncate sm:text-3xl sm:tracking-tight">Contact</h2>
-
-
-      <form name="contact" className="pr-5" method="POST" data-netlify="true">
-
-        <Input name="email" type="email" label="Email" placeholder="Enter your email" className="m-4" />
-        <Input name="subject" type="text" label="Subject" className="m-4" />
-        <Textarea name="message" label="Your message for me" minRows={15} className="m-4" />
-
-        <Button size="md" color="primary" type="submit" className="m-4">Submit</Button>
-
-      </form>
-
+    <div>
+      {!submitted ? (
+        <form name="contact" method="POST" data-netlify="true" onSubmit={onSubmit}>
+          <input type="hidden" name="form-name" value="contact" />
+          <div>
+            <div>
+              <input type="text" id="firstname" name="firstname" placeholder="First Name" onChange={handleChange} />
+            </div>
+            <div>
+              <input type="text" id="lastname" name="lastname" placeholder="Last Name" onChange={handleChange} />
+            </div>
+          </div>
+          <div>
+            <input type="text" name="email" id="email" placeholder="Email" onChange={handleChange} />
+          </div>
+          <div>
+            <button type="submit">Get Access</button>
+          </div>
+        </form>
+      ) : (
+        <h5>Thanks for submitting! We&apos;ll reach out ASAP!</h5>
+      )}
     </div>
-
   );
 }
+
+// Change this line to make it a default export
+export default Form;
