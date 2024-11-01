@@ -1,38 +1,31 @@
+"use client"
+
 import { Button } from "@nextui-org/button";
-import { Input, Textarea } from "@nextui-org/input";
 
-export default function Contact() {
-
+export default function ContactForm() {
   return (
+    
+    <form name="contact" method="POST" data-netlify="true">
+      <input type="hidden" name="form-name" value="contact" />
 
-    <div className="">
+      <p>
+        <label htmlFor="name">Your Name:</label>
+        <input type="text" name="name" id="name" required />
+      </p>
 
-      <h2 className="m-4 text-2xl font-bold leading-7 text-white sm:truncate sm:text-3xl sm:tracking-tight">Contact</h2>
+      <p>
+        <label htmlFor="email">Your Email:</label>
+        <input type="email" name="email" id="email" required />
+      </p>
 
+      <p>
+        <label htmlFor="message">Message:</label>
+        <textarea name="message" id="message" required></textarea>
+      </p>
 
-      {/* Hidden form for Netlify */}
-      <form name="contact" method="POST" data-netlify="true" className="hidden">
-        <input type="hidden" name="contactform" value="contact" />
-        <input type="hidden" name="email" />
-        <input type="hidden" name="subject" />
-        <input type="hidden" name="message" />
-      </form>
-
-
-
-      <form name="contactform" method="POST" className="pr-5">
-
-        <input type="hidden" name="form-name" value="contactform" />
-
-        <Input name="email" type="email" label="Email" placeholder="Enter your email" className="m-4" />
-        <Input name="subject" type="text" label="Subject" className="m-4" />
-        <Textarea name="message" label="Your message for me" minRows={15} className="m-4" />
-
-        <Button size="md" color="primary" type="submit" className="m-4">Submit</Button>
-
-      </form>
-
-    </div>
-
+      <p>
+        <Button type="submit" className="submit-button">Send</Button>
+      </p>
+    </form>
   );
 }
