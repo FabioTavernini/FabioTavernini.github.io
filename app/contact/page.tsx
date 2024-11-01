@@ -1,72 +1,27 @@
 "use client";
 
-import { useState } from 'react';
+import React from "react";
 
-interface FormPost {
-  firstname?: string;
-  lastname?: string;
-  email?: string;
-}
-
-const Form = () => {
-  const encode = (data: any) => {
-    return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
-  };
-
-  const [state, setState] = useState<FormPost>({});
-  const [submitted, setSubmitted] = useState(false);
-
-  const onSubmit = (event: React.FormEvent<HTMLFormElement>) => {
-    event.preventDefault(); // Prevent default submission
-
-    fetch("/", {
+const FeedbackForm = () => {
+  const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget); // Use event.currentTarget to get the form
+    await fetch("/", {
       method: "POST",
       headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "contact", ...state })
-    })
-      .then(() => {
-        console.log("Success!");
-        setSubmitted(true); // Set submitted state after successful submission
-      })
-      .catch(error => console.log(error));
-  }
-
-  const handleChange = (e: React.FormEvent<HTMLInputElement>) => {
-    const { id, value } = e.currentTarget;
-    setState(prevState => ({
-      ...prevState,
-      [id]: value,
-    }));
+      body: new URLSearchParams(formData as any).toString(), // Use 'as any' if TypeScript complains
+    });
+    // Success and error handling ...
   };
 
   return (
-    <div>
-      {!submitted ? (
-        <form name="contact" method="POST" data-netlify="true" onSubmit={onSubmit}>
-          <input type="hidden" name="form-name" value="contact" />
-          <div>
-            <div>
-              <input type="text" id="firstname" name="firstname" placeholder="First Name" onChange={handleChange} />
-            </div>
-            <div>
-              <input type="text" id="lastname" name="lastname" placeholder="Last Name" onChange={handleChange} />
-            </div>
-          </div>
-          <div>
-            <input type="text" name="email" id="email" placeholder="Email" onChange={handleChange} />
-          </div>
-          <div>
-            <button type="submit">Get Access</button>
-          </div>
-        </form>
-      ) : (
-        <h5>Thanks for submitting! We&apos;ll reach out ASAP!</h5>
-      )}
-    </div>
+    <form name="feedback" onSubmit={handleFormSubmit}>
+      <input type="hidden" name="form-name" value="feedback" />
+      <input name="name" type="text" placeholder="Name" required />
+      <input name="email" type="text" placeholder="Email (optional)" />
+      <button type="submit">Submit</button>
+    </form>
   );
-}
+};
 
-// Change this line to make it a default export
-export default Form;
+export default FeedbackForm;
