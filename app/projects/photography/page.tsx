@@ -45,7 +45,7 @@ const ImageGallery = () => {
     <div className="flex flex-col items-center">
       <h2 className="text-xl font-bold leading-7 text-white sm:truncate sm:text-2xl sm:tracking-tight">Image Gallery</h2>
       <h3 className="bg-gradient-to-r from-yellow-400 to-red-600 text-transparent bg-clip-text font-bold text-xs leading-2 sm:text-xl sm:tracking-tight">
-        Be patient when loading an image. When clicking on one, the "uncompressed" file is loaded :)
+        Be patient when loading an image. When clicking on one, the &quot;uncompressed&quot; file is loaded :)
       </h3>
 
       {/* Masonry Grid */}
