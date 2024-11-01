@@ -10,9 +10,9 @@ export default function Contact() {
       <h2 className="m-4 text-2xl font-bold leading-7 text-white sm:truncate sm:text-3xl sm:tracking-tight">Contact</h2>
 
 
-      <form name="contact" method="POST" className="pr-5">
+      <form name="contactform" method="POST" className="pr-5">
 
-        <input type="hidden" name="form-name" value="contact" />
+        <input type="hidden" name="form-name" value="contactform" />
 
         <Input name="email" type="email" label="Email" placeholder="Enter your email" className="m-4" />
         <Input name="subject" type="text" label="Subject" className="m-4" />
