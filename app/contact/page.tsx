@@ -1,8 +1,11 @@
 "use client";
 
 import React from "react";
+import { useRouter } from "next/navigation"; // Import useRouter
 
-const FeedbackForm = () => {
+const ContactForm = () => {
+  const router = useRouter(); // Initialize useRouter
+
   const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault(); // Prevent default form submission
     const formData = new FormData(event.currentTarget); // Get form data
@@ -19,15 +22,17 @@ const FeedbackForm = () => {
       }
 
       console.log("Form submitted successfully!"); // Log success
-      // Optionally, show a success message or redirect the user
+      // Redirect to the success page
+      router.push("/success"); // Adjust this path if necessary
+
     } catch (error) {
       console.error("There was a problem with the fetch operation:", error); // Log any errors
     }
   };
 
   return (
-    <form name="feedback" onSubmit={handleFormSubmit}>
-      <input type="hidden" name="form-name" value="feedback" />
+    <form name="contact" onSubmit={handleFormSubmit}>
+      <input type="hidden" name="form-name" value="contact" />
       <input name="name" type="text" placeholder="Name" required />
       <input name="email" type="text" placeholder="Email (optional)" />
       <button type="submit">Submit</button>
@@ -35,4 +40,4 @@ const FeedbackForm = () => {
   );
 };
 
-export default FeedbackForm;
+export default ContactForm;
