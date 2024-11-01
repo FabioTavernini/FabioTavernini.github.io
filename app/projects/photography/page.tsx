@@ -21,7 +21,6 @@ const images = [
   "alfa_portrait.jpg",
   "roadstop.jpg",
   "stahlgiesserei.jpg",
-  "stars.jpg",
   "plitvice2.jpg",
 ].map((img) => `/images/thumbnails/${img}`); // Update paths to thumbnails
 
@@ -42,22 +41,26 @@ const ImageGallery = () => {
   }, []);
 
   return (
+
     <div className="flex flex-col items-center">
       
       <h2 className="text-xl font-bold leading-7 text-white sm:truncate sm:text-2xl sm:tracking-tight">Image Gallery</h2>
+
+      <h3 className="bg-gradient-to-r from-yellow-400 to-red-600 text-transparent bg-clip-text font-bold text-xs leading-2 sm:text-xl sm:tracking-tight">Be patient when loading an image. When clicking on one, the "uncompressed" file is loaded :)</h3>
   
+
       {/* Image Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 m-4 w-screen pl-5 pr-5 justify-center overflow-y-hidden">
+      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 w-[98vw] justify-center">
         {images.map((src, index) => (
           <Button
             key={index}
             onPress={() => setSelectedImage(src.replace('/thumbnails/', '/'))} 
-            className="h-96 w-auto object-cover cursor-pointer rounded-lg shadow-lg hover:shadow-xl justify-self-center transition-shadow duration-300"
+            className="h-96 w-64 lg:h-auto lg:w-auto object-cover cursor-pointer rounded-lg shadow-lg hover:shadow-xl justify-self-center transition-shadow duration-300"
             style={{ background: 'none', border: 'none' }}
           >
             <img
               src={src}
-              className="h-96 w-auto object-cover cursor-pointer rounded-lg shadow-lg hover:shadow-xl justify-self-center transition-shadow duration-300"
+              className="h-96 w-64 lg:h-auto lg:w-auto object-cover cursor-pointer rounded-lg shadow-lg hover:shadow-xl justify-self-center transition-shadow duration-300"
              
             />
           </Button>

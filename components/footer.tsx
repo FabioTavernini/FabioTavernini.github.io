@@ -1,8 +1,5 @@
-// components/Footer.tsx
-"use client";
-
-import {  FaEnvelope, FaGithub, FaInstagram } from 'react-icons/fa';
-import { SiWhatsapp, SiNextdotjs, SiReact, SiTailwindcss } from '@icons-pack/react-simple-icons';
+import { FaEnvelope, FaGithub, FaInstagram } from 'react-icons/fa';
+import { SiWhatsapp } from '@icons-pack/react-simple-icons';
 
 export const Footer = () => {
   return (
@@ -19,7 +16,7 @@ export const Footer = () => {
           <div className="flex space-x-6">
 
             <a href="https://github.com/FabioTavernini" target='_blank' aria-label="GitHub">
-            <FaGithub size={25} />
+              <FaGithub size={25} />
             </a>
 
             <a href="https://instagram.com/F_Tavernini" target='_blank' aria-label="Instagram">
@@ -30,14 +27,11 @@ export const Footer = () => {
               <FaEnvelope size={25} />
             </a>
             <a href="https://wa.me/41774028394?text=pläuderle" target='_blank' aria-label="Whatsapp">
-            <SiWhatsapp size={24} />
+              <SiWhatsapp size={24} />
             </a>
-           
+
           </div>
 
-
-
-         
         </div>
 
         <div className="text-center mt-8">
