@@ -59,11 +59,13 @@ const HomePage: React.FC = () => {
         </div>
       </div>
 
-      <div className="flex justify-center items-center">
-        <img src="/images/BW.jpg" alt="test" className="w-2/4" />
+      <div className="flex flex-col items-center md:flex-row ml-5 w-[98vw]">
 
-        <div className="w-full">
-          <div className="w-3/4 max-h-full border rounded-lg">
+        <img src="/images/BW.jpg" alt="test" className="md:w-1/2" />
+
+        <div className="w-[85vw] mt-5 border rounded-lg md:w-full">
+
+          <div className="">
             <AccordionItem
               title="Why this page"
               subtitle="about this page"
