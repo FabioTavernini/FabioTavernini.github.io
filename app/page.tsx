@@ -8,7 +8,7 @@ import Image from "next/image";
 
 const AccordionItem: React.FC<{
   title: string;
-  subtitle?: React.ReactNode; // Optional subtitle prop
+  subtitle?: React.ReactNode;
   isOpen: boolean;
   onToggle: () => void;
   children: React.ReactNode;
@@ -23,10 +23,10 @@ const AccordionItem: React.FC<{
     <div className="mb-2">
       <div
         className="flex justify-between items-center p-4 rounded-lg bg-black cursor-pointer"
-        role="button"                   // Add role for accessibility
-        tabIndex={0}                     // Make focusable with keyboard
+        role="button"                  
+        tabIndex={0}                     
         onClick={onToggle}
-        onKeyDown={handleKeyDown}        // Handle keyboard toggle
+        onKeyDown={handleKeyDown}        
       >
         <div>
           <h2 className="text-lg font-semibold text-white">{title}</h2>
@@ -61,14 +61,14 @@ const HomePage: React.FC = () => {
 
       <div className="flex flex-col items-center md:flex-row ml-5 w-[98vw]">
 
-        <img src="/images/BW.jpg" alt="test" className="md:w-1/2" />
+        <img src="/images/BW.jpg" alt="test" className="rounded-lg md:w-1/2" />
 
         <div className="w-[85vw] mt-5 border rounded-lg md:w-full">
 
           <div className="">
             <AccordionItem
               title="Why this page"
-              subtitle="about this page"
+              subtitle="About this page"
               isOpen={openIndex === 0}
               onToggle={() => toggleAccordion(0)}
             >
@@ -89,7 +89,7 @@ const HomePage: React.FC = () => {
             <AccordionItem
               title="Some more Stuff"
               isOpen={openIndex === 2}
-              subtitle={<span>extras</span>}
+              subtitle={<span>Extras</span>}
               onToggle={() => toggleAccordion(2)}
             >
               Lately i tried out diffrent JS Frameworks, im trying to get a better skillset in modern web-stacks.<br></br>
