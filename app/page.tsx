@@ -83,7 +83,7 @@ const HomePage: React.FC = () => {
               subtitle={<span>Read about me</span>}
               onToggle={() => toggleAccordion(1)}
             >
-              Im an Application Manager at <a target="_blank" className="text-blue-600" href="https://itsh.ch">itsh.ch</a> and am responsible for a number of legacy PHP apps, aswell as many diffrent Powershell automation Jobs.
+              Im an Application Manager at <a target="_blank" className="text-blue-600" href="https://itsh.ch">ITSH.ch</a> and am responsible for a number of legacy PHP apps, aswell as many diffrent Powershell automation Jobs.
               if you&apos;d like to see my CV, you can do so here: <a target="_blank" className="text-blue-600" href="https://cv.tavernini.online">CV</a>.
             </AccordionItem>
             <AccordionItem

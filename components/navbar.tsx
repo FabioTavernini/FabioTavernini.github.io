@@ -22,6 +22,7 @@ export const Navbar = () => {
 
   const handleSetActive = (page: (typeof menuItems)[number]) => {
     setActivePage(page);
+    setIsMenuOpen(!isMenuOpen);
   };
 
   return (
