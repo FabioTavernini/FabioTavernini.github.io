@@ -29,7 +29,7 @@ export default function Nav() {
   const getLinkColor = (href: string) => (pathname === href ? "primary" : "foreground");
 
   return (
-    <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
+    <Navbar shouldHideOnScroll isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       {/* Left section with brand */}
       <NavbarContent>
         <NavbarMenuToggle
