@@ -1,72 +1,85 @@
 "use client";
 
+import React from "react";
+import { usePathname } from "next/navigation";
 import {
-  Navbar as NextUINavbar,
-  NavbarContent,
-  NavbarMenu,
-  NavbarMenuToggle,
+  Navbar,
   NavbarBrand,
+  NavbarContent,
   NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
   NavbarMenuItem,
-} from "@nextui-org/navbar";
-import { Link } from "@nextui-org/link";
-import React, { useState } from "react";
+  Link,
+} from "@nextui-org/react";
 
-export const Navbar = () => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  const [activePage, setActivePage] = useState<"Home" | "Projects" | "Contact">("Home");
+export default function Nav() {
+  const pathname = usePathname(); // Get the current path
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
-  const menuItems = [
-"Home", "Projects", "Contact"
-  ] as const;
-
-  const handleSetActive = (page: (typeof menuItems)[number]) => {
-    setActivePage(page);
-    setIsMenuOpen(!isMenuOpen);
-  };
+  // Helper function to determine active link color
+  const getLinkColor = (href: string) => (pathname === href ? "primary" : "foreground");
 
   return (
-    <NextUINavbar shouldHideOnScroll maxWidth="xl" position="sticky">
+    <Navbar onMenuOpenChange={setIsMenuOpen}>
+      {/* Left section with brand */}
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
           className="sm:hidden"
-          onClick={() => setIsMenuOpen(!isMenuOpen)}
         />
         <NavbarBrand>
           <p className="font-bold text-inherit">Fabio Tavernini</p>
         </NavbarBrand>
       </NavbarContent>
 
+      {/* Center section with links */}
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        {menuItems.map((item) => (
-          <NavbarItem key={item} isActive={activePage === item}>
-            <Link
-              color={activePage === item ? "primary" : "foreground"}
-              href={`/${item.toLowerCase()}`}
-              onClick={() => handleSetActive(item)}
-            >
-              {item}
-            </Link>
-          </NavbarItem>
-        ))}
+        <NavbarItem>
+          <Link href="/" color={getLinkColor("/")}>
+            Home
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link href="/projects" color={getLinkColor("/projects")}>
+            Projects
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link href="/contact" color={getLinkColor("/contact")}>
+            Contact
+          </Link>
+        </NavbarItem>
       </NavbarContent>
 
+      {/* Right section for menu items in mobile view */}
       <NavbarMenu>
-        {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
-            <Link
-              color={activePage === item ? "primary" : "foreground"}
-              className="w-full"
-              href={`/${item.toLowerCase()}`}
-              onClick={() => handleSetActive(item)}
-              size="lg"
-            >
-              {item}
-            </Link>
-          </NavbarMenuItem>
-        ))}
+        <NavbarMenuItem>
+          <Link className="w-full" href="/" color={getLinkColor("/")} size="lg">
+            Home
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            className="w-full"
+            href="/projects"
+            color={getLinkColor("/projects")}
+            size="lg"
+          >
+            Projects
+          </Link>
+        </NavbarMenuItem>
+        <NavbarMenuItem>
+          <Link
+            className="w-full"
+            href="/contact"
+            color={getLinkColor("/contact")}
+            size="lg"
+          >
+            Contact
+          </Link>
+        </NavbarMenuItem>
       </NavbarMenu>
-    </NextUINavbar>
+    </Navbar>
   );
-};
+}
