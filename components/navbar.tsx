@@ -13,18 +13,23 @@ import {
   Link,
 } from "@nextui-org/react";
 
+// Define the menu items
+const menuItems = [
+  { name: "Home", path: "/" },
+  { name: "Projects", path: "/projects" },
+  { name: "Contact", path: "/contact" },
+];
+
 export default function Nav() {
+  // Use useReducer to toggle the menu state
+  const [isMenuOpen, setIsMenuOpen] = React.useReducer((current) => !current, false);
   const pathname = usePathname();
-  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   // Helper function to determine active link color
   const getLinkColor = (href: string) => (pathname === href ? "primary" : "foreground");
 
-  // Handler to close the menu when a link is clicked
-  const handleLinkClick = () => setIsMenuOpen(false);
-
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
       {/* Left section with brand */}
       <NavbarContent>
         <NavbarMenuToggle
@@ -38,40 +43,30 @@ export default function Nav() {
 
       {/* Center section with links */}
       <NavbarContent className="hidden sm:flex gap-4" justify="center">
-        <NavbarItem>
-          <Link href="/" color={getLinkColor("/")}>
-            Home
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link href="/projects" color={getLinkColor("/projects")}>
-            Projects
-          </Link>
-        </NavbarItem>
-        <NavbarItem>
-          <Link href="/contact" color={getLinkColor("/contact")}>
-            Contact
-          </Link>
-        </NavbarItem>
+        {menuItems.map((item) => (
+          <NavbarItem key={item.path}>
+            <Link href={item.path} color={getLinkColor(item.path)}>
+              {item.name}
+            </Link>
+          </NavbarItem>
+        ))}
       </NavbarContent>
 
-      {/* Right section for menu items in mobile view */}
+      {/* Right section for mobile menu */}
       <NavbarMenu>
-        <NavbarMenuItem>
-          <Link className="w-full" href="/" color={getLinkColor("/")} size="lg" onClick={handleLinkClick}>
-            Home
-          </Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link className="w-full" href="/projects" color={getLinkColor("/projects")} size="lg" onClick={handleLinkClick}>
-            Projects
-          </Link>
-        </NavbarMenuItem>
-        <NavbarMenuItem>
-          <Link className="w-full" href="/contact" color={getLinkColor("/contact")} size="lg" onClick={handleLinkClick}>
-            Contact
-          </Link>
-        </NavbarMenuItem>
+        {menuItems.map((item) => (
+          <NavbarMenuItem key={item.path}>
+            <Link
+              className="w-full"
+              href={item.path}
+              color={getLinkColor(item.path)}
+              size="lg"
+              onPress={() => setIsMenuOpen()} // Close the menu on link press
+            >
+              {item.name}
+            </Link>
+          </NavbarMenuItem>
+        ))}
       </NavbarMenu>
     </Navbar>
   );
