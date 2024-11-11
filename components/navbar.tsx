@@ -14,11 +14,14 @@ import {
 } from "@nextui-org/react";
 
 export default function Nav() {
-  const pathname = usePathname(); // Get the current path
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   // Helper function to determine active link color
   const getLinkColor = (href: string) => (pathname === href ? "primary" : "foreground");
+
+  // Handler to close the menu when a link is clicked
+  const handleLinkClick = () => setIsMenuOpen(false);
 
   return (
     <Navbar onMenuOpenChange={setIsMenuOpen}>
@@ -55,27 +58,17 @@ export default function Nav() {
       {/* Right section for menu items in mobile view */}
       <NavbarMenu>
         <NavbarMenuItem>
-          <Link className="w-full" href="/" color={getLinkColor("/")} size="lg">
+          <Link className="w-full" href="/" color={getLinkColor("/")} size="lg" onClick={handleLinkClick}>
             Home
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link
-            className="w-full"
-            href="/projects"
-            color={getLinkColor("/projects")}
-            size="lg"
-          >
+          <Link className="w-full" href="/projects" color={getLinkColor("/projects")} size="lg" onClick={handleLinkClick}>
             Projects
           </Link>
         </NavbarMenuItem>
         <NavbarMenuItem>
-          <Link
-            className="w-full"
-            href="/contact"
-            color={getLinkColor("/contact")}
-            size="lg"
-          >
+          <Link className="w-full" href="/contact" color={getLinkColor("/contact")} size="lg" onClick={handleLinkClick}>
             Contact
           </Link>
         </NavbarMenuItem>
