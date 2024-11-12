@@ -35,7 +35,7 @@ export const Footer = () => {
         </div>
 
         <div className="text-center mt-8">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-white-500">
             Made with Next.js + React , TailwindCSS & ❤️ <br></br>
             Hosted on netlify
           </p>

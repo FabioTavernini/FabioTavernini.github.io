@@ -1,10 +1,7 @@
-// page.tsx
-
 "use client";
 
 import React, { useState } from "react";
 import { Code } from "@nextui-org/react";
-import Image from "next/image";
 
 const AccordionItem: React.FC<{
   title: string;
@@ -61,7 +58,7 @@ const HomePage: React.FC = () => {
 
       <div className="flex flex-col items-center md:flex-row ml-5 w-[98vw]">
 
-        <img src="/images/BW.jpg" alt="test" className="rounded-lg md:w-1/2" />
+        <img src="/images/BW.webp" alt="test" className="rounded-lg md:w-1/2" />
 
         <div className="w-[85vw] mt-5 border rounded-lg md:w-full">
 

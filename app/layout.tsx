@@ -23,6 +23,8 @@ export default function RootLayout({children}: { children: React.ReactNode }) { 
     <html suppressHydrationWarning lang="en">
       
       <head>
+      <title>Fabio Tavernini</title>
+      <meta name="description" content="My personal Website"></meta>
       </head>
 
       <body
