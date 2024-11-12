@@ -3,6 +3,8 @@
 import React, { useState } from "react";
 import { Code } from "@nextui-org/react";
 
+
+
 const AccordionItem: React.FC<{
   title: string;
   subtitle?: React.ReactNode;
@@ -17,13 +19,16 @@ const AccordionItem: React.FC<{
   };
 
   return (
+
+
+
     <div className="mb-2">
       <div
         className="flex justify-between items-center p-4 rounded-lg bg-black cursor-pointer"
-        role="button"                  
-        tabIndex={0}                     
+        role="button"
+        tabIndex={0}
         onClick={onToggle}
-        onKeyDown={handleKeyDown}        
+        onKeyDown={handleKeyDown}
       >
         <div>
           <h2 className="text-lg font-semibold text-white">{title}</h2>
@@ -58,7 +63,50 @@ const HomePage: React.FC = () => {
 
       <div className="flex flex-col items-center md:flex-row ml-5 w-[98vw]">
 
-        <img src="/images/BW.webp" alt="test" className="rounded-lg md:w-1/2" />
+        <svg width="0" height="0">
+          <filter
+            id="ambilight"
+            width="300%"
+            height="300%"
+            x="-0.75"
+            y="-0.75"
+            colorInterpolationFilters="sRGB"
+          >
+            <feOffset in="SourceGraphic" result="source-copy" />
+            <feColorMatrix
+              in="source-copy"
+              type="saturate"
+              values="3"
+              result="saturated-copy"
+            />
+            <feColorMatrix
+              in="saturated-copy"
+              type="matrix"
+              values="1 0 0 0 0
+                    0 1 0 0 0
+                    0 0 1 0 0
+                    33 33 33 101 -132"
+              result="bright-colors"
+            />
+            <feMorphology
+              in="bright-colors"
+              operator="dilate"
+              radius="10"
+              result="spread"
+            />
+            <feGaussianBlur
+              in="spread"
+              stdDeviation="30"
+              result="ambilight-light"
+            />
+            <feOffset in="SourceGraphic" result="source" />
+            <feComposite in="source" in2="ambilight-light" operator="over" />
+          </filter>
+        </svg>
+
+
+
+        <img id="BW" src="/images/BW.webp" alt="test" className="rounded-lg md:w-1/2" />
 
         <div className="w-[85vw] mt-5 border rounded-lg md:w-full">
 
