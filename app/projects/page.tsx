@@ -1,6 +1,6 @@
 "use client"
 
-import { SiCreality } from "@icons-pack/react-simple-icons";
+import { SiArgo, SiDebian, SiDell, SiDiagramsdotnet, SiDocker, SiFreebsd, SiFreenas, SiGitea, SiHp, SiJellyfin, SiKubernetes, SiProxmox, SiTplink, SiUbuntu, SiVsco, SiWire, SiWireguard } from "@icons-pack/react-simple-icons";
 import { Card, CardHeader, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
 import Link from "next/link";
 import { FaGithub } from 'react-icons/fa';
@@ -21,6 +21,7 @@ export default function ProjectsPage() {
         <Card className="col-span-12 sm:col-span-4 h-[300px]">
 
           <CardHeader className="absolute flex-col !items-start bg-black/50 justify-between">
+            <p className="text-tiny text-white/60 uppercase font-bold">photography</p>
             <h4 className="text-white font-medium text-large">Gallery</h4>
           </CardHeader>
 
@@ -30,7 +31,7 @@ export default function ProjectsPage() {
             alt="Card background"
             className="z-0 w-full h-full object-cover"
             src="/images/thumbnails/antelope_canyon.webp"
-            
+
           />
 
         </Card>
@@ -49,18 +50,34 @@ export default function ProjectsPage() {
         />
       </Card>
 
-      <Card className="col-span-12 sm:col-span-4 h-[300px]">
-        <CardHeader className="absolute z-10 top-1 flex-col !items-start">
-          <p className="text-tiny text-white/60 uppercase font-bold">Supercharged</p>
-          <h4 className="text-white font-medium text-large">Creates beauty like a beast</h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card background"
-          className="z-0 w-full h-full object-cover"
-          src="https://nextui.org/images/card-example-2.jpeg"
-        />
-      </Card>
+      <Link href={"/projects/homelab"} className="col-span-12 sm:col-span-4 h-[300px]">
+        <Card className="col-span-12 sm:col-span-4 h-[300px]">
+          <CardHeader className="absolute z-10 top-1 flex-col !items-start">
+            <p className="text-tiny text-white/60 uppercase font-bold">Server stuff</p>
+            <h4 className="text-white font-medium text-large">Homelab</h4>
+          </CardHeader>
+
+          <div className="z-0 w-auto h-full mt-[75px] flex flex-row flex-wrap justify-center align-center">
+            <SiDell size={40} color='default'></SiDell>
+            <SiHp size={40} color='default'></SiHp>
+            <SiTplink size={40} color='default'></SiTplink>
+            <SiProxmox size={40} color='default'></SiProxmox>
+            <SiWireguard size={40} color='default'></SiWireguard>
+            <SiFreenas size={40} color='default'></SiFreenas>
+            <SiGitea size={40} color='default'></SiGitea>
+            <SiFreebsd size={40} color='default'></SiFreebsd>
+            <SiDebian size={40} color='default'></SiDebian>
+            <SiUbuntu size={40} color='default'></SiUbuntu>
+            <SiJellyfin size={40} color='default'></SiJellyfin>
+            <SiKubernetes size={40} color='default'></SiKubernetes>
+            <SiDocker size={40} color='default'></SiDocker>
+            <SiArgo size={40} color='default'></SiArgo>
+            <SiDiagramsdotnet size={40} color='default'></SiDiagramsdotnet>
+          </div>
+
+        </Card>
+
+      </Link>
 
       <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
         <CardHeader className="absolute z-10 top-1 flex-col items-start">

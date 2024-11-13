@@ -1,8 +1,10 @@
 "use client";
 
 import React, { useState } from "react";
-import { Code } from "@nextui-org/react";
 
+import { Card, CardHeader, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
+
+import { Code } from "@nextui-org/react";
 
 
 const AccordionItem: React.FC<{
