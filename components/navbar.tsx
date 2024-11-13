@@ -11,6 +11,9 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
+  Avatar,
+  AvatarGroup,
+  AvatarIcon
 } from "@nextui-org/react";
 
 // Define the menu items
@@ -37,7 +40,10 @@ export default function Nav() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <p className="font-bold text-inherit">Fabio Tavernini</p>
+
+          <Avatar size="md" src="/images/portrait.webp" className="mr-5" />
+          
+          <Link href="/" className="font-bold text-inherit">Fabio Tavernini</Link>
         </NavbarBrand>
       </NavbarContent>
 
