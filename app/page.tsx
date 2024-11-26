@@ -103,8 +103,6 @@ const HomePage: React.FC = () => {
           </filter>
         </svg>
 
-
-
         <img id="BW" src="/images/BW.webp" alt="test" className="rounded-lg md:w-1/2" />
 
         <div className="w-[85vw] mt-5 border rounded-lg md:w-full">
@@ -137,7 +135,7 @@ const HomePage: React.FC = () => {
               onToggle={() => toggleAccordion(2)}
             >
               Lately i tried out diffrent JS Frameworks, im trying to get a better skillset in modern web-stacks.<br></br>
-              Angular and NextJS seem pretty nice to get my feet wet. This site is built with NextJS and TailwindCSS. <br></br>
+              Angular and NextJS seem pretty nice to get my feet wet. This site is built with NextJS and TailwindCSS. - with NextJS being completely overkill of course :) <br></br>
             </AccordionItem>
           </div>
         </div>

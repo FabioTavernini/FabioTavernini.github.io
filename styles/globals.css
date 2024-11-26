@@ -7,9 +7,3 @@
 #BW {
     filter: url(#ambilight);
 }
-
-#diagram{
-    margin-left: -40vw;
-    width: 90vw;
-    height: 90vh;
-}
