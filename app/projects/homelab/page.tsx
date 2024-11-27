@@ -37,7 +37,7 @@ export default function Page() {
       <h3 className="text-lg font-semibold mb-3">Diagram</h3>
 
       <div id="diagram" className="p-4 rounded-lg">
-        <p className="mb-3">Diagram can be found:</p>
+        <p className="mb-3">Diagram is made with draw.io</p>
         <Link target="_blank" href={data.link}>
           <Button className="m-1 bg-blue-600 text-white hover:bg-blue-700">
             View Diagram
