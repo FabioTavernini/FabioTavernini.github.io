@@ -3,7 +3,7 @@ import { Metadata, Viewport } from "next";
 import clsx from "clsx";
 import { Providers } from "./providers";
 import { fontSans } from "@/config/fonts";
-import Nav  from "@/components/navbar";
+import CustomNavbar  from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
@@ -35,7 +35,7 @@ export default function RootLayout({children}: { children: React.ReactNode }) { 
       >
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
-            <Nav />
+            <CustomNavbar />
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
               {children}
             </main>

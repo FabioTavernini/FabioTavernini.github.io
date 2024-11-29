@@ -75,24 +75,30 @@ export default function HomePage() {
           placeholder="blur"
         />
 
-        <div className="w-[85vw] mt-5 border rounded-lg md:w-full">
+        <div className="w-[85vw] m-5 md:w-full">
 
-          <Accordion selectionMode="multiple">
+          <h2 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-600">Why this page</h2>
+          <h3 className="text-gray-500">About this page</h3>
+          <p>I wanted to try out some new web technologies, thats part of why this site was created. Normally dabble in Powershell scripting, Legacy PHP Web-Apps and old VB Code. So for a change i wanted to test myself with some of the new stuff :)</p>
 
-            <AccordionItem key="1" aria-label="Accordion 1" subtitle="About this page" title="Why this page" disableAnimation keepContentMounted>
-              <p>I wanted to try out some new web technologies, thats part of why this site was created. Normally dabble in Powershell scripting, Legacy PHP Web-Apps and old VB Code. So for a change i wanted to test myself with some of the new stuff :)</p>
-            </AccordionItem>
+          <br></br>
+          <hr></hr>
+          <br></br>
 
-            <AccordionItem key="2" aria-label="Accordion 2" subtitle="Read about me" title="What i do" disableAnimation keepContentMounted>
-              <p>Im an Application Manager at <Link className="text-blue-500" href={"https://itsh.ch"}>ITSH.ch</Link> and am responsible for a number of legacy PHP apps, aswell as many diffrent Powershell automation Jobs. if you&apos;d like to see my CV, you can do so here: <Link className="text-blue-500" href={"https://cv.tavernini.online"}>CV</Link>.</p>
-            </AccordionItem>
+          <h2 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-600">What i do</h2>
+          <h3 className="text-gray-500">About this page</h3>
+          <p>Im an Application Manager at <Link className="text-blue-500" href={"https://itsh.ch"}>ITSH.ch</Link> and am responsible for a number of legacy PHP apps, aswell as many diffrent Powershell automation Jobs. if you&apos;d like to see my CV, you can do so here: <Link className="text-blue-500" href={"https://cv.tavernini.online"}>CV</Link>.</p>
 
-            <AccordionItem key="3" aria-label="Accordion 3" subtitle="Extras" title="Some more stuff" disableAnimation keepContentMounted>
-              <p>Lately i tried out diffrent JS Frameworks, im trying to get a better skillset in modern web-stacks.
-                Angular and NextJS seem pretty nice to get my feet wet. This site is built with NextJS and TailwindCSS. - with NextJS being completely overkill of course :)</p>
-            </AccordionItem>
+          <br></br>
+          <hr></hr>
+          <br></br>
 
-          </Accordion>
+          <h2 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-600">Some more stuff</h2>
+          <h3 className="text-gray-500">Extras</h3>
+          <p>Lately i tried out diffrent JS Frameworks, im trying to get a better skillset in modern web-stacks.
+            Angular and NextJS seem pretty nice to get my feet wet. This site is built with NextJS and TailwindCSS. - with NextJS being completely overkill of course :P</p>
+
+
 
         </div>
       </div>
