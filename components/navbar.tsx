@@ -11,9 +11,7 @@ import {
   NavbarMenu,
   NavbarMenuItem,
   Link,
-  Avatar,
-  AvatarGroup,
-  AvatarIcon
+  Avatar
 } from "@nextui-org/react";
 
 // Define the menu items
@@ -37,13 +35,13 @@ export default function Nav() {
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden"
+          className="sm:hidden pointer-events-none" // Adding pointer-events-none to this element
         />
         <NavbarBrand>
-
           <Avatar size="md" src="/images/portrait.webp" className="mr-5" />
-          
-          <Link href="/" className="font-bold text-inherit">Fabio Tavernini</Link>
+          <Link href="/" className="font-bold text-inherit">
+            Fabio Tavernini
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 

@@ -2,6 +2,8 @@
 
 import React, { useState } from "react";
 import { Code } from "@nextui-org/react";
+import Image from 'next/image';
+import profilePic from '/images/BW.webp';
 
 
 const AccordionItem: React.FC<{
@@ -103,7 +105,19 @@ const HomePage: React.FC = () => {
           </filter>
         </svg>
 
-        <img id="BW" src="/images/BW.webp" alt="test" className="rounded-lg md:w-1/2" />
+        <Image
+          id="BW"
+          src="/images/BW.webp"
+          alt="test"
+          className="rounded-lg md:w-1/2"
+          width={500}  // Specify width for optimal scaling
+          height={500} // Specify height for optimal scaling
+          priority // Load this image with high priority (since it’s the LCP element)
+          sizes="(max-width: 768px) 50vw, 33vw" // Ensure proper responsive sizes
+          placeholder="blur"
+          blurDataURL="/images/BW.webp"
+        />
+
 
         <div className="w-[85vw] mt-5 border rounded-lg md:w-full">
 
@@ -125,8 +139,8 @@ const HomePage: React.FC = () => {
               subtitle={<span>Read about me</span>}
               onToggle={() => toggleAccordion(1)}
             >
-              Im an Application Manager at <a target="_blank" className="text-blue-600" href="https://itsh.ch">ITSH.ch</a> and am responsible for a number of legacy PHP apps, aswell as many diffrent Powershell automation Jobs.
-              if you&apos;d like to see my CV, you can do so here: <a target="_blank" className="text-blue-600" href="https://cv.tavernini.online">CV</a>.
+              Im an Application Manager at <a target="_blank" rel="noopener" className="text-blue-600" href="https://itsh.ch">ITSH.ch</a> and am responsible for a number of legacy PHP apps, aswell as many diffrent Powershell automation Jobs.
+              if you&apos;d like to see my CV, you can do so here: <a target="_blank" className="text-blue-600" href="https://cv.tavernini.online" rel="noopener">CV</a>.
             </AccordionItem>
             <AccordionItem
               title="Some more Stuff"
