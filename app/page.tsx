@@ -85,7 +85,7 @@ export default function HomePage() {
             </AccordionItem>
 
             <AccordionItem key="2" aria-label="Accordion 2" subtitle="Read about me" title="What i do" disableAnimation>
-              <p>Im an Application Manager at <Link className="text-blue-500" href={"https://itsh.ch"}>ITSH.ch</Link> and am responsible for a number of legacy PHP apps, aswell as many diffrent Powershell automation Jobs. if you'd like to see my CV, you can do so here: <Link className="text-blue-500" href={"https://cv.tavernini.online"}>CV</Link>.</p>
+              <p>Im an Application Manager at <Link className="text-blue-500" href={"https://itsh.ch"}>ITSH.ch</Link> and am responsible for a number of legacy PHP apps, aswell as many diffrent Powershell automation Jobs. if you&apos;d like to see my CV, you can do so here: <Link className="text-blue-500" href={"https://cv.tavernini.online"}>CV</Link>.</p>
             </AccordionItem>
 
             <AccordionItem key="3" aria-label="Accordion 3" subtitle="Extras" title="Some more stuff" disableAnimation>
