@@ -3,52 +3,13 @@
 import React, { useState } from "react";
 import { Code } from "@nextui-org/react";
 import Image from 'next/image';
-import profilePic from '/images/BW.webp';
 
+import me from '../public/images/BW.webp'
 
-const AccordionItem: React.FC<{
-  title: string;
-  subtitle?: React.ReactNode;
-  isOpen: boolean;
-  onToggle: () => void;
-  children: React.ReactNode;
-}> = ({ title, subtitle, isOpen, onToggle, children }) => {
-  const handleKeyDown = (event: React.KeyboardEvent<HTMLDivElement>) => {
-    if (event.key === "Enter" || event.key === " ") {
-      onToggle();
-    }
-  };
+import { Accordion, AccordionItem } from "@nextui-org/accordion";
+import Link from "next/link";
 
-  return (
-
-
-
-    <div className="mb-2">
-      <div
-        className="flex justify-between items-center p-4 rounded-lg bg-black cursor-pointer"
-        role="button"
-        tabIndex={0}
-        onClick={onToggle}
-        onKeyDown={handleKeyDown}
-      >
-        <div>
-          <h2 className="text-lg font-semibold text-white">{title}</h2>
-          {subtitle && <p className="text-sm text-gray-400">{subtitle}</p>}
-        </div>
-        <span className="text-white">{isOpen ? "-" : "+"}</span>
-      </div>
-      {isOpen && <div className="p-4 bg-black text-white">{children}</div>}
-    </div>
-  );
-};
-
-const HomePage: React.FC = () => {
-
-  const [openIndex, setOpenIndex] = useState<number | null>(null);
-
-  const toggleAccordion = (index: number) => {
-    setOpenIndex((prevIndex) => (prevIndex === index ? null : index));
-  };
+export default function HomePage() {
 
   return (
     <section className="flex flex-wrap items-center justify-center gap-4 py-8 md:py-10">
@@ -107,55 +68,36 @@ const HomePage: React.FC = () => {
 
         <Image
           id="BW"
-          src="/images/BW.webp"
+          src={me}
           alt="test"
           className="rounded-lg md:w-1/2"
-          width={500}  // Specify width for optimal scaling
-          height={500} // Specify height for optimal scaling
-          priority // Load this image with high priority (since it’s the LCP element)
+          priority // LCP 
           sizes="(max-width: 768px) 50vw, 33vw" // Ensure proper responsive sizes
           placeholder="blur"
-          blurDataURL="/images/BW.webp"
         />
-
 
         <div className="w-[85vw] mt-5 border rounded-lg md:w-full">
 
-          <div className="">
-            <AccordionItem
-              title="Why this page"
-              subtitle="About this page"
-              isOpen={openIndex === 0}
-              onToggle={() => toggleAccordion(0)}
-            >
-              I wanted to try out some new web technologies, thats part of why this site was created.<br></br>
-              Normally dabble in Powershell scripting, Legacy PHP Web-Apps and old VB Code.
-              So for a change i wanted to test myself with some of the new stuff :)
+          <Accordion selectionMode="multiple">
 
+            <AccordionItem key="1" aria-label="Accordion 1" subtitle="About this page" title="Why this page" disableAnimation>
+              <p>I wanted to try out some new web technologies, thats part of why this site was created. Normally dabble in Powershell scripting, Legacy PHP Web-Apps and old VB Code. So for a change i wanted to test myself with some of the new stuff :)</p>
             </AccordionItem>
-            <AccordionItem
-              title="What i do"
-              isOpen={openIndex === 1}
-              subtitle={<span>Read about me</span>}
-              onToggle={() => toggleAccordion(1)}
-            >
-              Im an Application Manager at <a target="_blank" rel="noopener" className="text-blue-600" href="https://itsh.ch">ITSH.ch</a> and am responsible for a number of legacy PHP apps, aswell as many diffrent Powershell automation Jobs.
-              if you&apos;d like to see my CV, you can do so here: <a target="_blank" className="text-blue-600" href="https://cv.tavernini.online" rel="noopener">CV</a>.
+
+            <AccordionItem key="2" aria-label="Accordion 2" subtitle="Read about me" title="What i do" disableAnimation>
+              <p>Im an Application Manager at <Link className="text-blue-500" href={"https://itsh.ch"}>ITSH.ch</Link> and am responsible for a number of legacy PHP apps, aswell as many diffrent Powershell automation Jobs. if you'd like to see my CV, you can do so here: <Link className="text-blue-500" href={"https://cv.tavernini.online"}>CV</Link>.</p>
             </AccordionItem>
-            <AccordionItem
-              title="Some more Stuff"
-              isOpen={openIndex === 2}
-              subtitle={<span>Extras</span>}
-              onToggle={() => toggleAccordion(2)}
-            >
-              Lately i tried out diffrent JS Frameworks, im trying to get a better skillset in modern web-stacks.<br></br>
-              Angular and NextJS seem pretty nice to get my feet wet. This site is built with NextJS and TailwindCSS. - with NextJS being completely overkill of course :) <br></br>
+
+            <AccordionItem key="3" aria-label="Accordion 3" subtitle="Extras" title="Some more stuff" disableAnimation>
+              <p>Lately i tried out diffrent JS Frameworks, im trying to get a better skillset in modern web-stacks.
+              Angular and NextJS seem pretty nice to get my feet wet. This site is built with NextJS and TailwindCSS. - with NextJS being completely overkill of course :)</p>
             </AccordionItem>
-          </div>
+
+          </Accordion>
+
         </div>
       </div>
     </section>
   );
-};
 
-export default HomePage;
+}
