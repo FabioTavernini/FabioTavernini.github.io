@@ -80,17 +80,17 @@ export default function HomePage() {
 
           <Accordion selectionMode="multiple">
 
-            <AccordionItem key="1" aria-label="Accordion 1" subtitle="About this page" title="Why this page" disableAnimation>
+            <AccordionItem key="1" aria-label="Accordion 1" subtitle="About this page" title="Why this page" disableAnimation keepContentMounted>
               <p>I wanted to try out some new web technologies, thats part of why this site was created. Normally dabble in Powershell scripting, Legacy PHP Web-Apps and old VB Code. So for a change i wanted to test myself with some of the new stuff :)</p>
             </AccordionItem>
 
-            <AccordionItem key="2" aria-label="Accordion 2" subtitle="Read about me" title="What i do" disableAnimation>
+            <AccordionItem key="2" aria-label="Accordion 2" subtitle="Read about me" title="What i do" disableAnimation keepContentMounted>
               <p>Im an Application Manager at <Link className="text-blue-500" href={"https://itsh.ch"}>ITSH.ch</Link> and am responsible for a number of legacy PHP apps, aswell as many diffrent Powershell automation Jobs. if you&apos;d like to see my CV, you can do so here: <Link className="text-blue-500" href={"https://cv.tavernini.online"}>CV</Link>.</p>
             </AccordionItem>
 
-            <AccordionItem key="3" aria-label="Accordion 3" subtitle="Extras" title="Some more stuff" disableAnimation>
+            <AccordionItem key="3" aria-label="Accordion 3" subtitle="Extras" title="Some more stuff" disableAnimation keepContentMounted>
               <p>Lately i tried out diffrent JS Frameworks, im trying to get a better skillset in modern web-stacks.
-              Angular and NextJS seem pretty nice to get my feet wet. This site is built with NextJS and TailwindCSS. - with NextJS being completely overkill of course :)</p>
+                Angular and NextJS seem pretty nice to get my feet wet. This site is built with NextJS and TailwindCSS. - with NextJS being completely overkill of course :)</p>
             </AccordionItem>
 
           </Accordion>
