@@ -1,6 +1,5 @@
 "use client";
 
-import React, { useState } from "react";
 import { Code } from "@nextui-org/react";
 import Image from 'next/image';
 

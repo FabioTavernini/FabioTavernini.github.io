@@ -1,52 +1,41 @@
 "use client";
 
+
+
+
 import React from "react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button } from "@nextui-org/react";
 import { usePathname } from "next/navigation";
-import {
-  Navbar,
-  NavbarBrand,
-  NavbarContent,
-  NavbarItem,
-  NavbarMenuToggle,
-  NavbarMenu,
-  NavbarMenuItem,
-  Link,
-  Avatar
-} from "@nextui-org/react";
 
-// Define the menu items
-const menuItems = [
-  { name: "Home", path: "/" },
-  { name: "Projects", path: "/projects" },
-  { name: "Contact", path: "/contact" },
-];
+export default function CustomNavbar() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+  const pathname = usePathname();  // To get the current path and set active link
 
-export default function Nav() {
-  // Use useReducer to toggle the menu state
-  const [isMenuOpen, setIsMenuOpen] = React.useReducer((current) => !current, false);
-  const pathname = usePathname();
-
-  // Helper function to determine active link color
+  // Helper function to check if a link is active
   const getLinkColor = (href: string) => (pathname === href ? "primary" : "foreground");
 
+  // Menu items for mobile menu
+  const menuItems = [
+    { name: "Home", path: "/" },
+    { name: "Projects", path: "/projects" },
+    { name: "Contact", path: "/contact" },
+  ];
+
   return (
-    <Navbar shouldHideOnScroll isMenuOpen={isMenuOpen} onMenuOpenChange={setIsMenuOpen}>
-      {/* Left section with brand */}
+    <Navbar onMenuOpenChange={setIsMenuOpen}>
+      {/* Left Section: Brand */}
       <NavbarContent>
         <NavbarMenuToggle
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-          className="sm:hidden pointer-events-none" // Adding pointer-events-none to this element
+          className="sm:hidden"
         />
         <NavbarBrand>
-          <Avatar size="md" src="/images/portrait.webp" className="mr-5" />
-          <Link href="/" className="font-bold text-inherit">
-            Fabio Tavernini
-          </Link>
+          <p className="font-bold text-inherit">Fabio Tavernini</p>
         </NavbarBrand>
       </NavbarContent>
 
-      {/* Center section with links */}
-      <NavbarContent className="hidden sm:flex gap-4" justify="center">
+      {/* Center Section: Navbar items for desktop */}
+      <NavbarContent className="hidden sm:flex gap-4" justify="end">
         {menuItems.map((item) => (
           <NavbarItem key={item.path}>
             <Link href={item.path} color={getLinkColor(item.path)}>
@@ -56,16 +45,16 @@ export default function Nav() {
         ))}
       </NavbarContent>
 
-      {/* Right section for mobile menu */}
-      <NavbarMenu>
+      {/* Mobile Menu: Navbar items for small screens */}
+      <NavbarMenu className="min-h-[100vh]">
         {menuItems.map((item) => (
           <NavbarMenuItem key={item.path}>
             <Link
-              className="w-full"
               href={item.path}
               color={getLinkColor(item.path)}
+              className="w-full"
               size="lg"
-              onPress={() => setIsMenuOpen()} // Close the menu on link press
+              onPress={() => setIsMenuOpen(false)} // Close the menu when clicking a link
             >
               {item.name}
             </Link>
@@ -75,3 +64,4 @@ export default function Nav() {
     </Navbar>
   );
 }
+
