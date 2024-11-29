@@ -2,10 +2,7 @@
 
 import { Code } from "@nextui-org/react";
 import Image from 'next/image';
-
 import me from '../public/images/BW.webp'
-
-import { Accordion, AccordionItem } from "@nextui-org/accordion";
 import Link from "next/link";
 
 export default function HomePage() {
@@ -97,8 +94,6 @@ export default function HomePage() {
           <h3 className="text-gray-500">Extras</h3>
           <p>Lately i tried out diffrent JS Frameworks, im trying to get a better skillset in modern web-stacks.
             Angular and NextJS seem pretty nice to get my feet wet. This site is built with NextJS and TailwindCSS. - with NextJS being completely overkill of course :P</p>
-
-
 
         </div>
       </div>
