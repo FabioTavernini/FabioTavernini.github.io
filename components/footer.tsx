@@ -15,18 +15,18 @@ export const Footer = () => {
 
           <div className="flex space-x-6">
 
-            <a href="https://github.com/FabioTavernini" target='_blank' aria-label="GitHub">
+            <a rel='noopener' href="https://github.com/FabioTavernini" target='_blank' aria-label="GitHub">
               <FaGithub size={25} />
             </a>
 
-            <a href="https://instagram.com/F_Tavernini" target='_blank' aria-label="Instagram">
+            <a rel='noopener' href="https://instagram.com/F_Tavernini" target='_blank' aria-label="Instagram">
               <FaInstagram size={25} />
             </a>
 
-            <a href="mailto:fabiomeo.tavernini@gmail.com" target='_blank' aria-label="Mail">
+            <a rel='noopener' href="mailto:fabiomeo.tavernini@gmail.com" target='_blank' aria-label="Mail">
               <FaEnvelope size={25} />
             </a>
-            <a href="https://wa.me/41774028394?text=pläuderle" target='_blank' aria-label="Whatsapp">
+            <a rel='noopener' href="https://wa.me/41774028394?text=pläuderle" target='_blank' aria-label="Whatsapp">
               <SiWhatsapp size={24} />
             </a>
 
@@ -40,7 +40,6 @@ export const Footer = () => {
             Hosted on netlify
           </p>
         </div>
-
 
       </div>
     </footer>
