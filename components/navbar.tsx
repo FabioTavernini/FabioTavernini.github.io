@@ -12,15 +12,14 @@ export default function CustomNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const pathname = usePathname();  // To get the current path and set active link
 
-  const getLinkColor = (href: string) => {
-    // If href is "/", check for exact match
-    if (href === "/") {
-      return pathname === "/" ? "primary" : "foreground";
-    }
-    // For other paths, check if href is included in pathname
-    return pathname.includes(href) ? "primary" : "foreground";
-  };
-  
+const getLinkColor = (href: string) => {
+  // If href is "/", check for exact match
+  if (href === "/") {
+    return pathname === "/" ? "primary" : "foreground";
+  }
+  // For other paths, check if href is included in pathname
+  return pathname.includes(href) ? "primary" : "foreground";
+};
   // Menu items for mobile menu
   const menuItems = [
     { name: "Home", path: "/" },
@@ -29,7 +28,10 @@ export default function CustomNavbar() {
   ];
 
   return (
-    <Navbar onMenuOpenChange={setIsMenuOpen}>
+    <Navbar
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+    >
       {/* Left Section: Brand */}
       <NavbarContent>
         <NavbarMenuToggle
