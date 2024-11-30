@@ -27,24 +27,41 @@ const images = [
 
 const ImageGallery = () => {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
+    // Handle Escape key for modal
     const handleKeyDown = (event: KeyboardEvent) => {
       if (event.key === "Escape") {
         setSelectedImage(null);
       }
     };
 
+    // Toggle Back to Top button visibility
+    const toggleVisibility = () => {
+      setIsVisible(window.scrollY > 300);
+    };
+
     window.addEventListener("keydown", handleKeyDown);
+    window.addEventListener("scroll", toggleVisibility);
+
     return () => {
       window.removeEventListener("keydown", handleKeyDown);
+      window.removeEventListener("scroll", toggleVisibility);
     };
   }, []);
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   return (
     <div className="flex flex-col items-center">
-      <h2 className="text-xl font-bold leading-7 text-white sm:truncate sm:text-2xl sm:tracking-tight">Image Gallery</h2>
-      <h3 className="bg-gradient-to-r from-yellow-400 to-red-600 text-transparent bg-clip-text font-bold text-xs leading-2 sm:text-xl sm:tracking-tight mb-5">
+      <h2 className="bg-gradient-to-r from-yellow-400 to-red-600 text-transparent bg-clip-text font-bold text-2xl leading-2 sm:text-2xl sm:tracking-tight ">Image Gallery</h2>
+      <h3 className="text-md font-bold leading-7 text-white sm:truncate sm:text-md sm:tracking-tight mb-5">
         Be patient when loading an image. When clicking on one, the high-res file is loaded :)
       </h3>
 
@@ -85,6 +102,16 @@ const ImageGallery = () => {
             </Button>
           </div>
         </div>
+      )}
+
+      {/* Back to Top Button */}
+      {isVisible && (
+        <button
+          onClick={scrollToTop}
+          className="mt-5 p-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition"
+          aria-label="Back to top">
+          Back to top
+        </button>
       )}
     </div>
   );
