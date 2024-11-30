@@ -31,6 +31,7 @@ const getLinkColor = (href: string) => {
     <Navbar
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
+      shouldHideOnScroll
     >
       {/* Left Section: Brand */}
       <NavbarContent>
