@@ -12,4 +12,6 @@ Personal Website - [tavernini.online](https://tavernini.online)
 
 <img height="16" width="16" src="https://cdn.simpleicons.org/nextui/white"/> NextUI components 
 
+<img height="16" width="16" src="https://cdn.simpleicons.org/eslint"/> ESLint
+
 <img height="16" width="16" src="https://cdn.simpleicons.org/netlify"/> Built & hosted on netlify 
