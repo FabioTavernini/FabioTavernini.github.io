@@ -4,7 +4,12 @@
 Personal Website - [tavernini.online](https://tavernini.online)
 
 ## Things in Use
-- NextJS 14
-- TailwindCSS
-- React
-- NextUI components
+<img height="16" width="16" src="https://cdn.simpleicons.org/nextdotjs/white"/> NextJS 14 
+
+<img height="16" width="16" src="https://cdn.simpleicons.org/tailwindcss"/> TailwindCSS 
+
+<img height="16" width="16" src="https://cdn.simpleicons.org/react"/> React 
+
+<img height="16" width="16" src="https://cdn.simpleicons.org/nextui/white"/> NextUI components 
+
+<img height="16" width="16" src="https://cdn.simpleicons.org/netlify"/> Built & hosted on netlify 
