@@ -18,7 +18,7 @@ export default function ProjectsPage() {
 
       <Link className="col-span-12 sm:col-span-4 h-[300px]" href={"/projects/photography"}>
 
-        <Card className="col-span-12 sm:col-span-4 h-[300px]">
+        <Card className="col-span-12 sm:col-span-4 h-[300px] hover:ring-2 ring-blue-500 rounded-2xl">
 
           <CardHeader className="absolute flex-col !items-start bg-black/50 justify-between">
             <p className="text-tiny text-white/60 uppercase font-bold">photography</p>
@@ -51,7 +51,7 @@ export default function ProjectsPage() {
       </Card>
 
       <Link href={"/projects/homelab"} className="col-span-12 sm:col-span-4 h-[300px]">
-        <Card className="col-span-12 sm:col-span-4 h-[300px]">
+        <Card className="col-span-12 sm:col-span-4 h-[300px] hover:ring-2 ring-blue-500 rounded-2xl">
           <CardHeader className="absolute z-10 top-1 flex-col !items-start">
             <p className="text-tiny text-white/60 uppercase font-bold">Server stuff</p>
             <h4 className="text-white font-medium text-large">Homelab</h4>
@@ -79,23 +79,22 @@ export default function ProjectsPage() {
 
       </Link>
 
-      <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-5">
-        <CardHeader className="absolute z-10 top-1 flex-col items-start">
-          <p className="text-tiny text-black/60 uppercase font-bold">STL Files & More</p>
-          <h4 className="text-black font-medium text-2xl">3D-Printing</h4>
-        </CardHeader>
-        <Image
-          removeWrapper
-          alt="Card example background"
-          className="z-0 w-full h-full scale-125 -translate-y-6 object-cover blur-[3px]"
-          src="https://media.elv.com/pdsquare/253165_hb.jpg"
-        />
-        <CardFooter className="absolute bg-white/30 bottom-0 border-t-1 border-zinc-100/50 z-10 justify-between">
-          <div>
-            <p className="text-black text-tiny">Coming soon.</p>
-          </div>
-        </CardFooter>
-      </Card>
+      <Link className="col-span-12 sm:col-span-5 h-[300px] hover:ring-2 ring-blue-500 rounded-2xl" href={"/projects/3dprinting"}>
+        <Card className="w-full h-[300px] col-span-12 sm:col-span-5">
+          <CardHeader className="absolute flex-col !items-start bg-black/70 justify-between">
+            <p className="text-tiny text-white uppercase font-bold">STL Files & More</p>
+            <h4 className="text-white font-medium text-xl">3D-Printing</h4>
+          </CardHeader>
+          <Image
+            removeWrapper
+            alt="3dprinter background"
+            className="z-0 w-full h-full scale-125 -translate-y-6 object-cover"
+            src="https://media.elv.com/pdsquare/253165_hb.jpg"
+            
+          />
+
+        </Card>
+      </Link>
 
       <Card isFooterBlurred className="w-full h-[300px] col-span-12 sm:col-span-7">
         <CardHeader className="absolute z-10 top-1 flex-col items-start">
@@ -112,7 +111,7 @@ export default function ProjectsPage() {
           <div className="flex flex-grow gap-2 items-center">
 
           </div>
-          <Button onClick={handleButtonClick} endContent={<FaGithub size={20} />} radius="full" size="sm">
+          <Button onClick={handleButtonClick} endContent={<FaGithub size={20} />} radius="full" size="sm" className="hover:ring-2 ring-blue-500 rounded-2xl">
             View on GitHub
           </Button>
         </CardFooter>

@@ -74,7 +74,7 @@ const ImageGallery = () => {
         {images.map((src, index) => (
           <Button
             key={index}
-            onPress={() => setSelectedImage(src.replace('/thumbnails/', '/'))}
+            onPress={() => setSelectedImage(src.replace('/thumbnails/', '/photography/'))}
             className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full h-auto object-cover rounded-lg"
             style={{ background: 'none', border: 'none', marginBottom: '10px' }} // Add margin for spacing
           >
