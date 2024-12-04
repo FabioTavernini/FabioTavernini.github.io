@@ -15,7 +15,7 @@ export default function HomePage() {
         </h1>
 
         <div className="w-full max-w-md">
-          <Code color="danger">npm install @webdev/FabioTavernini</Code>
+          <Code color="default">{`import { Skills, Projects } from "@tavernini/dev";`}</Code>
         </div>
       </div>
 
