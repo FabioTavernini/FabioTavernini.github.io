@@ -16,7 +16,6 @@ const images = [
   "gas_station.jpg",
   "stahlgiesserei.jpg",
   "grand_canyon.jpg",
-  
   "MB-BMW.jpg",
   "monument_valley.jpg",
   "mühlentalstrasse.jpg",
