@@ -8,21 +8,26 @@ const images = [
   "parking-ticket.jpg",
   "well.jpg",
   "alfa_landscape.jpg",
+  "grafenbuckstieg.jpg",
   "antelope_canyon.jpg",
   "balcony.jpg",
   "falera_summer.jpg",
   "flowerpetal.jpg",
   "gas_station.jpg",
+  "stahlgiesserei.jpg",
   "grand_canyon.jpg",
-  "kantine.jpg",
+  
   "MB-BMW.jpg",
   "monument_valley.jpg",
   "mühlentalstrasse.jpg",
   "plitvice1.jpg",
+  "kantine.jpg",
   "alfa_portrait.jpg",
   "roadstop.jpg",
-  "stahlgiesserei.jpg",
   "plitvice2.jpg",
+  "velo.jpg",
+  "hochstrasse.jpg",
+  "sbb.jpg",
 ].map((img) => `/images/thumbnails/${img}`);
 
 const ImageGallery = () => {
