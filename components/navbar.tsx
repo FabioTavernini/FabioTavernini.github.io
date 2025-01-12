@@ -12,19 +12,21 @@ export default function CustomNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
   const pathname = usePathname();  // To get the current path and set active link
 
-const getLinkColor = (href: string) => {
-  // If href is "/", check for exact match
-  if (href === "/") {
-    return pathname === "/" ? "primary" : "foreground";
-  }
-  // For other paths, check if href is included in pathname
-  return pathname.includes(href) ? "primary" : "foreground";
-};
+  const getLinkColor = (href: string) => {
+    // If href is "/", check for exact match
+    if (href === "/") {
+      return pathname === "/" ? "primary" : "foreground";
+    }
+    // For other paths, check if href is included in pathname
+    return pathname.includes(href) ? "primary" : "foreground";
+  };
   // Menu items for mobile menu
   const menuItems = [
     { name: "Home", path: "/" },
     { name: "Projects", path: "/projects" },
+    { name: "CV", path: "/cv" },
     { name: "Contact", path: "/contact" },
+
   ];
 
   return (
@@ -41,7 +43,7 @@ const getLinkColor = (href: string) => {
         />
         <NavbarBrand>
           <Link href="/" className="font-bold text-inherit">
-            <Avatar className="mr-2" size="sm" src="/images/portrait.webp"/> Fabio Tavernini</Link>
+            <Avatar className="mr-2" size="sm" src="/images/portrait.webp" /> Fabio Tavernini</Link>
         </NavbarBrand>
       </NavbarContent>
 
