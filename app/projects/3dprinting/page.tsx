@@ -68,6 +68,11 @@ export default function Page() {
                 <li>
                   <Link target="_blank" href="https://www.thingiverse.com/thing:5923376">Alfa romeo GTV6 Radio cover</Link>
                 </li>
+
+                <li>
+                  <Link target="_blank" href="https://www.thingiverse.com/thing:6911332">Zyxel switch rack mount</Link>
+                </li>
+
               </ul>
             </li>
 
