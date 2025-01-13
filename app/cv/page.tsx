@@ -30,11 +30,11 @@ const cv = () => {
       </div>
 
 
-      <Card className="mb-10 border-2 border-blue-500">
+      <Card className="mb-10 border-2 border-white-500">
         <CardBody className="flex flex-row justify-between flex-wrap">
-          <div className="links">
+          <div className="p-5">
             <h3 className="text-2xl font-bold">About Me</h3>
-            <p className="max-w-96">
+            <p className="max-w-96 ">
               As a computer scientist, I am confronted with many techniques and problems.
               I am always looking for creative and effective solutions.
               I have already gained experience with many languages, including HTML, CSS, Powershell, Javascript, SQL, PHP and others.
@@ -42,7 +42,7 @@ const cv = () => {
             </p>
           </div>
 
-          <div className="">
+          <div className="p-5">
             <Link href="/contact" className="text-2xl font-bold">Contact</Link>
             <p className="flex flex-col mt-5">
               <Link href="mailto:mail@tavernini.online ">mail@tavernini.online </Link><br />
@@ -53,7 +53,7 @@ const cv = () => {
         </CardBody>
       </Card>
 
-      <Card className="border-2 border-blue-500 mb-10">
+      <Card className="border-2 border-white-500 mb-10">
         <CardHeader className="text-2xl font-bold">Professional Experience</CardHeader>
         <CardBody>
           <VerticalTimeline layout="1-column-left" animate lineColor="blue">
@@ -70,14 +70,14 @@ const cv = () => {
               <h4 className=" text-gray-200">Informatik Schaffhausen</h4>
 
               <ul className="list-disc ml-5">
-                <li>Betreuung interner Web-Portale mit PHP und SQL</li>
-                <li>Verwaltung von Applikationen</li>
-                <li>Einführung Versionskontrollsystem GIT</li>
-                <li>Aufbau von GIT-Server mit gitea</li>
-                <li>Einführen CI/CD Pipelines</li>
-                <li>Pflegen und Verwalten von PHP Legacy Codebase</li>
-                <li>Migrieren von Web-Portalen von PHP 5.2 auf PHP 8.2.4</li>
-                <li>Verwaltung von diversen Schnittstellen mit VB, Powershell, MSSQL und PHP</li>
+                <li>Maintenance of internal web portals with PHP and SQL</li>
+                <li>Management of applications</li>
+                <li>Introduction of version control system GIT</li>
+                <li>Setup of GIT server with Gitea</li>
+                <li>Implementation of CI/CD pipelines</li>
+                <li>Maintenance and management of PHP legacy codebase</li>
+                <li>Migration of web portals from PHP 5.2 to PHP 8.2.4</li>
+                <li>Management of various interfaces with VB, PowerShell, MSSQL, and PHP</li>
               </ul>
             </VerticalTimelineElement>
 
@@ -90,16 +90,12 @@ const cv = () => {
               iconStyle={{ background: 'rgb(0, 106, 192)', color: '#fff' }}
               icon={<FaBook />}
             >
-              <h3 className="vertical-timeline-element-title">Ausbildung zum Informatiker EFZ</h3>
+              <h3 className="vertical-timeline-element-title text-lg font-bold"><Link className="text-lg font-bold" href="https://www.ict-berufsbildung.ch/grundbildung/ict-lehren/betriebsinformatiker-in-efz">Apprenticeship</Link> in IT (Swiss EFZ)</h3>
               <h4 className="vertical-timeline-element-subtitle text-gray-200">KSD Schaffhausen</h4>
 
               <ul className="list-disc ml-5">
-                <li>
-                  Übernahme interner Webformulare
-                </li>
-                <li>
-                  Einführung Festplattenverschlüsselung
-                </li>
+                <li>Management of internal web forms</li>
+                <li>Introduction of disk encryption</li>
               </ul>
             </VerticalTimelineElement>
 
@@ -109,7 +105,7 @@ const cv = () => {
       </Card>
 
 
-      <Card className="border-2 border-blue-500 mb-10">
+      <Card className="border-2 border-white-500 mb-10">
 
         <CardHeader className="text-2xl font-bold">Intrests & Hobbies</CardHeader>
 
@@ -173,14 +169,14 @@ const cv = () => {
 
 
 
-      <Card className="border-2 border-blue-500 mb-10 ">
+      <Card className="border-2 border-white-500">
 
         <CardHeader className="text-2xl font-bold">References</CardHeader>
 
 
         <CardBody className="flex flex-row flex-wrap justify-around items-center">
 
-          <Card className="border-2 border-white-500 mb-10 w-80 ">
+          <Card className="border-2 border-white-500 mb-5 w-80 ">
 
             <CardHeader className="justify-between">
               <div className="flex gap-5">
@@ -211,7 +207,7 @@ const cv = () => {
 
           </Card>
 
-          <Card className=" border-2 border-white-500 mb-10 w-80">
+          <Card className=" border-2 border-white-500 mb-5 w-80">
 
             <CardHeader className="justify-between">
               <div className="flex gap-5">
@@ -241,7 +237,7 @@ const cv = () => {
             </CardBody>
 
           </Card>
-          <Card className=" border-2 border-white-500 mb-10 w-80">
+          <Card className=" border-2 border-white-500 w-80 md:mb-5">
 
             <CardHeader className="justify-between">
               <div className="flex gap-5">
