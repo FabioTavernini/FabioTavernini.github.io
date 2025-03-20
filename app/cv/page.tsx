@@ -98,7 +98,7 @@ const cv = () => {
               contentArrowStyle={{ borderRight: '7px solid  rgb(73, 73, 73)' }}
               date="2018 - 2022"
               iconStyle={{ background: 'rgb(0, 106, 192)', color: '#fff' }}
-              icon={<FaBook /> as React.ReactElement}
+              icon={<FaBook />}
             >
               <h3 className="vertical-timeline-element-title text-lg font-bold"><Link className="text-lg font-bold" href="https://www.ict-berufsbildung.ch/grundbildung/ict-lehren/betriebsinformatiker-in-efz">Apprenticeship</Link> in IT (Swiss EFZ)</h3>
               <h4 className="vertical-timeline-element-subtitle text-gray-200">KSD Schaffhausen</h4>
