@@ -34,6 +34,7 @@ export default function CustomNavbar() {
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       shouldHideOnScroll
+      id="navbar"
     >
       {/* Left Section: Brand */}
       <NavbarContent>

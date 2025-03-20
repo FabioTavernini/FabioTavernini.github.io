@@ -15,10 +15,10 @@
 }
 
 @media print {
-    main {
+    main, footer, #navbar {
         display: none;
     }
-
+    
     #print-visible {
         display: block;
         font-size: 50pt;
@@ -26,5 +26,6 @@
         align-items: center;
         justify-content: center;
         font-weight: bold;
+        margin-top: 45vh;
     }
 }

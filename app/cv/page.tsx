@@ -22,13 +22,13 @@ const cv = () => {
 
     <div className="flex flex-col">
 
-      <div className="w-3/4 flex flex-wrap justify-around items-center mb-10">
+      <div className="w-full flex flex-wrap justify-around items-center mb-10">
         <div className="">
           <h1 className="text-4xl font-bold">Fabio Tavernini</h1>
           <h2 className="text-xl text-gray-400">Application manager</h2>
         </div>
 
-        <div className="">
+        <div className="w-full flex justify-center mt-5">
           <Button onPress={handlePrint}>Download PDF</Button>
         </div>
 
@@ -203,7 +203,7 @@ const cv = () => {
 
             <CardBody className="px-3 py-0 text-small text-default-400">
 
-              <p>ICT Coordinator</p>
+              <p className="min-h-10">ICT Coordinator</p>
 
               <p>
                 <Link href="mailto:dominik.uehlinger@georgfischer.com">dominik.uehlinger@georgfischer.com</Link> <br />
@@ -234,7 +234,7 @@ const cv = () => {
 
             <CardBody className="px-3 py-0 text-small text-default-400">
 
-              <p>Teamleiter Customer Solutions</p>
+              <p className="min-h-10">Team-Leader Customer Solutions</p>
 
               <p>
                 <Link href="mailto:patrik.decurtins@itsh.ch">patrik.decurtins@itsh.ch</Link> <br />
@@ -264,7 +264,7 @@ const cv = () => {
 
             <CardBody className="px-3 py-0 text-small text-default-400">
 
-              <p>Abteilungsleiter & Mitglied GL</p>
+              <p className="min-h-10"> Head of department & <br></br> Member of executive board </p>
 
               <p>
                 <Link href="mailto:marco.schirru@itsh.ch">marco.schirru@itsh.ch</Link> <br />
