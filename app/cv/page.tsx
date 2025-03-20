@@ -1,21 +1,26 @@
 "use client"
 
 import React from "react";
-import { Card, CardHeader, CardBody, CardFooter, Image, Button, Link, Chip, Avatar } from "@nextui-org/react";
+import { Card, CardHeader, CardBody, Button, Link, Avatar } from "@nextui-org/react";
 
 import {
   VerticalTimeline,
   VerticalTimelineElement
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { FaBeer, FaBook, FaCamera, FaCar, FaCode, FaSwimmingPool, FaUtensilSpoon } from "react-icons/fa";
+import { FaBook, FaCamera, FaCar, FaCode, FaUtensilSpoon } from "react-icons/fa";
+
+
 
 const cv = () => {
 
+  const handlePrint = () => {
+    window.print();
+  };
 
   return (
 
-    <div className=" flex flex-col">
+    <div className="flex flex-col">
 
       <div className="w-3/4 flex flex-wrap justify-around items-center mb-10">
         <div className="">
@@ -24,7 +29,7 @@ const cv = () => {
         </div>
 
         <div className="">
-          {/* <Button>Download PDF</Button> */}
+          <Button onPress={handlePrint}>Download PDF</Button>
         </div>
 
       </div>
@@ -34,7 +39,7 @@ const cv = () => {
         <CardBody className="flex flex-row justify-between flex-wrap">
           <div className="p-5">
             <h3 className="text-2xl font-bold">About Me</h3>
-            <p className="max-w-96 ">
+            <p className="max-w-96">
               As a computer scientist, I am confronted with many techniques and problems.
               I am always looking for creative and effective solutions.
               I have already gained experience with many languages, including HTML, CSS, Powershell, Javascript, SQL, PHP and others.
@@ -45,8 +50,8 @@ const cv = () => {
           <div className="p-5">
             <Link href="/contact" className="text-2xl font-bold">Contact</Link>
             <p className="flex flex-col mt-5">
-              <Link href="mailto:mail@tavernini.online ">mail@tavernini.online </Link><br />
-              <Link href="/">www.tavernini.online</Link><br />
+              <Link href="mailto:mail@tavernini.online ">mail@tavernini.online </Link>
+              <Link href="/">www.tavernini.online</Link>
               <Link href="tel:+41 77 402 83 94">+41 77 402 83 94</Link>
             </p>
           </div>
@@ -72,12 +77,17 @@ const cv = () => {
               <ul className="list-disc ml-5">
                 <li>Maintenance of internal web portals with PHP and SQL</li>
                 <li>Management of applications</li>
+
                 <li>Introduction of version control system GIT</li>
-                <li>Setup of GIT server with Gitea</li>
+                <ul>
+                  <li>- Setup of GIT server with Gitea</li>
+                  <li>- Setup of GIT server with Gitlab for automated deployments to VMWare Tanzu K8s</li>
+                </ul>
                 <li>Implementation of CI/CD pipelines</li>
-                <li>Maintenance and management of PHP legacy codebase</li>
+                <li>Maintenance and management of PHP & VB legacy codebase</li>
                 <li>Migration of web portals from PHP 5.2 to PHP 8.2.4</li>
-                <li>Management of various interfaces with VB, PowerShell, MSSQL, and PHP</li>
+                <li>Programming of multiple interfaces for applications.</li>
+                <li>Management & Monitoring of various interfaces with <Link target="_blank" href="https://github.com/FabioTavernini/notify-threema-broadcast">Github actions</Link>, Powershell, Prtg & <Link target="_blank" href="https://threema.ch/en/work/clients/itsh">Threema</Link></li>
               </ul>
             </VerticalTimelineElement>
 
@@ -103,7 +113,6 @@ const cv = () => {
 
         </CardBody>
       </Card>
-
 
       <Card className="border-2 border-white-500 mb-10">
 
@@ -166,8 +175,6 @@ const cv = () => {
         </CardBody>
 
       </Card>
-
-
 
       <Card className="border-2 border-white-500">
 
