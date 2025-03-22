@@ -28,9 +28,9 @@ const cv = () => {
           <h2 className="text-xl text-gray-400">Application manager</h2>
         </div>
 
-        <div className="w-full flex justify-center mt-5">
+        {/* <div className="w-full flex justify-center mt-5">
           <Button onPress={handlePrint}>Download PDF</Button>
-        </div>
+        </div> */}
 
       </div>
 
