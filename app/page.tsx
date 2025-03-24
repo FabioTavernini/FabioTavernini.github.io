@@ -84,7 +84,7 @@ export default function HomePage() {
 
           <h2 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-600">What i do</h2>
           <h3 className="text-gray-400">About me</h3>
-          <p>Im an Application Manager at <Link className="text-blue-500" href={"https://itsh.ch"}>ITSH.ch</Link> and am responsible for a number of legacy PHP apps, aswell as many diffrent Powershell automation Jobs. If you&apos;d like to see my CV, you can do so here: <Link className="text-blue-500" href={"https://cv.tavernini.online"}>CV</Link>.</p>
+          <p>Im an Application Manager at <Link className="text-blue-500" href={"https://itsh.ch"}>ITSH.ch</Link> and am responsible for a number of legacy PHP apps, aswell as many diffrent Powershell automation Jobs. If you&apos;d like to see my CV, you can do so here: <Link className="text-blue-500" href={"https://tavernini.online/cv"}>CV</Link>.</p>
 
           <br></br>
           <hr></hr>
