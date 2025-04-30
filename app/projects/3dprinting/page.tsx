@@ -1,7 +1,7 @@
 "use client";
 
 import { SiCreality } from '@icons-pack/react-simple-icons';
-import { Card, CardHeader, CardBody, CardFooter, Image, Button, Link } from "@nextui-org/react";
+import { Card, CardHeader, CardBody, CardFooter, Image, Button, Link } from "@heroui/react";
 import React from 'react';
 
 export default function Page() {

@@ -9,13 +9,8 @@
 		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
 	},
 	"dependencies": {
+		"@heroui/react": "^2.7.8",
 		"@icons-pack/react-simple-icons": "^10.1.0",
-		"@nextui-org/avatar": "^2.2.6",
-		"@nextui-org/button": "^2.2.9",
-		"@nextui-org/input": "^2.4.8",
-		"@nextui-org/react": "^2.6.11",
-		"@nextui-org/system": "2.4.0",
-		"@nextui-org/theme": "2.4.3",
 		"@types/react-icons": "^2.2.7",
 		"autoprefixer": "^10.4.20",
 		"clsx": "2.1.1",

@@ -1,6 +1,6 @@
 "use client";
 
-import { Code } from "@nextui-org/react";
+import { Code } from "@heroui/react";
 import Image from 'next/image';
 import me from '../public/images/BW.webp'
 import Link from "next/link";

@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Button } from '@nextui-org/button';
+import { Button } from '@heroui/button';
 
 interface DiagramData {
   link: string;
