@@ -6,10 +6,6 @@
     filter: url(#ambilight);
 }
 
-.vertical-timeline-element--work .vertical-timeline-element-content {
-    box-shadow: none;
-}
-
 #print-visible{
     display: none;
 }

@@ -2,14 +2,13 @@ import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import 'github-markdown-css/github-markdown.css';
 
-
 interface MarkdownRendererProps {
   markdownText: string;
 }
 
 function MarkdownRenderer({ markdownText }: { markdownText: string }) {
   return (
-    <div className="markdown-body bg-black">
+    <div className="markdown-body !bg-black">
       <ReactMarkdown>{markdownText}</ReactMarkdown>
     </div>
   );
