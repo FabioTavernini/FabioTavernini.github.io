@@ -1,6 +1,5 @@
 "use client";
 
-import { SiCreality } from '@icons-pack/react-simple-icons';
 import { Card, CardHeader, CardBody, CardFooter, Image, Button, Link } from "@heroui/react";
 import React from 'react';
 
@@ -18,7 +17,7 @@ type Printer = {
 
 
 const printers: Printer[] = [
-    {
+  {
     name: "Creality K1",
     upgrades: [
       {
@@ -33,17 +32,38 @@ const printers: Printer[] = [
       {
         label: "Dual Z Axis upgrade",
         url: "https://store.creality.com/eu/products/dual-screw-rod-upgrade-kit-for-ender-3-ender-3-pro-ender-3-v2-ender-3-neo-ender-3-v2-neo?srsltid=AfmBOordiYUUqNIrfSgyo86NAnLnO8mGecgQOp0_3HiSWl0VP7jIuAnf",
+        description: "adds loads of stability to x axis"
       },
       {
-        label: "Custom Fan shroud fix",
-        url: "/images/3dprinting/fan_fix.jpg",
+        label: "Custom Fan shroud",
+        url: "https://www.printables.com/model/389830-neo-thang",
         description:
-          "Since the tiny soldering spots on the fan always kept breaking when taking off the fan shroud, I soldered some proper wire onto the connection and wired it up again with some luster terminals.",
+          "Since part cooling is not the best on the Ender 3 V2 Neo, I designed a custom fan shroud that improves airflow and cooling.",
       },
       {
-        label: "Creality glass print plate",
-        url: "https://store.creality.com/eu/collections/accessories/products/ender-3-carborundum-glass-platform-235-235mm",
+        label: "Bi-Metal Heat Break",
+        url: "https://de.aliexpress.com/item/1005007715765619.html?spm=a2g0o.productlist.main.1.2d925ca6LIePqc&algo_pvid=a9543792-b122-495f-8f06-d68be01a3262&pdp_ext_f=%7B%22order%22%3A%2299%22%2C%22eval%22%3A%221%22%7D&utparam-url=scene%3Asearch%7Cquery_from%3A",
+        description:
+          "Faster heat-up times and better thermal performance.",
       },
+      {
+        label: "Klipper firmware",
+        url: "https://www.printables.com/model/389830-neo-thang",
+        description:
+          "Klipper with a raspberry pi is loads of fun. Allows for advanced features like pressure advance, input shaping, and more.",
+      },
+      {
+        label: "Dual gear extruder",
+        url: "https://de.aliexpress.com/item/1005007660748539.html?spm=a2g0o.productlist.main.1.14fe43d7CQJ4w0&algo_pvid=68d1a80f-84ca-4de5-9352-e5bbf91cf33f&pdp_ext_f=%7B%22order%22%3A%22236%22%2C%22eval%22%3A%221%22%7D&utparam-url=scene%3Asearch%7Cquery_from%3A",
+        description:
+          "Dual gear extruder as an upgrade for the Ender 3 V2 Neo. It improves the extrusion force and reliability.",
+      },
+      {
+        label: "Rubber Bed spacers",
+        url: "https://de.aliexpress.com/item/1005007300734604.html?spm=a2g0o.productlist.main.14.34044fd4REX4Vl&algo_pvid=d9926a5a-319e-4c03-86f3-8803d3a0bba9&pdp_ext_f=%7B%22order%22%3A%22811%22%2C%22eval%22%3A%221%22%7D&utparam-url=scene%3Asearch%7Cquery_from%3A",
+        description:
+          "Help with bed-leveling and prevent the bed from getting out of whack over time.",
+      }
     ],
   }
 ];

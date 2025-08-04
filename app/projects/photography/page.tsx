@@ -27,7 +27,7 @@ const images = [
   "velo.jpg",
   "hochstrasse.jpg",
   "sbb.jpg",
-  "flowerhead_pos.jpg"
+  "flowerheadpos.jpg"
 ].map((img) => `/images/thumbnails/${img}`);
 
 const ImageGallery = () => {
