@@ -1,8 +1,74 @@
 "use client";
 
-import { SiCreality } from '@icons-pack/react-simple-icons';
-import { Card, CardHeader, CardBody, CardFooter, Image, Button, Link } from "@nextui-org/react";
+import { Card, CardHeader, CardBody, CardFooter, Image, Button, Link } from "@heroui/react";
 import React from 'react';
+
+type Upgrade = {
+  label: string;
+  url: string;
+  description?: string;
+};
+
+type Printer = {
+  name: string;
+  image?: string;
+  upgrades: Upgrade[];
+};
+
+
+const printers: Printer[] = [
+  {
+    name: "Creality K1",
+    upgrades: [
+      {
+        label: "Klipper firmware",
+        url: "https://www.klipper3d.org/",
+      },
+    ],
+  },
+  {
+    name: "Creality Ender 3 V2 Neo",
+    upgrades: [
+      {
+        label: "Dual Z Axis upgrade",
+        url: "https://store.creality.com/eu/products/dual-screw-rod-upgrade-kit-for-ender-3-ender-3-pro-ender-3-v2-ender-3-neo-ender-3-v2-neo?srsltid=AfmBOordiYUUqNIrfSgyo86NAnLnO8mGecgQOp0_3HiSWl0VP7jIuAnf",
+        description: "adds loads of stability to x axis"
+      },
+      {
+        label: "Custom Fan shroud",
+        url: "https://www.printables.com/model/389830-neo-thang",
+        description:
+          "Since part cooling is not the best on the Ender 3 V2 Neo, I designed a custom fan shroud that improves airflow and cooling.",
+      },
+      {
+        label: "Bi-Metal Heat Break",
+        url: "https://de.aliexpress.com/item/1005007715765619.html?spm=a2g0o.productlist.main.1.2d925ca6LIePqc&algo_pvid=a9543792-b122-495f-8f06-d68be01a3262&pdp_ext_f=%7B%22order%22%3A%2299%22%2C%22eval%22%3A%221%22%7D&utparam-url=scene%3Asearch%7Cquery_from%3A",
+        description:
+          "Faster heat-up times and better thermal performance.",
+      },
+      {
+        label: "Klipper firmware",
+        url: "https://www.printables.com/model/389830-neo-thang",
+        description:
+          "Klipper with a raspberry pi is loads of fun. Allows for advanced features like pressure advance, input shaping, and more.",
+      },
+      {
+        label: "Dual gear extruder",
+        url: "https://de.aliexpress.com/item/1005007660748539.html?spm=a2g0o.productlist.main.1.14fe43d7CQJ4w0&algo_pvid=68d1a80f-84ca-4de5-9352-e5bbf91cf33f&pdp_ext_f=%7B%22order%22%3A%22236%22%2C%22eval%22%3A%221%22%7D&utparam-url=scene%3Asearch%7Cquery_from%3A",
+        description:
+          "Dual gear extruder as an upgrade for the Ender 3 V2 Neo. It improves the extrusion force and reliability.",
+      },
+      {
+        label: "Rubber Bed spacers",
+        url: "https://de.aliexpress.com/item/1005007300734604.html?spm=a2g0o.productlist.main.14.34044fd4REX4Vl&algo_pvid=d9926a5a-319e-4c03-86f3-8803d3a0bba9&pdp_ext_f=%7B%22order%22%3A%22811%22%2C%22eval%22%3A%221%22%7D&utparam-url=scene%3Asearch%7Cquery_from%3A",
+        description:
+          "Help with bed-leveling and prevent the bed from getting out of whack over time.",
+      }
+    ],
+  }
+];
+
+
 
 export default function Page() {
 
@@ -14,34 +80,38 @@ export default function Page() {
 
       <Card className="border-2 border-white-400">
         <CardHeader>
-          <h3 className='text-2xl'>Setup</h3>
-
+          <h3 className='text-2xl'>Printers & Setup</h3>
 
         </CardHeader>
 
-
-
         <CardBody>
-          <ul className='text-left list-disc m-5'>
-
-            <li>
-              <Link className='text-2xl font-bold' rel='noopener' target='_blank' href='/images/3dprinting/ender3v2neo.jpg'>Ender 3 V2 Neo</Link>
-              <SiCreality color='white' className='mt-[-40px] mb-[-30px]' size={100}></SiCreality>
-            </li>
-
-            <li>
-              <Link target="_blank" href="https://store.creality.com/eu/products/dual-screw-rod-upgrade-kit-for-ender-3-ender-3-pro-ender-3-v2-ender-3-neo-ender-3-v2-neo?srsltid=AfmBOordiYUUqNIrfSgyo86NAnLnO8mGecgQOp0_3HiSWl0VP7jIuAnf">Dual Z Axis upgrade</Link>
-            </li>
-
-            <li >
-              <Link target="_blank" className='text-blue-600' rel='noopener' href='/images/3dprinting/fan_fix.jpg'>Custom Fan shroud fix</Link>
-
-              <p className='text-sm'>Since the tiny soldering spots on the fan always kept breaking when taking of the fan shroud, i soldered some proper wire onto the connection and wired it up again with some luster terminals.</p>
-
-            </li>
-            <li>
-              <Link target="_blank" href="https://store.creality.com/eu/collections/accessories/products/ender-3-carborundum-glass-platform-235-235mm?spm=..collection_9813d596-2ab3-49db-bfa8-a20eb9964ebc.collection_custom_1.8&spm_prev=..product_88cbf05c-480e-413b-a0c8-864a086d2f4d.breadcrumbs_1.1">Creality glass print plate</Link>
-            </li>
+          <ul className="text-left list-disc m-5">
+            {printers.map((printer, idx) => (
+              <li key={idx} className="mb-3">
+                <h2
+                  className="text-2xl font-bold"
+                >
+                  {printer.name}
+                </h2>
+                <ul className="ml-5 list-disc text-base mt-2">
+                  {printer.upgrades.map((upgrade, uIdx) => (
+                    <li key={uIdx} className="mb-2">
+                      <Link
+                        target="_blank"
+                        rel="noopener"
+                        href={upgrade.url}
+                        className={upgrade.url.endsWith(".jpg") ? "text-blue-600" : ""}
+                      >
+                        {upgrade.label}
+                      </Link>
+                      {upgrade.description && (
+                        <p className="text-sm mt-1">{upgrade.description}</p>
+                      )}
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))}
           </ul>
         </CardBody>
       </Card>
@@ -63,6 +133,14 @@ export default function Page() {
               <ul className='list-disc ml-10'>
                 <li>
                   <Link target="_blank" href="https://www.thingiverse.com/thing:6911226">Gridfinity SFP holder</Link>
+                </li>
+
+                <li>
+                  <Link target="_blank" href="https://www.thingiverse.com/thing:6944060">E30 Dash USB Charger</Link>
+                </li>
+
+                <li>
+                  <Link target="_blank" href="https://www.thingiverse.com/thing:7075834">Remix of Raspberry Pi Holder</Link>
                 </li>
 
                 <li>

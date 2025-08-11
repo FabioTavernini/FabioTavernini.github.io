@@ -4,9 +4,9 @@
 
 
 import React from "react";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button } from "@nextui-org/react";
+import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button } from "@heroui/react";
 import { usePathname } from "next/navigation";
-import { Avatar } from "@nextui-org/avatar";
+import { Avatar } from "@heroui/avatar";
 
 export default function CustomNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
@@ -34,6 +34,7 @@ export default function CustomNavbar() {
       isMenuOpen={isMenuOpen}
       onMenuOpenChange={setIsMenuOpen}
       shouldHideOnScroll
+      id="navbar"
     >
       {/* Left Section: Brand */}
       <NavbarContent>

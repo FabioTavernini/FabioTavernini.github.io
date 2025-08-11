@@ -2,7 +2,7 @@
 
 import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
-import { Button } from '@nextui-org/button';
+import { Button } from '@heroui/button';
 
 interface DiagramData {
   link: string;
@@ -55,8 +55,8 @@ export default function Page() {
           Within this cluster, I&apos;ve deployed:
         </p>
         <ul className="list-disc list-inside mt-2">
-          <li><strong>Gitea</strong>: A Git server to manage my repositories.</li>
-          <li><strong>Jenkins</strong>: A robust CI/CD pipeline to streamline build, test, and deployment processes.</li>
+          <li><strong>Gitlab</strong>: A Git server to manage my repositories.</li>
+          <li><strong>Gitlab CI CD</strong>: A robust CI/CD pipeline to streamline build, test, and deployment processes.</li>
           <li><strong>ArgoCD</strong>: A powerful tool for GitOps-driven container and deployment orchestration.</li>
         </ul>
 

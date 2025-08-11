@@ -1,7 +1,7 @@
 "use client"
 
 import { SiArgo, SiDebian, SiDell, SiDiagramsdotnet, SiDocker, SiFreebsd, SiFreenas, SiGitea, SiHp, SiJellyfin, SiKubernetes, SiProxmox, SiTplink, SiUbuntu, SiVsco, SiWire, SiWireguard } from "@icons-pack/react-simple-icons";
-import { Card, CardHeader, CardBody, CardFooter, Image, Button } from "@nextui-org/react";
+import { Card, CardHeader, CardBody, CardFooter, Image, Button } from "@heroui/react";
 import Link from "next/link";
 import { FaGithub } from 'react-icons/fa';
 

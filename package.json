@@ -3,33 +3,30 @@
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
-		"dev": "next dev --turbo",
+		"dev": "next dev",
 		"build": "next build",
 		"start": "next start",
 		"lint": "eslint . --ext .ts,.tsx -c .eslintrc.json --fix"
 	},
 	"dependencies": {
+		"@heroui/react": "^2.7.8",
 		"@icons-pack/react-simple-icons": "^10.1.0",
-		"@nextui-org/avatar": "^2.0.33",
-		"@nextui-org/button": "2.0.38",
-		"@nextui-org/input": "2.2.5",
-		"@nextui-org/react": "^2.6.11",
-		"@nextui-org/system": "2.4.0",
-		"@nextui-org/theme": "2.4.3",
+		"@types/react-icons": "^2.2.7",
 		"autoprefixer": "^10.4.20",
 		"clsx": "2.1.1",
-		"framer-motion": "~11.5.6",
-		"next": "^15.0.3",
+		"framer-motion": "^12.23.3",
+		"github-markdown-css": "^5.8.1",
+		"next": "^15.3.5",
 		"next-themes": "^0.2.1",
-		"react": "^18.3.1",
-		"react-dom": "^18.3.1",
-		"react-icons": "^5.3.0",
-		"react-masonry-css": "^1.0.16",
-		"react-vertical-timeline-component": "^3.5.3"
+		"react": "^19.1.0",
+		"react-dom": "^19.1.0",
+		"react-icons": "5.3.0",
+		"react-markdown": "^10.1.0",
+		"react-masonry-css": "^1.0.16"
 	},
 	"devDependencies": {
 		"@types/node": "22.10.1",
-		"@types/react": "18.3.3",
+		"@types/react": "^19.1.8",
 		"@types/react-vertical-timeline-component": "^3.3.6",
 		"@typescript-eslint/eslint-plugin": "7.2.0",
 		"@typescript-eslint/parser": "7.2.0",
@@ -45,5 +42,19 @@
 		"tailwind-variants": "0.1.20",
 		"tailwindcss": "3.4.3",
 		"typescript": "5.0.4"
-	}
+	},
+	"description": "[![Netlify Status](https://api.netlify.com/api/v1/badges/fcce7287-6005-4167-9386-623b9e74ffa0/deploy-status)](https://app.netlify.com/sites/ftave/deploys)",
+	"main": "next.config.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/FabioTavernini/FabioTavernini.github.io.git"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"type": "module",
+	"bugs": {
+		"url": "https://github.com/FabioTavernini/FabioTavernini.github.io/issues"
+	},
+	"homepage": "https://github.com/FabioTavernini/FabioTavernini.github.io#readme"
 }

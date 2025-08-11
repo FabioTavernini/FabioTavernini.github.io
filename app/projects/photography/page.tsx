@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useState, useEffect } from "react";
-import { Button } from "@nextui-org/button";
+import { Button } from "@heroui/button";
 import Masonry from 'react-masonry-css';
 
 const images = [
@@ -27,6 +27,7 @@ const images = [
   "velo.jpg",
   "hochstrasse.jpg",
   "sbb.jpg",
+  "flowerheadpos.jpg"
 ].map((img) => `/images/thumbnails/${img}`);
 
 const ImageGallery = () => {
@@ -84,7 +85,7 @@ const ImageGallery = () => {
           >
             <img
               src={src}
-              className="w-full h-auto object-cover rounded-lg"
+              className="w-full h-auto object-cover rounded-lg border border-black hover:border-blue-600"
             />
           </Button>
         ))}

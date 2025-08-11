@@ -9,32 +9,37 @@
 
 <url>
   <loc>https://tavernini.online/</loc>
-  <lastmod>2024-12-05T18:54:31+00:00</lastmod>
+  <lastmod>2025-02-09T23:27:36+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://tavernini.online/projects</loc>
-  <lastmod>2024-12-05T18:54:31+00:00</lastmod>
+  <lastmod>2025-02-09T23:27:36+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://tavernini.online/cv</loc>
+  <lastmod>2025-02-09T23:27:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://tavernini.online/contact</loc>
-  <lastmod>2024-12-05T18:54:31+00:00</lastmod>
+  <lastmod>2025-02-09T23:27:36+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://tavernini.online/projects/photography</loc>
-  <lastmod>2024-12-05T18:54:31+00:00</lastmod>
+  <lastmod>2025-02-09T23:27:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://tavernini.online/projects/homelab</loc>
-  <lastmod>2024-12-05T18:54:31+00:00</lastmod>
+  <lastmod>2025-02-09T23:27:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://tavernini.online/projects/3dprinting</loc>
-  <lastmod>2024-12-05T18:54:31+00:00</lastmod>
+  <lastmod>2025-02-09T23:27:36+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 

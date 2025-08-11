@@ -3,7 +3,7 @@ import { Metadata, Viewport } from "next";
 import clsx from "clsx";
 import { Providers } from "./providers";
 import { fontSans } from "@/config/fonts";
-import CustomNavbar  from "@/components/navbar";
+import CustomNavbar from "@/components/navbar";
 import { Footer } from "@/components/footer";
 
 export const metadata: Metadata = {
@@ -19,12 +19,13 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({children}: { children: React.ReactNode }) { return (
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
     <html suppressHydrationWarning lang="en">
-      
+
       <head>
-      <title>Fabio Tavernini</title>
-      <meta name="description" content="My personal Website"></meta>
+        <title>Fabio Tavernini</title>
+        <meta name="description" content="My personal Website"></meta>
       </head>
 
       <body
@@ -36,6 +37,9 @@ export default function RootLayout({children}: { children: React.ReactNode }) { 
         <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
           <div className="relative flex flex-col h-screen">
             <CustomNavbar />
+            <div id="print-visible" className="">
+              <h1>Think of the trees man</h1>
+            </div>
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
               {children}
             </main>

@@ -2,12 +2,26 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 #BW {
     filter: url(#ambilight);
 }
 
-.vertical-timeline-element--work .vertical-timeline-element-content {
-    box-shadow: none;
+#print-visible{
+    display: none;
+}
+
+@media print {
+    main, footer, #navbar {
+        display: none;
+    }
+    
+    #print-visible {
+        display: block;
+        font-size: 50pt;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        margin-top: 45vh;
+    }
 }
