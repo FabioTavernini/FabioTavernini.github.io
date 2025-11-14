@@ -191,21 +191,21 @@ Apprenticeship as IT Specialist EFZ
 `;
 
 export default function App() {
-  const [language, setLanguage] = useState<'DE' | 'EN'>('DE');
+  const [language, setLanguage] = useState<'DE' | 'EN'>('EN');
 
   return (
     <div className="flex flex-col items-center p-4">
-      
+
       {/* Language toggle */}
       <div className="flex items-center mb-6">
         <span className={`mr-2 ${language === 'DE' ? 'font-bold' : ''}`}>DE</span>
         <label className="relative inline-flex items-center cursor-pointer">
           <input
-            type="checkbox"
-            value=""
+            checked={language === "EN"}
             className="sr-only peer"
-            checked={language === 'EN'}
-            onChange={() => setLanguage(language === 'DE' ? 'EN' : 'DE')}
+            type="checkbox"
+            aria-label="Toggle language"
+            onChange={() => setLanguage(language === "DE" ? "EN" : "DE")}
           />
           <div className="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-blue-300 rounded-full peer dark:bg-gray-700 peer-checked:bg-gray-700 transition-all"></div>
           <div className="absolute left-1 top-1 bg-white w-4 h-4 rounded-full transition-transform peer-checked:translate-x-5"></div>
