@@ -48,14 +48,14 @@ export default function HomePage() {
           <h3 className="text-gray-400">About me</h3>
           <p>
             I&apos;m an Application Manager at{" "}
-            <Link className="text-blue-500" href="https://itsh.ch">
+            <Link className="text-blue-500" href="https://itsh.ch" target="_blank">
               ITSH.ch
             </Link>
             , responsible for a number of legacy PHP apps, various PowerShell
             automation jobs, and partially managing our internal VMware Tanzu
             Kubernetes platform (all on-prem) along with our GitOps workflows.
             If you&apos;d like to see my CV, you can do so here:{" "}
-            <Link className="text-blue-500" href="https://tavernini.online/cv">
+            <Link className="text-blue-500" href="/cv">
               CV
             </Link>
             .
