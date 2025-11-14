@@ -1,5 +1,3 @@
-"use client";
-
 import { Code } from "@heroui/react";
 import Image from 'next/image';
 import me from '../public/images/BW.webp'

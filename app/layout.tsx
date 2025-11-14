@@ -1,10 +1,10 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
-import { Providers } from "./providers";
 import { fontSans } from "@/config/fonts";
 import CustomNavbar from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { ProvidersWrapper } from "./providers-wrapper";
 
 export const metadata: Metadata = {
   icons: {
@@ -21,31 +21,29 @@ export const viewport: Viewport = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html suppressHydrationWarning lang="en">
-
+    <html lang="en" suppressHydrationWarning>
       <head>
         <title>Fabio Tavernini</title>
-        <meta name="description" content="My personal Website"></meta>
+        <meta name="description" content="My personal Website" />
       </head>
 
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable,
+          fontSans.variable
         )}
       >
-        <Providers themeProps={{ attribute: "class", defaultTheme: "dark" }}>
-          <div className="relative flex flex-col h-screen">
+        <ProvidersWrapper>
+          <div className="relative flex flex-col min-h-screen">
             <CustomNavbar />
-            <div id="print-visible" className="">
-              <h1>Think of the trees man</h1>
-            </div>
+
             <main className="container mx-auto max-w-7xl pt-16 px-6 flex-grow">
               {children}
             </main>
+
             <Footer />
           </div>
-        </Providers>
+        </ProvidersWrapper>
       </body>
     </html>
   );
