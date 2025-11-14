@@ -20,6 +20,7 @@ export default function HomePage() {
           alt="Portrait of me :)"
           className="rounded-lg w-full"
           src="/images/BW-opt.webp"
+          loading="eager"
         />
 
         <div className="w-[85vw] m-5 md:w-full">
