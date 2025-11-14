@@ -16,12 +16,15 @@ export default function HomePage() {
       </div>
 
       <div className="flex flex-col items-center md:flex-row ml-5 w-[98vw]">
-        <Image
-          alt="Portrait of me :)"
-          className="rounded-lg w-full"
-          src="/images/BW-opt.webp"
-          loading="eager"
-        />
+        <div className="flex justify-center">
+          <Image
+            alt="Portrait of me :)"
+            className="rounded-lg w-11/12"
+            src="/images/BW-opt.webp"
+            loading="eager"
+          />
+        </div>
+
 
         <div className="w-[85vw] m-5 md:w-full">
           <h2 className="text-xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-yellow-400 to-red-600">
