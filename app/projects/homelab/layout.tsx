@@ -3,9 +3,5 @@ export default function PhotographyLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <section>
-        {children}
-    </section>
-  );
+  return <section>{children}</section>;
 }

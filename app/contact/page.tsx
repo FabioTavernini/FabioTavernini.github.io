@@ -24,29 +24,48 @@ const ContactForm = () => {
       }
 
       alert("Thank you for the submission :)");
-
     } catch (error) {
       console.error("There was a problem with the fetch operation:", error);
     }
   };
 
   return (
+    <form className="pr-5" name="contact" onSubmit={handleFormSubmit}>
+      <Input name="form-name" type="hidden" value="contact" />
 
-
-  
-
-    <form name="contact" onSubmit={handleFormSubmit} className="pr-5">
-      
-      <Input type="hidden" name="form-name" value="contact" />
-
-      <Input name="name" type="text" label="Your name" placeholder="Foo Bar" className="m-4" />
-      <Input name="email" type="email" label="Email" placeholder="Where i can contact you" className="m-4" required/>
-      <Input name="subject" type="text" label="Subject" placeholder="whats this about?" className="m-4" />
-      <Textarea name="message" label="Your message for me" minRows={15} className="m-4" required/>     
-      <Button size="md" color="primary" type="submit" className="m-4">Submit</Button>
-
+      <Input
+        className="m-4"
+        label="Your name"
+        name="name"
+        placeholder="Foo Bar"
+        type="text"
+      />
+      <Input
+        required
+        className="m-4"
+        label="Email"
+        name="email"
+        placeholder="Where i can contact you"
+        type="email"
+      />
+      <Input
+        className="m-4"
+        label="Subject"
+        name="subject"
+        placeholder="whats this about?"
+        type="text"
+      />
+      <Textarea
+        required
+        className="m-4"
+        label="Your message for me"
+        minRows={15}
+        name="message"
+      />
+      <Button className="m-4" color="primary" size="md" type="submit">
+        Submit
+      </Button>
     </form>
-
   );
 };
 

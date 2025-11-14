@@ -1,9 +1,11 @@
 import "@/styles/globals.css";
 import { Metadata, Viewport } from "next";
 import clsx from "clsx";
+
 import { fontSans } from "@/config/fonts";
 import CustomNavbar from "@/components/navbar";
 import { Footer } from "@/components/footer";
+
 import { ProvidersWrapper } from "./providers-wrapper";
 
 export const metadata: Metadata = {
@@ -19,18 +21,22 @@ export const viewport: Viewport = {
   ],
 };
 
-export default function RootLayout({ children }: { children: React.ReactNode }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html suppressHydrationWarning lang="en">
       <head>
         <title>Fabio Tavernini</title>
-        <meta name="description" content="My personal Website" />
+        <meta content="My personal Website" name="description" />
       </head>
 
       <body
         className={clsx(
           "min-h-screen bg-background font-sans antialiased",
-          fontSans.variable
+          fontSans.variable,
         )}
       >
         <ProvidersWrapper>

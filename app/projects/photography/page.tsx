@@ -2,7 +2,7 @@
 
 import React, { useState, useEffect } from "react";
 import { Button } from "@heroui/button";
-import Masonry from 'react-masonry-css';
+import Masonry from "react-masonry-css";
 
 const images = [
   "parking-ticket.jpg",
@@ -27,7 +27,7 @@ const images = [
   "velo.jpg",
   "hochstrasse.jpg",
   "sbb.jpg",
-  "flowerheadpos.jpg"
+  "flowerheadpos.jpg",
 ].map((img) => `/images/thumbnails/${img}`);
 
 const ImageGallery = () => {
@@ -65,9 +65,12 @@ const ImageGallery = () => {
 
   return (
     <div className="flex flex-col items-center">
-      <h2 className="bg-gradient-to-r from-yellow-400 to-red-600 text-transparent bg-clip-text font-bold text-2xl leading-2 sm:text-2xl sm:tracking-tight ">Image Gallery</h2>
+      <h2 className="bg-gradient-to-r from-yellow-400 to-red-600 text-transparent bg-clip-text font-bold text-2xl leading-2 sm:text-2xl sm:tracking-tight ">
+        Image Gallery
+      </h2>
       <h3 className="text-md font-bold leading-7 text-white sm:truncate sm:text-md sm:tracking-tight mb-5">
-        Be patient when loading an image. When clicking on one, the high-res file is loaded :)
+        Be patient when loading an image. When clicking on one, the high-res
+        file is loaded :)
       </h3>
 
       {/* Masonry Grid */}
@@ -79,13 +82,15 @@ const ImageGallery = () => {
         {images.map((src, index) => (
           <Button
             key={index}
-            onPress={() => setSelectedImage(src.replace('/thumbnails/', '/photography/'))}
             className="rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 w-full h-auto object-cover rounded-lg"
-            style={{ background: 'none', border: 'none', marginBottom: '10px' }} // Add margin for spacing
+            style={{ background: "none", border: "none", marginBottom: "10px" }} // Add margin for spacing
+            onPress={() =>
+              setSelectedImage(src.replace("/thumbnails/", "/photography/"))
+            }
           >
             <img
-              src={src}
               className="w-full h-auto object-cover rounded-lg border border-black hover:border-blue-600"
+              src={src}
             />
           </Button>
         ))}
@@ -96,12 +101,12 @@ const ImageGallery = () => {
         <div className="fixed inset-0 bg-black bg-opacity-80 flex justify-center items-center z-50">
           <div className="relative">
             <img
-              src={selectedImage}
               className="max-w-full max-h-screen rounded-lg"
+              src={selectedImage}
             />
             <Button
-              onPress={() => setSelectedImage(null)}
               className="absolute top-2 right-2 text-white text-xl font-bold bg-red-500"
+              onPress={() => setSelectedImage(null)}
             >
               ✕
             </Button>
@@ -112,9 +117,10 @@ const ImageGallery = () => {
       {/* Back to Top Button */}
       {isVisible && (
         <button
-          onClick={scrollToTop}
+          aria-label="Back to top"
           className="mt-5 p-3 bg-blue-600 text-white rounded-full shadow-lg hover:bg-blue-700 transition"
-          aria-label="Back to top">
+          onClick={scrollToTop}
+        >
           Back to top
         </button>
       )}

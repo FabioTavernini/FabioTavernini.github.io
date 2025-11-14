@@ -1,8 +1,8 @@
 "use client";
 
-import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
-import { Button } from '@heroui/button';
+import React, { useEffect, useState } from "react";
+import Link from "next/link";
+import { Button } from "@heroui/button";
 
 interface DiagramData {
   link: string;
@@ -14,9 +14,11 @@ export default function Page() {
   useEffect(() => {
     async function fetchData() {
       try {
-        const response = await fetch('/diagrams/diagram.json'); // Fetch from the public folder
-        if (!response.ok) throw new Error('Failed to fetch data');
+        const response = await fetch("/diagrams/diagram.json"); // Fetch from the public folder
+
+        if (!response.ok) throw new Error("Failed to fetch data");
         const result: DiagramData = await response.json(); // Explicitly type the fetched data
+
         setData(result);
       } catch (error) {
         console.error(error);
@@ -36,9 +38,9 @@ export default function Page() {
 
       <h3 className="text-lg font-semibold mb-3">Diagram</h3>
 
-      <div id="diagram" className="p-4 rounded-lg">
+      <div className="p-4 rounded-lg" id="diagram">
         <p className="mb-3">Diagram is made with draw.io</p>
-        <Link target="_blank" href={data.link}>
+        <Link href={data.link} target="_blank">
           <Button className="m-1 bg-blue-600 text-white hover:bg-blue-700">
             View Diagram
           </Button>
@@ -46,7 +48,8 @@ export default function Page() {
 
         <p className="mt-4 leading-relaxed">
           Here, I explore, experiment, and build with new (at least to me)
-          technologies to deepen skills in DevOps and system automation.<wbr></wbr>
+          technologies to deepen skills in DevOps and system automation.
+          <wbr />
           My setup features a Proxmox host running two virtual machines
           configured as a Kubernetes cluster.
         </p>
@@ -55,13 +58,19 @@ export default function Page() {
           Within this cluster, I&apos;ve deployed:
         </p>
         <ul className="list-disc list-inside mt-2">
-          <li><strong>Gitlab</strong>: A Git server to manage my repositories.</li>
-          <li><strong>Gitlab CI CD</strong>: A robust CI/CD pipeline to streamline build, test, and deployment processes.</li>
-          <li><strong>ArgoCD</strong>: A powerful tool for GitOps-driven container and deployment orchestration.</li>
+          <li>
+            <strong>Gitlab</strong>: A Git server to manage my repositories.
+          </li>
+          <li>
+            <strong>Gitlab CI CD</strong>: A robust CI/CD pipeline to streamline
+            build, test, and deployment processes.
+          </li>
+          <li>
+            <strong>ArgoCD</strong>: A powerful tool for GitOps-driven container
+            and deployment orchestration.
+          </li>
         </ul>
-
       </div>
     </div>
   );
-};
-
+}

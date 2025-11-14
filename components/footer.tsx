@@ -1,5 +1,5 @@
-import { FaEnvelope, FaGithub, FaInstagram } from 'react-icons/fa';
-import { SiWhatsapp } from '@icons-pack/react-simple-icons';
+import { FaEnvelope, FaGithub, FaInstagram } from "react-icons/fa";
+import { SiWhatsapp } from "@icons-pack/react-simple-icons";
 
 export const Footer = () => {
   return (
@@ -14,33 +14,49 @@ export const Footer = () => {
           </div>
 
           <div className="flex space-x-6">
-
-            <a rel='noopener' href="https://github.com/FabioTavernini" target='_blank' aria-label="GitHub">
+            <a
+              aria-label="GitHub"
+              href="https://github.com/FabioTavernini"
+              rel="noopener"
+              target="_blank"
+            >
               <FaGithub size={25} />
             </a>
 
-            <a rel='noopener' href="https://instagram.com/F_Tavernini" target='_blank' aria-label="Instagram">
+            <a
+              aria-label="Instagram"
+              href="https://instagram.com/F_Tavernini"
+              rel="noopener"
+              target="_blank"
+            >
               <FaInstagram size={25} />
             </a>
 
-            <a rel='noopener' href="mailto:fabiomeo.tavernini@gmail.com" target='_blank' aria-label="Mail">
+            <a
+              aria-label="Mail"
+              href="mailto:fabiomeo.tavernini@gmail.com"
+              rel="noopener"
+              target="_blank"
+            >
               <FaEnvelope size={25} />
             </a>
-            <a rel='noopener' href="https://wa.me/41774028394?text=pläuderle" target='_blank' aria-label="Whatsapp">
+            <a
+              aria-label="Whatsapp"
+              href="https://wa.me/41774028394?text=pläuderle"
+              rel="noopener"
+              target="_blank"
+            >
               <SiWhatsapp size={24} />
             </a>
-
           </div>
-
         </div>
 
         <div className="text-center mt-8">
           <p className="text-sm text-white-500">
-            Made with Next.js + React , TailwindCSS & ❤️ <br></br>
+            Made with Next.js + React , TailwindCSS & ❤️ <br />
             Hosted on netlify
           </p>
         </div>
-
       </div>
     </footer>
   );

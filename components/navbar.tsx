@@ -1,22 +1,29 @@
 "use client";
 
-
-
-
 import React from "react";
-import { Navbar, NavbarBrand, NavbarContent, NavbarItem, NavbarMenuToggle, NavbarMenu, NavbarMenuItem, Link, Button } from "@heroui/react";
+import {
+  Navbar,
+  NavbarBrand,
+  NavbarContent,
+  NavbarItem,
+  NavbarMenuToggle,
+  NavbarMenu,
+  NavbarMenuItem,
+  Link,
+} from "@heroui/react";
 import { usePathname } from "next/navigation";
 import { Avatar } from "@heroui/avatar";
 
 export default function CustomNavbar() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const pathname = usePathname();  // To get the current path and set active link
+  const pathname = usePathname(); // To get the current path and set active link
 
   const getLinkColor = (href: string) => {
     // If href is "/", check for exact match
     if (href === "/") {
       return pathname === "/" ? "primary" : "foreground";
     }
+
     // For other paths, check if href is included in pathname
     return pathname.includes(href) ? "primary" : "foreground";
   };
@@ -26,15 +33,14 @@ export default function CustomNavbar() {
     { name: "Projects", path: "/projects" },
     { name: "CV", path: "/cv" },
     { name: "Contact", path: "/contact" },
-
   ];
 
   return (
     <Navbar
-      isMenuOpen={isMenuOpen}
-      onMenuOpenChange={setIsMenuOpen}
       shouldHideOnScroll
       id="navbar"
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
     >
       {/* Left Section: Brand */}
       <NavbarContent>
@@ -43,8 +49,10 @@ export default function CustomNavbar() {
           className="sm:hidden"
         />
         <NavbarBrand>
-          <Link href="/" className="font-bold text-inherit">
-            <Avatar className="mr-2" size="sm" src="/images/portrait.webp" /> Fabio Tavernini</Link>
+          <Link className="font-bold text-inherit" href="/">
+            <Avatar className="mr-2" size="sm" src="/images/portrait.webp" />{" "}
+            Fabio Tavernini
+          </Link>
         </NavbarBrand>
       </NavbarContent>
 
@@ -52,7 +60,7 @@ export default function CustomNavbar() {
       <NavbarContent className="hidden sm:flex gap-4" justify="end">
         {menuItems.map((item) => (
           <NavbarItem key={item.path}>
-            <Link href={item.path} color={getLinkColor(item.path)}>
+            <Link color={getLinkColor(item.path)} href={item.path}>
               {item.name}
             </Link>
           </NavbarItem>
@@ -64,9 +72,9 @@ export default function CustomNavbar() {
         {menuItems.map((item) => (
           <NavbarMenuItem key={item.path}>
             <Link
-              href={item.path}
-              color={getLinkColor(item.path)}
               className="w-full"
+              color={getLinkColor(item.path)}
+              href={item.path}
               size="lg"
               onPress={() => setIsMenuOpen(false)} // Close the menu when clicking a link
             >
@@ -78,4 +86,3 @@ export default function CustomNavbar() {
     </Navbar>
   );
 }
-
