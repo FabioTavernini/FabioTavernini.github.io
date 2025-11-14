@@ -50,7 +50,7 @@ export default function CustomNavbar() {
         />
         <NavbarBrand>
           <Link className="font-bold text-inherit" href="/">
-            <Avatar className="mr-2" size="sm" src="/images/portrait.webp" />{" "}
+            <Avatar className="mr-2" size="sm" src="/images/portrait-opt.webp" />{" "}
             Fabio Tavernini
           </Link>
         </NavbarBrand>

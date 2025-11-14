@@ -19,7 +19,7 @@ export default function HomePage() {
         <Image
           alt="Portrait of me :)"
           className="rounded-lg w-full"
-          src="/images/BW.webp"
+          src="/images/BW-opt.webp"
         />
 
         <div className="w-[85vw] m-5 md:w-full">
