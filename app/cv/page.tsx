@@ -37,7 +37,7 @@ Als motivierter und lernbegeisterter Informatiker mit Erfahrung in verschiedenen
 
 **Skills & gesammelte Erfahrung:**
 * Scripting & Entwickeln von Schnittstellen
-* Automation mit REST & SOAP API's
+* Automation mit REST & SOAP API&apos;s
 * Weberfahrung, Front & Back-End
 * Kubernetes / DevOps & GitOps
   * Gitlab pipelines
