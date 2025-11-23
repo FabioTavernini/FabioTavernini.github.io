@@ -22,7 +22,7 @@ export default function ContactForm() {
       if (!response.ok) throw new Error("Network response was not ok");
 
       alert("Thank you for the submission :)");
-      // optional: reset form or redirect
+      event.currentTarget.reset();
     } catch (error) {
       console.error("There was a problem with the fetch operation:", error);
     }
