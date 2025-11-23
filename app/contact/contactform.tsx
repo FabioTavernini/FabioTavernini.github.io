@@ -10,7 +10,8 @@ export default function ContactForm() {
 
   const handleFormSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    const formData = new FormData(event.currentTarget);
+    const form = event.currentTarget; // get the form element
+    const formData = new FormData(form);
 
     try {
       const response = await fetch("/__forms.html", {
@@ -22,7 +23,9 @@ export default function ContactForm() {
       if (!response.ok) throw new Error("Network response was not ok");
 
       alert("Thank you for the submission :)");
-      event.currentTarget.reset();
+
+      // ✅ Clear the form
+      form.reset();
     } catch (error) {
       console.error("There was a problem with the fetch operation:", error);
     }
